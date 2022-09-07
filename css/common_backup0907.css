@@ -75,12 +75,11 @@ dt {font-weight: initial;}
 .flex_btn>a:last-child,
 .flex_btn>button:last-child {margin-right:0}
 .btn_wrap.ctr {margin:30px 0; text-align:center;}
-.btn-primary {border: 1px solid #283D6C;}
 a.btn_type1,button.btn_type1 {width:260px; height:70px; line-height:35px; box-sizing:border-box;  font-size:30px; border-radius:4px; text-align:center;}
 a.btn_type1.btn_type1_1,button.btn_type1.btn_type1_1 {width: 360px}
 a.btn_type1.btn_type1_2,button.btn_type1.btn_type1_2 {width: 100%}
-a.btn_type1.btn_type1_3,button.btn_type1.btn_type1_3 {background: #8A8F9B;color:#fff; border:0}
-a.btn_type1.btn_type1_4,button.btn_type1.btn_type1_4 {background: #DEDEDE;color:#666; border:0}
+a.btn_type1.btn_type1_3,button.btn_type1.btn_type1_3 {background: #8A8F9B;color:#fff}
+a.btn_type1.btn_type1_4,button.btn_type1.btn_type1_4 {background: #DEDEDE;color:#666}
 a.btn_type1.btn_type1_sm,button.btn_type1.btn_type1_sm {width: auto; height:34px; padding:0 15px; font-size: 18px; font-weight:inherit; color:#fff; border-radius:6px; letter-spacing: -0.04em; line-height: 0;}
 a.btn_type1.btn_type1_2_sm,button.btn_type1.btn_type1_2_sm {width: 120px; height:34px; padding:0 15px; font-size: 20px; font-weight:inherit; color:#666; border-radius:6px;background: #FFFFFF;border: 1px solid #EAEAEA; letter-spacing: -0.04em; line-height: 0;}
 a.btn_type1.btn_type1_3_sm,button.btn_type1.btn_type1_3_sm {width: 120px; height:34px; padding:0 15px; font-size: 20px; font-weight:inherit; color:#fff; border-radius:6px;background: #293D6C; letter-spacing: -0.04em; line-height: 0;}
@@ -118,7 +117,7 @@ a.btn_type4.btn_type4_12,button.btn_type4.btn_type4_12 {min-width:160px;height:5
 a.btn.btn_type5,button.btn.btn_type5 {min-width:100px;height:34px;padding:0;line-height:0; box-sizing:border-box;font-weight: 400;font-size: 18px;color: #fff;background: #8A8F9B;border: 0;border-radius: 6px;text-align:center;letter-spacing: -.1px;}
 .modal-content a.btn.btn_type2.disabled,.modal-content button.btn.btn_type2.disabled,
 a.btn_type2.disabled,button.btn_type2.disabled {color: #CBCBCB;background-color: #F4F4F4;}
-.btn.btn-primary {color: #fff;background-color: #283D6C;}
+.btn.btn-primary {color: #fff;background-color: #283D6C;border: 1px solid #283D6C;}
 .btn.btn-primary:hover {border-color: transparent;}
 .btn.btn-outline-primary {color: #293D6C; border-color: #293D6C;}
 .btn.btn-outline-primary:hover {color: #293D6C; background-color: #F2F2F2; border-color: #F2F2F2;}
@@ -778,7 +777,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
 }
 
 @media (max-width: 575px) {
-    body {overflow-x: hidden; letter-spacing: -.5px;}
+    body {overflow-x: hidden;}
     .nav_blankheight {height: calc(14vh / 2); min-height: calc(135px /2 );}
     .nav_blankheightnone {min-height: calc(130px/2);}
     .back-to-top {right: 15px;}
@@ -793,22 +792,22 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .burger:before,
     .burger span,
     .burger:after {height: calc(6px / 1.5);}
-    .burger:before {top: calc(4px / 1.5);}
-    .burger span {top: calc(17px/ 1.5);}
-    .burger:after {top: calc(28px/ 1.5);}
-    .burger:hover:before {top: calc(7px/ 1.5);}
-    .burger:hover:after {top: calc(27px/ 1.5);}
+    .burger:before {top: calc(4px /1.5);}
+    .burger span {top: calc(17px/1.5);}
+    .burger:after {top: calc(28px/1.5);}
+    .burger:hover:before {top: calc(7px/1.5);}
+    .burger:hover:after {top: calc(27px/1.5);}
     .burger.active:before,
     .burger.active:after {top: 40%;}
     .site-footer {padding: calc(58px /2) 0 calc(62px/2);}
     .site-footer .foot_logo {width:13px}
-    .site-footer .cotxt {padding-left: calc(15px / 2); font-size: calc(16px/1.5);}
-    .site-footer .cotxt .strongtxt {font-size: calc(26px/1.5);}
-    .site-footer .list_txt > li {font-size: calc(16px/1.5); line-height: initial;}
+    .site-footer .cotxt {padding-left: calc(15px / 2); font-size: calc(16px / 1.5 );}
+    .site-footer .cotxt .strongtxt {font-size: calc(26px / 1.5 );}
+    .site-footer .list_txt > li {font-size: calc(16px / 2 ); line-height: initial;}
     .site-footer .list_txt > li:before {margin: calc(13px / 2 ) calc(7px / 2 ) 0 0;}
     .site-footer .accordion-item, .site-footer .accordion-button {padding: 0 0 calc(10px /2) 0;}
-    .site-footer .footer_menu {padding-top: calc(20px /2); font-size: calc(20px/1.5);}
-    .site-footer .copyright {font-size: calc(16px/1.5);}
+    .site-footer .footer_menu {padding-top: calc(20px /2); font-size: calc(20px / 2 );}
+    .site-footer .copyright {font-size: calc(16px / 2 );}
     .site-footer .list_txt .address_txt dt {width: calc(44px / 1.5)}
     .section {padding-top: 2rem;padding-bottom: 2rem;}
     .site-footer .list_txt > li.dotnone .address_txt dt {width: calc(84px/2); padding-left: calc(10px/2);}
@@ -817,102 +816,102 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .main_banner {border-radius: calc(20px /2);}
     .main_info {padding-bottom: calc(80px/2); padding-top: calc(60px/2);}
     .main_info .dl {padding-bottom: calc(30px/2);}
-    .main_info .dt_tit {font-size: calc(44px/1.5);}
-    .main_info .dd_desc {font-size: calc(60px/1.5); line-height: initial;word-break: keep-all;}
-    .main_info .p_desc {font-size: calc(22px/1.5);}
+    .main_info .dt_tit {font-size: calc(44px/2);}
+    .main_info .dd_desc {font-size: calc(60px/2); line-height: initial;}
+    .main_info .p_desc {font-size: calc(22px/2);}
     .main_info .dd_desc .icon_sbubble {bottom: calc(30px /2)}
     .icon_sbubble {width: calc(56px/2); height: calc(54px/2);}
     .main_service {padding-top: calc(60px/2);}
-    .main_service .h2_tit {padding-bottom: calc(20px/2); font-size:calc(32px/1.5);}
+    .main_service .h2_tit {padding-bottom: calc(20px/2); font-size:calc(32px/2);}
     .main_service .h2_tit .icon_malgubbk {margin-right: calc(10px/2);}
     #accordionMainservice .accordion-item .accordion-body {margin-bottom: calc(30px/2);}
     #accordionMainservice .accordion-item {margin-bottom: calc(20px/2); border-radius: calc(18px/2);}
-    #accordionMainservice .accordion-item .accordion-body .t_desc {padding: calc(20px/2) calc(22px/2); margin-bottom: calc(20px/2); border-radius: calc(20px/2); font-size: calc(20px/1.5); line-height: initial; letter-spacing: calc(-0.02em/2);}
+    #accordionMainservice .accordion-item .accordion-body .t_desc {padding: calc(20px/2) calc(22px/2); margin-bottom: calc(20px/2); border-radius: calc(20px/2); font-size: calc(20px/2); line-height: initial; letter-spacing: calc(-0.02em/2);}
     #accordionMainservice .accordion-item .accordion-body .t_desc li {padding-top: calc(12px/2);}
     .accordion-body,
     .accordion-button {padding: calc(1rem/2) calc(1.25rem/2);}
-    #accordionMainservice .tit {font-size: calc(40px/1.5);}
-    #accordionMainservice .desc {padding: 0 calc(1.25rem/2) calc(2rem/2); font-size:calc(24px/1.5);}
+    #accordionMainservice .tit {font-size: calc(40px/2);}
+    #accordionMainservice .desc {padding: 0 calc(1.25rem/2) calc(2rem/2); font-size:calc(24px/2);}
     .accordion-item:first-of-type .accordion-button,
     .accordion-item:last-of-type .accordion-button.collapsed,
     .accordion-item .accordion-button {border-radius: calc(18px/2);}
     #accordionMainservice .accordion-item:last-of-type .accordion-collapse {padding-bottom: calc(50px/2);}
     #accordionMainservice .accordion-button::after {width: calc(36px/2);height: calc(36px/2);}
     .icon_malgubbk {width: calc(26px/2); height: calc(27px/2);}
-    #accordionMainservice .btn {padding: calc(7px/2) calc(7px/2); border-radius: calc(8px/2); font-size: calc(36px/1.5); letter-spacing: calc(14px/2);}
+    #accordionMainservice .btn {padding: calc(7px/2) calc(7px/2); border-radius: calc(8px/2); font-size: calc(36px/2); letter-spacing: calc(14px/2);}
     /* modal popup ================================================== */
     .modal-content {border-radius: calc(20px/2);box-shadow: calc(1px/2) calc(10px/2) calc(34px/2) rgba(0, 0, 0, 0.6);}
-    .modal-content .btn {font-size:calc(30px/1.5)}
-    .modal-header {padding: calc(20px/2) calc(20px/1.5);}
+    .modal-content .btn {font-size:calc(30px/2)}
+    .modal-header {padding: calc(20px/2) calc(20px/2);}
     .modal-header .btn-close {margin: 0 0 -0.5rem auto;}
     .modal-body {padding: calc(1rem/2)}
-    .modal-body .modal-title {font-size: calc(28px/1.5);}
+    .modal-body .modal-title {font-size: calc(28px/2);}
     .btn-close {width:calc(26px/2); height:calc(26px/2);}
-    .box_popinfo {margin-top: calc(30px/2); padding:calc(30px/2) calc(20px/2); font-size: calc(20px/1.5); border-radius: calc(20px/2);}
+    .box_popinfo {margin-top: calc(30px/2); padding:calc(30px/2) calc(20px/2); font-size: calc(20px/2); border-radius: calc(20px/2);}
     .box_popinfo.head {padding: calc(14px/2) calc(30px/2);border-radius: calc(10px/2);}
     .modal-footer .flex_btn {margin: calc(20px/2) 0 calc(60px/2) 0;}
     .modal-dialog.full {display:none; position: fixed;top: 0;height: 100%;width: 100%;margin:0;z-index: 98;background-color: #FFF;}
     .modal-dialog.full .modal-content {border: 0; border-radius: 0; box-shadow:none;}
     
     /* button ================================================== */
-    .btn.btn-primary {line-height: 0;}
+    /* .btn.btn-primary {line-height: 0;} */
     .btn {padding: calc(15px/2) calc(20px/2);}
-    .modal-content .btn {font-size: calc(30px/1.5);line-height: 0;}
+    .modal-content .btn {font-size: calc(30px/2);line-height: 0;}
     .flex_btn {margin: calc(30px/2) 0 calc(20px/2) 0;}
     .flex_btn+.flex_btn {margin:0 0 calc(10px/2) 0;}
     .flex_btn>a,
     .flex_btn>button {margin-right:calc(10px/2)}
     .btn_wrap.ctr {margin:calc(30px/2) 0;}
-    a.btn_type1,button.btn_type1 {width:calc(260px/2); height:calc(70px/2); line-height:initial; font-size:calc(30px/1.5); border-radius:calc(4px/2);}
-    a.btn_type1.btn_type1_1,button.btn_type1.btn_type1_1 {width: calc(360px/2);line-height:0}
-    a.btn_type1.btn_type1_sm,button.btn_type1.btn_type1_sm {height:calc(34px/2); padding:0 calc(15px/2); font-size: calc(18px/1.5); border-radius:calc(6px/2); letter-spacing: calc(-0.04em/2);}
+    a.btn_type1,button.btn_type1 {width:calc(260px/2); height:calc(70px/2); line-height:initial; font-size:calc(30px/2); border-radius:calc(4px/2);}
+    a.btn_type1.btn_type1_1,button.btn_type1.btn_type1_1 {width: calc(360px/2)}
+    a.btn_type1.btn_type1_sm,button.btn_type1.btn_type1_sm {height:calc(34px/2); padding:0 calc(15px/2); font-size: calc(18px/2); border-radius:calc(6px/2); letter-spacing: calc(-0.04em/2);}
     a.btn_type1.btn_type1_2_sm,button.btn_type1.btn_type1_2_sm,
-    a.btn_type1.btn_type1_3_sm,button.btn_type1.btn_type1_3_sm {width: calc(120px/2); height:calc(34px/2); padding: 0 calc(15px/2); font-size: calc(20px/1.5); border-radius:calc(6px/2);letter-spacing: calc(-0.04em/2); line-height: auto;}
+    a.btn_type1.btn_type1_3_sm,button.btn_type1.btn_type1_3_sm {width: calc(120px/2); height:calc(34px/2); padding:0 calc(15px/2); font-size: calc(20px/2); border-radius:calc(6px/2);letter-spacing: calc(-0.04em/2); line-height: initial;}
     .modal-content a.btn.btn_type2,.modal-content button.btn.btn_type2,
-    a.btn_type2,button.btn_type2 {width:calc(260px/2); height:calc(50px/2);font-size:calc(20px/1.5); border-radius:calc(6px/2);border:0}
-    a.btn_type2.btn_type2_2,button.btn_type2.btn_type2_2 {min-width: calc(150px/2); height: calc(34px/2); font-size: calc(18px/1.5);}
+    a.btn_type2,button.btn_type2 {width:calc(260px/2); height:calc(50px/2);font-size:calc(20px/2); border-radius:calc(6px/2);}
+    a.btn_type2.btn_type2_2,button.btn_type2.btn_type2_2 {min-width: calc(150px/2); height: calc(34px/2); font-size: calc(18px/2);}
     a.btn_type3,button.btn_type3,
-    a.btn.btn_type3,button.btn.btn_type3 {width:calc(380px/2);height:calc(60px/2);font-size:calc(28px/1.5);border: 1px solid rgba(41, 61, 108, 0.7);border-radius: calc(10px/2);}
+    a.btn.btn_type3,button.btn.btn_type3 {width:calc(300px/2);height:calc(60px/2);font-size:calc(28px/2);border: 1px solid rgba(41, 61, 108, 0.7);border-radius: calc(10px/2);}
     a.btn_type4,button.btn_type4,
-    a.btn.btn_type4,button.btn.btn_type4 {min-width:calc(160px/2);height:calc(46px/2);padding: calc(13px/2) calc(4px/2);font-size: calc(20px/1.5);border-radius: calc(20px/2);}
+    a.btn.btn_type4,button.btn.btn_type4 {min-width:calc(160px/2);height:calc(46px/2);padding: calc(13px/2) calc(18px/2);font-size: calc(20px/2);border-radius: calc(20px/2);}
     a.btn_type4.btn_type4_5, button.btn_type4.btn_type4_5 {border-radius: calc(4px/2);}
     a.btn_type4.btn_type4_6,button.btn_type4.btn_type4_6 {min-width:calc(165px/2);margin:calc(5px/2) 0;}
     a.btn_type4.btn_type4_8,button.btn_type4.btn_type4_8,
-    a.btn_type4.btn_type4_9,button.btn_type4.btn_type4_9 {min-width:calc(200px/2);height:calc(50px/2);border-radius: calc(4px/2);font-size:calc(22px/1.5);}
+    a.btn_type4.btn_type4_9,button.btn_type4.btn_type4_9 {min-width:calc(200px/2);height:calc(50px/2);border-radius: calc(4px/2);font-size:calc(22px/2);}
     a.btn_type4.btn_type4_9.btn_type4_9_1,button.btn_type4.btn_type4_9.btn_type4_9_1 {min-width: calc(160px/2);}
     a.btn_type4.btn_type4_8.btn_type4_8_2,button.btn_type4.btn_type4_8.btn_type4_8_2,
-    a.btn_type4.btn_type4_8.btn_type4_8_3,button.btn_type4.btn_type4_8.btn_type4_8_3 {font-size: calc(20px/1.5)}
+    a.btn_type4.btn_type4_8.btn_type4_8_3,button.btn_type4.btn_type4_8.btn_type4_8_3 {font-size: calc(20px/2)}
     a.btn_type4.btn_type4_10,button.btn_type4.btn_type4_10 {border-radius: calc(4px/2);}
     a.btn_type4.btn_type4_11,button.btn_type4.btn_type4_11,
     a.btn_type4.btn_type4_12,button.btn_type4.btn_type4_12 {min-width:calc(160px/2);height:calc(50px/2);border-radius: calc(6px/2);}
-    a.btn.btn_type5,button.btn.btn_type5 {min-width:calc(100px/2);height:calc(34px/2);font-size: calc(18px/1.5);border-radius: calc(6px/2);letter-spacing: calc(-.1px/2);}
-    #accordionMainservice .btn {padding: calc(7px/2) calc(7px/2); border-radius: calc(8px/2); font-size: calc(36px/1.5); letter-spacing: calc(14px/2);}
+    a.btn.btn_type5,button.btn.btn_type5 {min-width:calc(100px/2);height:calc(34px/2);font-size: calc(18px/2);border-radius: calc(6px/2);letter-spacing: calc(-.1px/2);}
+    #accordionMainservice .btn {padding: calc(7px/2) calc(7px/2); border-radius: calc(8px/2); font-size: calc(36px/2); letter-spacing: calc(14px/2);}
     .mw140 {min-width: calc(140px/2)}
     
     /* text :list ================================================== */
-    .list_txt {font-size:calc(16px/1.5);}
+    .list_txt {font-size:calc(16px/2);}
     .list_txt > li {line-height:1.4; margin:0 0 calc(5px/2) calc(8px/2); text-indent:calc(-8px/2);}
     .list_txt > li:before {width: calc(3px/2); height:calc(3px/2); margin:calc(13px/2) calc(5px/2) 0 0;}
     .list_txt .pl50 {padding-left: calc(50px /2) !important;}
     /* 담당자정보보기 popup ================================================== */
-    .h6_tit {margin:calc(10px/2) 0 calc(20px/2);font-size: calc(20px/1.5);line-height: initial;}
-    .dl_txt {font-size: calc(18px/1.5);line-height: initial;}
+    .h6_tit {margin:calc(10px/2) 0 calc(20px/2);font-size: calc(20px/2);line-height: initial;}
+    .dl_txt {font-size: calc(18px/2);line-height: initial;}
     .box_popinfo .inner {padding:calc(15px/2) calc(27px/2);border-radius: calc(6px/2);}
     .inlineflex li:before {height:calc(20px/2);top: calc(6px/2);left: calc(-40px/2);}
     .inlineflex.btline {padding-bottom:calc(18px/2);}
-    .nodata {padding: calc(40px/2) 0;font-size: calc(18px/1.5)}
-    .modal-body .modal-title .txt_gray {font-size: calc(30px/1.5);}
+    .nodata {padding: calc(40px/2) 0;font-size: calc(18px/2)}
+    .modal-body .modal-title .txt_gray {font-size: calc(30px/2);}
     .box_phoneinfo {padding: calc(80px/2) 0;}
-    .txt_phonenum {font-size: calc(48px/1.5);}
+    .txt_phonenum {font-size: calc(48px/2);}
     /* 온라인문의 popup ================================================== */
-    .top_date {padding:calc(4px/2) 0; font-size: calc(20px/1.5); border-radius: calc(16px/2);}
-    .chatid {padding:calc(28px/2) 0 calc(10px/2); font-size: calc(18px/1.5);}
-    .wrap_cont .cont {padding:calc(20px/2); font-size: calc(18px/1.5); line-height: initial;border-radius: calc(6px/2);}
-    .wrap_cont .time {padding-left:calc(10px/2); font-size: calc(16px/1.5);}
+    .top_date {padding:calc(4px/2) 0; font-size: calc(20px/2); border-radius: calc(16px/2);}
+    .chatid {padding:calc(28px/2) 0 calc(10px/2); font-size: calc(18px/2);}
+    .wrap_cont .cont {padding:calc(20px/2); font-size: calc(18px/2); line-height: initial;border-radius: calc(6px/2);}
+    .wrap_cont .time {padding-left:calc(10px/2); font-size: calc(16px/2);}
     .r_side .wrap_cont .time {padding-right: calc(10px/2);}
     .modal-footer.linetype {padding-top: calc(30px/2);}
     .box_chatinput {padding: calc(20px/2);}
-    .box_chatinput .form-control {height:calc(70px/2); font-size:calc(26px/1.5)}
+    .box_chatinput .form-control {height:calc(70px/2); font-size:calc(26px/2)}
     .selectcontent_item {padding:calc(22px/2); margin-top: calc(20px/2);border-radius: calc(4px/2);}
     .selectcontent_item .img_item {width: calc(130px/2); height:calc(98px/2); margin-right: calc(16px/2);}
     .selectcontent_item .del_item {top:calc(-6px/2); right:calc(-10px/2); width:calc(20px/2); height:calc(20px/2);}
@@ -920,60 +919,59 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .modal-body.full .box_popinfo.head {margin: calc(35px/2) calc(50px/2)}
     .modal-body.full .nav-tabs.nav_tabtype1 {padding: 0 calc(50px/2);}
     .modal-body.full .tab-content.nav_tabtype1 {padding:calc(30px/2) calc(40px/2); margin-bottom: calc(30px/2);}
-    .modal-body.full .nav-tabs .nav-link.active, .modal-body.full .nav-tabs .nav-item.show .nav-link {font-size: calc(20px/1.5);border-radius: calc(6px/2)}
-    .modal-body.full .nav-tabs .nav-link {font-size: calc(20px/1.5);}
-    .nav-link {padding: 0.5rem 0.2rem;}
+    .modal-body.full .nav-tabs .nav-link.active, .modal-body.full .nav-tabs .nav-item.show .nav-link {font-size: calc(20px/2);border-radius: calc(6px/2)}
+    .modal-body.full .nav-tabs .nav-link {font-size: calc(20px/2);}
     .box_tabinfo {padding: calc(30px/2) calc(24px/2);border-radius: calc(10px/2);}
     .box_info_gray {padding:calc(25px/2) calc(10px/2) calc(15px/2); margin-bottom: calc(10px/2);}
     .box_info_gray.type1 {padding-bottom: calc(25px/2);}
 	.box_info_darkgray {padding: calc(20px/2) calc(10px/2); margin-bottom: calc(10px/2); border-radius: calc(6px/2);}
-    .h7_tit {padding-bottom:calc(10px/2); font-size: calc(18px/1.5);}
-    .car_tit {padding:calc(25px/2) 0 calc(25px/2) calc(10px/2); font-size: calc(22px/1.5);}
+    .h7_tit {padding-bottom:calc(10px/2); font-size: calc(18px/2);}
+    .car_tit {padding:calc(25px/2) 0 calc(25px/2) calc(10px/2); font-size: calc(22px/2);}
     .car_tit:before {width: calc(4px/2); height: calc(4px/2); border-radius: calc(4px/2);}
     .car_img {padding: calc(20px/2) calc(45px/2);}
-    .dl_txt.type2 {font-size: calc(18px/1.5); line-height: initial;}
+    .dl_txt.type2 {font-size: calc(18px/2); line-height: initial;}
     .dl_txt.type2 dt,
-    .dl_txt_type2_end {padding: calc(10px/2) calc(8px/2) calc(10px/2) calc(10px/2);font-size: calc(18px/1.5);line-height: initial;}
+    .dl_txt_type2_end {padding: calc(10px/2) calc(8px/2) calc(10px/2) calc(10px/2);font-size: calc(18px/2);line-height: initial;}
     .dl_txt.type2 dt:before,
     .dl_txt.type2_2 dt:before {width:calc(4px/2); height:calc(4px/2); border-radius: calc(4px/2);}
-    .dl_txt.type2_2 {font-size: calc(22px/1.5);}
+    .dl_txt.type2_2 {font-size: calc(22px/2);}
     .dl_txt.type2_2 dt {padding: calc(10px/2) calc(8px/2) calc(10px/2) calc(10px/2);}
-    .num.type1 {font-size: calc(22px/1.5);}
-    .num.type2 {font-size: calc(40px/1.5);}
-    .num.type2_1 {font-size: calc(20px/1.5);line-height: initial;}
-    .dl_txt.type3 {font-size: calc(20px/1.5);}
-    .car_bigtag {padding:calc(7px/2) calc(13px/2);margin-bottom: calc(15px/2); border-radius: calc(20px/2);font-size: calc(20px/1.5);}
-    .h6_tit18 {margin:0 0 calc(20px/2);font-size: calc(18px/1.5); line-height: initial ;}
-    .h6_tit16 {margin:0 0 calc(20px/2);font-size: calc(16px/1.5);}
+    .num.type1 {font-size: calc(22px/2);}
+    .num.type2 {font-size: calc(40px/2);}
+    .num.type2_1 {font-size: calc(20px/2);line-height: initial;}
+    .dl_txt.type3 {font-size: calc(20px/2);}
+    .car_bigtag {padding:calc(7px/2) calc(13px/2);margin-bottom: calc(15px/2); border-radius: calc(20px/2);font-size: calc(20px/2);}
+    .h6_tit18 {margin:0 0 calc(20px/2);font-size: calc(18px/2); line-height: initial ;}
+    .h6_tit16 {margin:0 0 calc(20px/2);font-size: calc(16px/2);}
     h6.bline {padding-bottom: calc(15px/2);}
     .txt_dot {padding-left: calc(10px/2);}
     .txt_dot:before {width:calc(4px/2); height:calc(4px/2); border-radius: calc(4px/2);}
     .box_laypopinfo {padding: calc(40px/2) calc(20px/2);}
-    .desc_gray16 {font-size: calc(16px/1.5); line-height: initial;letter-spacing: calc(-0.02em/2);}
+    .desc_gray16 {font-size: calc(16px/2); line-height: initial;letter-spacing: calc(-0.02em/2);}
     .pdtb20 {padding: calc(20px/2) 0;}
     .pdtb15 {padding: calc(15px/2) 0;}
     .box_info_white {padding:calc(10px/2) calc(20px/2) calc(15px/2); margin-bottom: calc(10px/2); border-radius: calc(6px/2);}
-    .dl_txt.type3 {font-size: calc(20px/1.5);line-height: inherit;}
-    .dl_txt.type4 {font-size: calc(18px/1.5);}
+    .dl_txt.type3 {font-size: calc(20px/2);line-height: inherit;}
+    .dl_txt.type4 {font-size: calc(18px/2);}
     .dl_txt.type4 dt {padding: calc(5px/2) calc(8px/2) calc(5px/2) calc(10px/2);min-width:calc(110px/2)}
     .dl_txt.type4 dt:before {width:calc(4px/2); height:calc(4px/2); border-radius: calc(4px/2);}
-    .dl_txt.type4 dd .num {font-size: calc(22px/1.5)}
+    .dl_txt.type4 dd .num {font-size: calc(22px/2)}
     /* 알림 목록 popup ================================================== */
     .area_notilist {padding: 0 calc(20px/2) calc(50px/2) calc(42px/2);}
-    .area_notilist .date {padding-bottom:calc(20px/2); font-size: calc(24px/1.5); line-height:initial}
+    .area_notilist .date {padding-bottom:calc(20px/2); font-size: calc(24px/2); line-height:initial}
     .area_notilist .date .wrap_cir {left:calc(-14px/2);}
     .area_notilist .date .cir {width:calc(28px/2); height:calc(28px/2); border-radius: calc(24px/2);}
     .area_notilist .date .cir:before {width:calc(12px/2); height:calc(12px/2); border-radius: calc(24px/2); margin-top: calc(-6px/2); margin-left: calc(-6px/2);}
     .area_notilist .notibox {padding:calc(15px/2) calc(20px/2);margin-bottom:calc(10px/2); border-radius: calc(6px/2);}
-    .area_notilist .notibox .time {padding-bottom:calc(10px/2); font-size:calc(22px/1.5); line-height:initial}
-    .area_notilist .notibox .desc {font-size:calc(20px/1.5); line-height:initial}
+    .area_notilist .notibox .time {padding-bottom:calc(10px/2); font-size:calc(22px/2); line-height:initial}
+    .area_notilist .notibox .desc {font-size:calc(20px/2); line-height:initial}
     .box_popinfo.notitype {padding-left:calc(30px/2)}
     /* 상단퀵메뉴 ================================================== */
-    .box_quickmenu {padding: calc(40px/2) calc(20px/2); margin-bottom: calc(10px/2); border-radius: calc(20px/2); font-size: calc(20px/1.5);}
+    .box_quickmenu {padding: calc(40px/2) calc(20px/2); margin-bottom: calc(10px/2); border-radius: calc(20px/2); font-size: calc(20px/2);}
     .box_quickmenu.listnone {padding: calc(180px/2) 0;}
     .quickstatus .status_before,
     .quickstatus .status_progress,
-    .quickstatus .status_disabled {padding:calc(20px/2) calc(10px/2); margin-bottom: calc(10px/2); border-radius: calc(4px/2); font-size: calc(22px/1.5);}
+    .quickstatus .status_disabled {padding:calc(20px/2) calc(10px/2); margin-bottom: calc(10px/2); border-radius: calc(4px/2); font-size: calc(22px/2);}
     .icon_quickclose {width:calc(18px/2); height: calc(12px/2);}
     .site-mobile-menu {width: calc(640px/2); left: calc(-640px/2)}
     .site-mobile-menu-close,
@@ -981,69 +979,68 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .site-mobile-menu .site-mobile-menu-header {padding-left: calc(50px/2); padding-right: calc(50px/2);}
     /* 전산조회팝업 popup ================================================== */
     .area_result {margin-bottom: calc(20px/2);}
-    .rs_top {padding: calc(20px/2) 0 calc(15px/2); margin-bottom: calc(15px/2); font-size: calc(20px/1.5);}
-    .rs_top .num {font-size: calc(22px/1.5)}
-    .rs_tit {padding: calc(5px/2) calc(10px/2); margin-bottom: calc(25px/2); font-size:calc(24px/1.5);}
+    .rs_top {padding: calc(20px/2) 0 calc(15px/2); margin-bottom: calc(15px/2); font-size: calc(20px/2);}
+    .rs_top .num {font-size: calc(22px/2)}
+    .rs_tit {padding: calc(5px/2) calc(10px/2); margin-bottom: calc(25px/2); font-size:calc(24px/2);}
     .rs_desc {padding-bottom: calc(30px/2);}
     .rs_desc .row {padding-bottom: calc(15px/2);}
     .rs_desc .dl_detail {padding-top: calc(15px/2)}
-    .rs_desc .dl_detail .tit {font-size: calc(16px/1.5);}
-    .rs_desc .dl_detail .desc {font-size: calc(18px/1.5); padding-left: calc(40px/2)}
-    .rs_desc .dl_detail .desc .num {font-size: calc(20px/1.5)}
+    .rs_desc .dl_detail .tit {font-size: calc(16px/2);}
+    .rs_desc .dl_detail .desc {font-size: calc(18px/2); padding-left: calc(40px/2)}
+    .rs_desc .dl_detail .desc .num {font-size: calc(20px/2)}
     /* 거래확인팝업 popup ================================================== */
-    .h5_tit {padding: calc(20px/2) 0 calc(8px/2); font-size: calc(18px/1.5);}
-    .originthumimg {margin: calc(25px/2) calc(45px/2); padding:calc(10px/2); border-radius: calc(40px/2);font-size:calc(20px/1.5)}
-    .available {margin: calc(20px/2) calc(56px/2);padding: calc(10px/2) 0 calc(8px/2); font-size: calc(18px/1.5);border-radius: calc(4px/2);}
+    .h5_tit {padding: calc(20px/2) 0 calc(8px/2); font-size: calc(18px/2);}
+    .originthumimg {margin: calc(25px/2) calc(45px/2); padding:calc(10px/2); border-radius: calc(40px/2);font-size:calc(20px/2)}
+    .available {margin: calc(20px/2) calc(56px/2);padding: calc(10px/2) 0 calc(8px/2); font-size: calc(18px/2);border-radius: calc(4px/2);}
     /* 차량검사팝업 popup ================================================== */
     #carreport_tab4 .nav-item {margin-left: calc(10px/2)}
-    #carreport_tab4 .nav {top:calc(-25px/2); left:50%; margin: 0 calc(-275px/2);}
-    #carreport_tab4 .nav.tabea2 {top:calc(-25px/2); left:50%; margin: 0 calc(-245px/2);}
-    #carreport_tab4 .nav .nav-link {width:calc(240px/2); height:calc(50px/2);border-radius: calc(4px/2);font-size: calc(22px/1.5);line-height: 0;}
+    #carreport_tab4 .nav {top:calc(-25px/2); margin: 0 calc(24px/2);}
+    #carreport_tab4 .nav .nav-link {width:calc(240px/2); height:calc(50px/2);border-radius: calc(4px/2);font-size: calc(22px/2);line-height: 0;}
     #carreport_tab4.tab3 .nav .nav-link {width:calc(175px/2);}
     /* 서비스신청시작하기 채팅창 ================================================== */
     .chatcontainer {padding-bottom: calc(100px/2);}
-    .navsubtit {padding: calc(8px/2) 0 0 calc(10px/2);font-size: calc(24px/1.5);vertical-align: baseline;}
+    .navsubtit {padding: calc(8px/2) 0 0 calc(10px/2);font-size: calc(24px/2);vertical-align: baseline;}
     .wrap_alarm .btn_alarm {width:calc(32px/2);height:calc(32px/2);}
-    .wrap_alarm .new {top:-2px; right:-3px; padding: 0 calc(2px/2); min-width:calc(23px/2);height:calc(23px/2);font-size:calc(12px/1.5);border-radius:calc(15px/2);line-height: 1.1;}
+    .wrap_alarm .new {top:-2px; right:-3px; padding: 0 calc(2px/2); min-width:calc(23px/2);height:calc(23px/2);font-size:calc(12px/2);border-radius:calc(15px/2);line-height: 1.1;}
     .iocn_arrowserviceopen {width:calc(18px/2); height:calc(12px/2);vertical-align: calc(4px/2);}
     .sapbtnfixed {top:calc(130px/2);margin-bottom: calc(60px/2);}
     .wrap_chatbox {margin-bottom: calc(85px/2);}
-    .wrap_chatbox .chatbox {padding:calc(20px/2);font-size: calc(18px/1.5); line-height: initial;border-radius: calc(10px/2);box-shadow: calc(4px/2) calc(3px/2) calc(3px/2) rgba(199,208,221, 0.9);}
+    .wrap_chatbox .chatbox {padding:calc(20px/2);font-size: calc(18px/2); line-height: initial;border-radius: calc(10px/2);box-shadow: calc(4px/2) calc(3px/2) calc(3px/2) rgba(199,208,221, 0.9);}
     .wrap_chatbox .chatbox:before {bottom:calc(-21px/2); left:calc(12px/2);width:calc(50px/2);height:calc(25px/2);}
-    .wrap_chatbox .time {padding-left:calc(10px/2); font-size: calc(16px/1.5);}
+    .wrap_chatbox .time {padding-left:calc(10px/2); font-size: calc(16px/2);}
     .r_side .wrap_chatbox .time {padding-right: calc(10px/2);}
-    .r_side .wrap_chatbox .replychatbox {min-width:calc(182px/2);padding:calc(10px/2) calc(22px/2);border-radius: calc(20px/2);font-size: calc(20px/1.5);letter-spacing: calc(-0.04em/2);}
+    .r_side .wrap_chatbox .replychatbox {min-width:calc(182px/2);padding:calc(10px/2) calc(22px/2);border-radius: calc(20px/2);font-size: calc(20px/2);letter-spacing: calc(-0.04em/2);}
     .r_side .wrap_chatbox .replychatbox:before {bottom:calc(-14px/2); right:calc(4px/2);width:calc(74px/2);height:calc(43px/2);}
     .wrap_chatdate {height:calc(50px/2);}
-    .chatdate {margin-top: calc(-50px/2); padding: 0 calc(40px/2);font-size: calc(26px/1.5);letter-spacing: calc(-1px/2);}
+    .chatdate {margin-top: calc(-50px/2); padding: 0 calc(40px/2);font-size: calc(26px/2);letter-spacing: calc(-1px/2);}
     .box_chatwindow .btn_wrap {margin-top: calc(-56px/2);}
-    .chatdesc_type1 {padding-bottom:calc(15px/2);font-size: calc(26px/1.5);}
-    .chatdesc_type2 {padding-bottom:calc(15px/2);font-size: calc(20px/1.5);}
-    .chatdesc_type3 {padding-bottom:calc(15px/2);font-size: calc(16px/1.5);}
-    .chatdesc_type4 {padding-bottom:calc(15px/2);font-size: calc(30px/1.5);}
-    .txt_type1 {padding-bottom: calc(10px/2); font-size: calc(23px/1.5);}
-    .txt_type2 {padding-bottom: calc(10px/2); font-size: calc(28px/1.5);}
-    .txt_type3 {padding-bottom: calc(10px/2); font-size: calc(20px/1.5);}
-    .txt_type4 {padding-bottom: calc(5px/2); font-size: calc(22px/1.5);}
-    .txt_type5 {padding-bottom: calc(5px/2); font-size: calc(18px/1.5);}
-    .txt_type6 {padding-bottom: calc(5px/2); font-size: calc(24px/1.5);}
-    .txt_type7 {padding-bottom: calc(5px/2); font-size: calc(24px/1.5);}
-    .txt_type8 {padding-bottom: calc(5px/2); font-size: calc(22px/1.5);}
-    .txt_type9 {padding-bottom: calc(5px/2); font-size: calc(20px/1.5);}
-    .txt_type10 {padding-bottom: calc(5px/2); font-size: calc(28px/1.5);}
-    .dl_txt.type5 {padding: calc(20px/2) 0 calc(20px/2) calc(10px/2);font-size: calc(22px/1.5);line-height: initial;color: #666;}
+    .chatdesc_type1 {padding-bottom:calc(15px/2);font-size: calc(26px/2);}
+    .chatdesc_type2 {padding-bottom:calc(15px/2);font-size: calc(20px/2);}
+    .chatdesc_type3 {padding-bottom:calc(15px/2);font-size: calc(16px/2);}
+    .chatdesc_type4 {padding-bottom:calc(15px/2);font-size: calc(30px/2);}
+    .txt_type1 {padding-bottom: calc(10px/2); font-size: calc(23px/2);}
+    .txt_type2 {padding-bottom: calc(10px/2); font-size: calc(28px/2);}
+    .txt_type3 {padding-bottom: calc(10px/2); font-size: calc(20px/2);}
+    .txt_type4 {padding-bottom: calc(5px/2); font-size: calc(22px/2);}
+    .txt_type5 {padding-bottom: calc(5px/2); font-size: calc(18px/2);}
+    .txt_type6 {padding-bottom: calc(5px/2); font-size: calc(24px/2);}
+    .txt_type7 {padding-bottom: calc(5px/2); font-size: calc(24px/2);}
+    .txt_type8 {padding-bottom: calc(5px/2); font-size: calc(22px/2);}
+    .txt_type9 {padding-bottom: calc(5px/2); font-size: calc(20px/2);}
+    .txt_type10 {padding-bottom: calc(5px/2); font-size: calc(28px/2);}
+    .dl_txt.type5 {padding: calc(20px/2) 0 calc(20px/2) calc(10px/2);font-size: calc(22px/2);line-height: initial;color: #666;}
     .dl_txt.type5 dt {padding-left: calc(10px/2);}
     .dl_txt.type5 dt:before {width:calc(4px/2); height:calc(4px/2); border-radius: calc(4px/2);}
     .icon_infopop {width:calc(28px/2);height:calc(29px/2)}
     /* 서비스신청내역확인 ================================================== */
     .totalpayamount {padding: calc(30px/2) 0 calc(40px/2);}
     .totalpayamount .tit,
-    .totalpayamount .desc {font-size: calc(20px/1.5);}
-    .totalpayamount .desc .num {font-size:calc(40px/1.5);}
+    .totalpayamount .desc {font-size: calc(20px/2);}
+    .totalpayamount .desc .num {font-size:calc(40px/2);}
     .box_login,
     .box_carsite {min-width:calc(158px/2);min-height:calc(160px/2);padding:calc(20px/2) 0;border-radius: calc(8px/2);}
     .box_login .desc,
-    .box_carsite .desc {min-height:calc(52px/2);padding-top:calc(10px/2);font-size:calc(20px/1.5);line-height: calc(26px/2);}
+    .box_carsite .desc {min-height:calc(52px/2);padding-top:calc(10px/2);font-size:calc(20px/2);line-height: calc(26px/2);}
     .icon_logowrap,
     .icon_carlogowrap {width:calc(56px/2);height:calc(56px/2);border-radius: calc(6px/2);}
     .icon_logowrap .icon_naver {width: calc(28px/2); height:calc(26px/2);margin: calc(-13px/2) 0 0 calc(-14px/2);}
@@ -1058,17 +1055,17 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .icon_carlogowrap .icon_encar {width: calc(89px/2); height:calc(41px/2);margin: calc(-20.5px/2) 0 0 calc(-44.5px/2);}
     .icon_carlogowrap .icon_kcar {width: calc(39px/2); height:calc(39px/2);margin: calc(-19.5px/2) 0 0 calc(-19.5px/2);}
     .icon_carlogowrap .icon_bobae {width: calc(54px/2); height:calc(54px/2);margin: calc(-27px/2) 0 0 calc(-27px/2);}
-    .box_info_white .form-control-lg {height:auto;padding: calc(0.5rem/2) calc(1rem/2);font-size: calc(1.25rem/1.5);}
+    .box_info_white .form-control-lg {height:auto;padding: calc(0.5rem/2) calc(1rem/2);font-size: calc(1.25rem/2);}
     /* 차량검사 진행 ================================================== */
     .box_selectitem {border-radius: calc(20px/2);}
-    .box_selectitem .selectitem {padding:calc(24px/2) 0;font-size: calc(26px/1.5);}
-    .box_selectitem .form-select-lg {padding-top: calc(0.5rem/2);padding-bottom: calc(0.5rem/2);padding-left: calc(1rem/2);font-size: calc(26px/1.5);border-radius: calc(0.3rem/2);}
-    .box_selectitem .form-select {padding: calc(15px/2) calc(2.25rem/2) calc(15px/2) calc(0.75rem/2);font-size: calc(26px/1.5);background-position: right calc(0.75rem/2) center;background-size: calc(16px/2) calc(12px/2);border-radius: calc(0.25rem/2);}
+    .box_selectitem .selectitem {padding:calc(24px/2) 0;font-size: calc(26px/2);}
+    .box_selectitem .form-select-lg {padding-top: calc(0.5rem/2);padding-bottom: calc(0.5rem/2);padding-left: calc(1rem/2);font-size: calc(26px/2);border-radius: calc(0.3rem/2);}
+    .box_selectitem .form-select {padding: calc(15px/2) calc(2.25rem/2) calc(15px/2) calc(0.75rem/2);font-size: calc(26px/2);background-position: right calc(0.75rem/2) center;background-size: calc(16px/2) calc(12px/2);border-radius: calc(0.25rem/2);}
     .box_selectitem.type1 .form-select {border-radius: 4px}
     /* 셀렉트박스 스타일적용 */
     .selectstyle .select-hidden {padding-right: calc(10px/2);}
-    .selectstyle .select {font-size: calc(16px/1.5);height: calc(48px/2);}
-    .selectstyle .select-styled {height:34px;padding: calc(14px/2) calc(2.25rem/2) calc(20px/2) calc(0.75rem/2);font-size: calc(26px/1.5);border-radius: calc(4px/2);}
+    .selectstyle .select {font-size: calc(16px/2);height: calc(48px/2);}
+    .selectstyle .select-styled {height:34px;padding: calc(14px/2) calc(2.25rem/2) calc(20px/2) calc(0.75rem/2);font-size: calc(26px/2);border-radius: calc(4px/2);}
     .selectstyle .select-styled:after {width: calc(20px/2);height: calc(16px/2);top: calc(24px/2);right: calc(16px/2);background-size: 100%;}
     .selectstyle .select-styled:active:after, .select-styled.active:after {top: calc(24px/2);}
     .selectstyle .select-options {top: calc(100% + 9px);}
@@ -1078,13 +1075,13 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .star_rate {margin-left: calc(-191px/2);}
     .star_rate .star {margin-right:calc(25px/2); width:calc(53px/2); height:calc(53px/2);}
     .box_reviewconfirm {margin: calc(50px/2) 0 calc(20px/2);}
-    .box_reviewconfirm .tit {font-size:calc(22px/1.5);padding-bottom: calc(20px/2);}
-    .box_reviewconfirm .desc {font-size:calc(18px/1.5);padding:calc(15px/2) 0 calc(40px/2);}
-    .area_timeselect a.btn_type4.btn_type4_6, .area_timeselect button.btn_type4.btn_type4_6 {min-width:calc(156px/2);font-size:calc(22px/1.5);margin-bottom: calc(20px/2);}
+    .box_reviewconfirm .tit {font-size:calc(22px/2);padding-bottom: calc(20px/2);}
+    .box_reviewconfirm .desc {font-size:calc(18px/2);padding:calc(15px/2) 0 calc(40px/2);}
+    .area_timeselect a.btn_type4.btn_type4_6, .area_timeselect button.btn_type4.btn_type4_6 {min-width:calc(156px/2);font-size:calc(22px/2);margin-bottom: calc(20px/2);}
     /* 날짜선택 달력 */
     .icon_arrowcalendarmovelf {width: calc(28px/2); height: calc(20px/2);}
 	.box_calendar {padding: calc(10px/2) 0}
-	.calendar_infotxt {padding: calc(10px/2) 0 calc(50px/2); font-size: calc(22px/1.5); line-height: initial;}
+	.calendar_infotxt {padding: calc(10px/2) 0 calc(50px/2); font-size: calc(22px/2); line-height: initial;}
     .inputdata .ui-datepicker-trigger {right: calc(13px/2);margin-top: calc(-3px/2);}
     /* 로그인 ================================================== */
     .pc_quick_Box {display: none}
@@ -1107,89 +1104,89 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
 	.site-mobile-menu-close .btn-close {width: calc(26px/2);height: calc(26px/2);margin: calc(10px/2) 0 0 calc(30px/2);}
 	.sidenav_head {margin: calc(58px/2) 0 calc(40px/2); }
 	.site-mobile-menu .site-mobile-menu-body {padding: calc(100px/2) calc(30px/2) calc(50px/2);}
-	.site-mobile-menu .site-nav-wrap>li>a {padding: calc(16px/2) calc(20px/2); margin-bottom: calc(10px/2);border-radius: calc(6px/2);font-size: calc(28px/1.5);}
+	.site-mobile-menu .site-nav-wrap>li>a {padding: calc(16px/2) calc(20px/2); margin-bottom: calc(10px/2);border-radius: calc(6px/2);font-size: calc(28px/2);}
 	.site-mobile-menu .site-nav-wrap>li>a:before {right:calc(25px/2);margin-top: calc(-12px/2);width: calc(16px/2); height: calc(27px/2);}
 	.box_sideservice .txt_type1 {padding: calc(26px/2) 0 calc(10px/2) calc(70px/2);}
 	.box_sideservice .sidedesc {padding: calc(30px/2);border-radius: calc(10px/2);}
 	.box_sideservice .sidedesc .sidehead {height:calc(300px/2);padding: calc(30px/2) calc(20px/2);margin: 0 calc(50px/2);border-radius: calc(10px/2);}
-	.box_sideservice .sidedesc .sidehead .nologin {font-size: calc(23px/1.5);}
+	.box_sideservice .sidedesc .sidehead .nologin {font-size: calc(23px/2);}
 	.icon_arrow_side {width:calc(15px/2); height:calc(25px/2); }
-    .maymabulogin .tit {padding-bottom: calc(30px/2);font-size: calc(30px/1.5);}
-    .maymabulogin .desc {padding-bottom: calc(50px/2);font-size: calc(20px/1.5);}
+    .maymabulogin .tit {padding-bottom: calc(30px/2);font-size: calc(30px/2);}
+    .maymabulogin .desc {padding-bottom: calc(50px/2);font-size: calc(20px/2);}
     /* 전체 약관 동의 ================================================== */
     .memberauth {padding: calc(30px/2);}
     .box_memberauthcheck {padding: calc(40px/2) calc(30px/2); border-radius: calc(20px/2);}
-    .box_memberauthcheck .chkitem {padding: calc(15px/2); margin-bottom: calc(10px/2); border-radius: calc(4px/2); font-size: calc(28px/1.5); }
-    .box_memberauthcheck .chkitem .viewlink {font-size: calc(20px/1.5);padding-right: calc(20px/2);}
+    .box_memberauthcheck .chkitem {padding: calc(15px/2); margin-bottom: calc(10px/2); border-radius: calc(4px/2); font-size: calc(28px/2); }
+    .box_memberauthcheck .chkitem .viewlink {font-size: calc(20px/2);padding-right: calc(20px/2);}
     .box_memberauthcheck .form-check-input {width:calc(40px/2); height:calc(40px/2); border-radius: calc(2px/2);}
-    .box_memberauthcheck .form-check-label {font-size: calc(20px/1.5);padding-left: calc(20px/2);}
+    .box_memberauthcheck .form-check-label {font-size: calc(20px/2);padding-left: calc(20px/2);}
     .box_memberauthcheck .chkitemall {margin-bottom: calc(20px/2);}
-    .box_memberauthcheck .chkitemall label {height: calc(40px/2); line-height: calc(40px/2);border-radius: calc(4px/2);font-size: calc(18px/1.5);}
+    .box_memberauthcheck .chkitemall label {height: calc(40px/2); line-height: calc(40px/2);border-radius: calc(4px/2);font-size: calc(18px/2);}
     /* 자주하는 질문 ================================================== */
-    .faqtit {padding-bottom: calc(20px/2); font-size: calc(24px/1.5); margin-bottom: calc(30px/2);letter-spacing: -1px;}
+    .faqtit {padding-bottom: calc(20px/2); font-size: calc(24px/2); margin-bottom: calc(30px/2);}
     .box_faqbody {padding: calc(15px/2) calc(10px/2);border-radius: calc(6px/2);}
 	.accordionFaqstyle .accordion-item .accordion-body {margin-bottom: calc(10px/2);}
 	.accordionFaqstyle .accordion-item {margin-bottom: calc(20px/2); border-radius: calc(6px/2);}
-	.accordionFaqstyle .accordion-item .accordion-body .t_desc {padding: calc(20px/2) calc(22px/2); margin-bottom: calc(20px/2); border-radius: calc(20px/2); font-size: calc(20px/1.5); line-height: initial; letter-spacing: calc(-0.02em/2);}
+	.accordionFaqstyle .accordion-item .accordion-body .t_desc {padding: calc(20px/2) calc(22px/2); margin-bottom: calc(20px/2); border-radius: calc(20px/2); font-size: calc(20px/2); line-height: initial; letter-spacing: calc(-0.02em/2);}
 	.accordionFaqstyle .accordion-item .accordion-body .t_desc li {padding-top: calc(12px/2);}
 	.accordion-body,
 	.accordion-button {padding: calc(1rem/2) calc(1.25rem/2);}
-	.accordionFaqstyle .tit {font-size: calc(22px/1.5);}
-	.accordionFaqstyle> .desc {padding: 0 calc(1.25rem/2) calc(2rem/2); font-size:calc(24px/1.5);}
+	.accordionFaqstyle .tit {font-size: calc(22px/2);}
+	.accordionFaqstyle> .desc {padding: 0 calc(1.25rem/2) calc(2rem/2); font-size:calc(24px/2);}
 	.accordion-item:first-of-type .accordion-button,
 	.accordion-item:last-of-type .accordion-button.collapsed,
 	.accordion-item .accordion-button {border-radius: calc(18px/2);}
 	.accordionFaqstyle .accordion-item:last-of-type .accordion-collapse {padding-bottom: calc(50px/2);}
 	.accordionFaqstyle .accordion-button::after {width: calc(36px/2);height: calc(36px/2);}
-	.accordionFaqstyle .btn {padding: calc(7px/2) calc(7px/2); border-radius: calc(8px/2); font-size: calc(36px/1.5); letter-spacing: calc(14px/2);}
+	.accordionFaqstyle .btn {padding: calc(7px/2) calc(7px/2); border-radius: calc(8px/2); font-size: calc(36px/2); letter-spacing: calc(14px/2);}
     /* 이용후기 ================================================== */
     .reviewtabs .nav-item {margin-left: calc(10px/2);}
     .reviewtabs .nav {margin: 0 calc(40px/2);}
-    .reviewtabs .nav .nav-link {height: calc(50px/2);border-radius: calc(4px/2);font-size: calc(22px/1.5);}
+    .reviewtabs .nav .nav-link {height: calc(50px/2);border-radius: calc(4px/2);font-size: calc(22px/2);}
     .reviewlist {padding: calc(10px/2) 0;}
-    .reviewlist .tit {font-size: calc(18px/1.5);}
-    .reviewlist .desc {font-size: calc(18px/1.5);}
-    .reviewdetail {font-size: calc(18px/1.5);}
+    .reviewlist .tit {font-size: calc(18px/2);}
+    .reviewlist .desc {font-size: calc(18px/2);}
+    .reviewdetail {font-size: calc(18px/2);}
     .reviewclientinfo .starimg img {width: calc(140px/2);margin-bottom: 5px;}
-    .reviewclientinfo .tit {font-size: calc(18px/1.5);}
-    .reviewclientinfo .desc {font-size: calc(18px/1.5);}
+    .reviewclientinfo .tit {font-size: calc(18px/2);}
+    .reviewclientinfo .desc {font-size: calc(18px/2);}
     .box_info_gray.type1 {padding: calc(15px/2) calc(23px/2)}
     /* 서비스 신청 진행 ================================================== */
-	.paynum {margin-bottom: calc(10px/2);padding-bottom: calc(15px/2);font-size: calc(18px/1.5);}
+	.paynum {margin-bottom: calc(10px/2);padding-bottom: calc(15px/2);font-size: calc(18px/2);}
 	.paynum .tit {padding-left: calc(10px/2);}
 	.prodname {margin-bottom: calc(25px/2); padding: calc(7px/2) calc(10px/2);}
-	.prodname .tit {font-size: calc(22px/1.5);}
+	.prodname .tit {font-size: calc(22px/2);}
 	.payamount {margin-bottom: calc(15px/2);}
-	.payamount .tit {padding-left: calc(10px/2);font-size: calc(20px/1.5);}
-	.payamount .desc {font-size: calc(18px/1.5);}
-	.payamount .desc .sum {font-size: calc(24px/1.5);}
-	.payadd {padding: calc(10px/2) 0;font-size: calc(20px/1.5);}
+	.payamount .tit {padding-left: calc(10px/2);font-size: calc(20px/2);}
+	.payamount .desc {font-size: calc(18px/2);}
+	.payamount .desc .sum {font-size: calc(24px/2);}
+	.payadd {padding: calc(10px/2) 0;font-size: calc(20px/2);}
 	.paynum .desc,
 	.payamount .desc,
 	.payadd {padding-right: calc(10px/2);}
     .bankinfo .tit,
     .bankinfo .form-select,
-    .bankinfo .form-control {font-size: calc(22px/1.5)}
+    .bankinfo .form-control {font-size: calc(22px/2)}
     .bankinfo .form-control {height: calc(54px/2);}
     .bankinfo .form-select {background-size: 4%;}
     .bankinfo.layertype .form-select {background-size:7%}
     /* 환불내역 */
-    .box_textarea {height: calc(210px/2); padding: calc(20px/2) calc(15px/2); border-radius: calc(6px/2);font-size: calc(18px/1.5);}
+    .box_textarea {height: calc(210px/2); padding: calc(20px/2) calc(15px/2); border-radius: calc(6px/2);font-size: calc(18px/2);}
     .box_textarea.type1 {height: calc(100px/2)}
     /* 구매동행서비스소개 ================================================== */
-	.serviceinfo .tit {padding-bottom: calc(10px/2);font-size: calc(24px/1.5);}
-	.serviceinfo .desc {font-size: calc(20px/1.5);}
+	.serviceinfo .tit {padding-bottom: calc(10px/2);font-size: calc(24px/2);}
+	.serviceinfo .desc {font-size: calc(20px/2);}
 	.tag_blue {width:calc(74px/2); margin-right: calc(10px/2);padding: calc(2px/2) calc(10px/2);border-radius: calc(6px/2);font-size: calc(18px/2);}
 	.servicestep + .flex_btn {margin: calc(7px/2) 0 0}
 	.list_scroll li {width: calc(620px/2);margin-right: calc(10px/2);}
 	.whosearch { min-height: calc(90px/2)}
-	.whosearch .tit {margin-bottom: calc(10px/2); border-radius: calc(50px/2);font-size: calc(22px/1.5)}
-	.whosearch .desc {font-size: calc(18px/1.5)}
+	.whosearch .tit {margin-bottom: calc(10px/2); border-radius: calc(50px/2);font-size: calc(22px/2)}
+	.whosearch .desc {font-size: calc(18px/2)}
 	.list_scroll.inspectimg li,
 	.inspectimg li > a > img {width: calc(267px/2);}
 	.inspectimg li > a > img {height: calc(150px/2);}
 	.box_clientstar {padding: calc(23px/2) calc(20px/2);border-radius: calc(4px/2);}
-	.satisfact {margin-bottom: calc(10px/2);font-size: calc(18px/1.5);}
+	.satisfact {margin-bottom: calc(10px/2);font-size: calc(18px/2);}
 	.satisfact .starimg {padding-right: calc(5px/2);}
 	.satisfact .starimg img {width: calc(140px/2)}
 	.satisfact #progress {height: calc(10px/2);}
@@ -1201,32 +1198,30 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .wrap_bankitem {padding: 0 calc(30px/2);}
     .wrap_bankitem li {padding: calc(15px/2) 0;}
     .bankitem .banklogo {width: calc(58px/2); height: calc(58px/2)}
-    .bankitem .bankname {padding-left: calc(14px/2);font-size: calc(22px/1.5);}
+    .bankitem .bankname {padding-left: calc(14px/2);font-size: calc(22px/2);}
     /* 수정 v1 ================================================== */
     .areascreen {position: fixed; top: 10px; width:100%; height: 100px; background: #F4F7FC; z-index: 7;}
-    .dlw100 .dl_txt.type2 dt {width: calc(190px/2)}
+    .dlw100 .dl_txt.type2 dt {width: calc(150px/2)}
     .list_scroll ul {padding-bottom: calc(8px/2);}
     .list_scroll ul::-webkit-scrollbar {height: calc(14px/2);}
     /* 검차프로그램 ================================================== */
     .wrap_loginstart {padding: 0 calc(75px/2)}
     .loginstart .logotxt {width: calc(289px/2); height: calc(58px/2)}
-    .loginstart .txt {font-size: calc(34px/1.5);}
+    .loginstart .txt {font-size: calc(34px/2);}
     .wrap_loginstart dl {padding: calc(280px/2) 0 calc(250px/2);}
-    .wrap_loginstart .loginstartdesc {padding-top: calc(30px/2); font-size: calc(30px/1.5);}
+    .wrap_loginstart .loginstartdesc {padding-top: calc(30px/2); font-size: calc(30px/2);}
     /* 회사계정 로그인 */
     .inspectionstatusinfo {padding: calc(30px/2) calc(50px/2);}
-    .inspectionstatusinfo .info_area {padding: calc(32px/2) calc(20px/2); margin-bottom: calc(20px/2); font-size: calc(18px/1.5);border-radius: calc(6px/2);}
-    .inspectionstatusinfo .info_area .num {font-size: calc(26px/1.5);}
+    .inspectionstatusinfo .info_area {padding: calc(32px/2) calc(20px/2); margin-bottom: calc(20px/2); font-size: calc(18px/2);border-radius: calc(6px/2);}
+    .inspectionstatusinfo .info_area .num {font-size: calc(26px/2);}
     /* 추가 v1 ================================================== */
-	.box_tabinfo .box_selectitem .form-select {font-size: calc(22px/1.5); padding: calc(10px/2) calc(2.25rem/2) calc(10px/2) calc(0.75rem/2) }
+	.box_tabinfo .box_selectitem .form-select {font-size: calc(22px/2); padding: calc(10px/2) calc(2.25rem/2) calc(10px/2) calc(0.75rem/2) }
     /* 검차예정차량 */
     .icon_arrow_title {width: calc(14px/2); height: calc(17px/2); margin-right: calc(10px/2);}
     /* 금일검차대상차량목록 */
     .todaytabSwiper {padding: 0 calc(30px/2); margin-right: calc(-20px/2); margin-left: calc(-10px/2);}
     .todaytabSwiper .nav.nav_tabtype2 .nav-item {width: calc(100px/2); min-height: calc(50px/2);}
-    .todaytabSwiper .nav.nav_tabtype2 .nav-item .nav-link {padding: 0.5rem;font-size: calc(20px/1.5)}
-    .todaytabSwiper .tab-content>.active {padding-right: 0; padding-left: 0;}
-    
+    .todaytabSwiper .nav.nav_tabtype2 .nav-item .nav-link {padding: 0.5rem;font-size: calc(20px/2)}
     .todaytabSwiper .swiper-button-next, .todaytabSwiper .swiper-button-prev {margin-top: calc(-42px/2);}
     .todaytabSwiper .swiper-rtl .swiper-button-prev {margin-right: calc(-37px/2);}
     .todaytabSwiper .swiper-button-next{margin-right: calc(-25px/2);}
@@ -1236,18 +1231,18 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
 	.carcheckendtab {margin-top: calc(60px/2);}
     .carcheckendtab .nav-item {margin-left: calc(10px/2)}
     .carcheckendtab .nav {top:calc(-25px/2); margin-left: -138px;}
-    .carcheckendtab .nav .nav-link {width:calc(278px/2); height:calc(50px/2);border-radius: calc(4px/2);font-size: calc(22px/1.5);line-height: 0.5;}
+    .carcheckendtab .nav .nav-link {width:calc(278px/2); height:calc(50px/2);border-radius: calc(4px/2);font-size: calc(22px/2);line-height: 0.5;}
     .carcheckendtab.tab3 .nav .nav-link {width:calc(175px/2);}
     /* 검사시작사진재촬영 */
-	.area_linebtn a.btn_type4.btn_type4_6, .area_linebtn button.btn_type4.btn_type4_6 {min-width: calc(143px/2); font-family: "Roboto";font-size: calc(18px/1.5);}
+	.area_linebtn a.btn_type4.btn_type4_6, .area_linebtn button.btn_type4.btn_type4_6 {min-width: calc(143px/2); font-family: "Roboto";font-size: calc(18px/2);}
     /* 검사결과입력폼들 */
-    .testresultbox {padding: calc(20px/2) calc(15px/2); margin-bottom: calc(10px/2); border-radius: calc(4px/2);font-size: calc(20px/1.5);}
-    .box_resultoverlapcheck .chkitem {padding: calc(15px/2); margin-bottom: calc(10px/2); border-radius: calc(4px/2); font-size: calc(28px/1.5); }
-    .box_resultoverlapcheck .chkitem .viewlink {font-size: calc(20px/1.5);padding-right: calc(20px/2);}
+    .testresultbox {padding: calc(20px/2) calc(15px/2); margin-bottom: calc(10px/2); border-radius: calc(4px/2);font-size: calc(20px/2);}
+    .box_resultoverlapcheck .chkitem {padding: calc(15px/2); margin-bottom: calc(10px/2); border-radius: calc(4px/2); font-size: calc(28px/2); }
+    .box_resultoverlapcheck .chkitem .viewlink {font-size: calc(20px/2);padding-right: calc(20px/2);}
     .box_resultoverlapcheck .form-check-input {width:calc(40px/2); height:calc(40px/2); border-radius: calc(2px/2);}
-    .box_resultoverlapcheck .form-check-label {font-size: calc(20px/1.5);padding-left: calc(10px/2);}
+    .box_resultoverlapcheck .form-check-label {font-size: calc(20px/2);padding-left: calc(10px/2);}
     .box_resultoverlapcheck .chkitemall {margin-bottom: calc(20px/2);}
-    .box_resultoverlapcheck .chkitemall label {height: calc(40px/2); line-height: calc(40px/2);border-radius: calc(4px/2);font-size: calc(18px/1.5);}
+    .box_resultoverlapcheck .chkitemall label {height: calc(40px/2); line-height: calc(40px/2);border-radius: calc(4px/2);font-size: calc(18px/2);}
     /* 회원탈퇴 */
     .icon_person {width: calc(21px/2); height: calc(19px/2);} 
     .box_memberauthcheck.type1 {padding: calc(15px/2) calc(20px/2)}

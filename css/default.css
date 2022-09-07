@@ -239,30 +239,30 @@ iframe.ifr_full {height:calc(100vmax - 56px);}
 .hr_divided {background:#F8F8F8; height:5px; margin:20px -18px;}
 
 @media (max-width: 575px) {
-.font8 {font-size:calc(8px/2)}
-.font9 {font-size:calc(9px/2)}
-.font10 {font-size:calc(10px/2)}
-.font11 {font-size:calc(11px/2)}
-.font12 {font-size:calc(12px/2)}
-.font13 {font-size:calc(13px/2)}
-.font14 {font-size:calc(14px/2)}
-.font15 {font-size:calc(15px/2)}
-.font16 {font-size:calc(16px/2)}
-.font17 {font-size:calc(17px/2)}
-.font18 {font-size:calc(18px/2)}
-.font19 {font-size:calc(19px/2)}
-.font20 {font-size:calc(20px/2)}
-.font21 {font-size:calc(21px/2)}
-.font22 {font-size:calc(22px/2)}
-.font23 {font-size:calc(23px/2)}
-.font24 {font-size:calc(24px/2)}
-.font25 {font-size:calc(25px/2)}
-.font26 {font-size:calc(26px/2)}
-.font27 {font-size:calc(27px/2)}
-.font28 {font-size:calc(28px/2)}
-.font30 {font-size:calc(30px/2)}
-.font32 {font-size:calc(32px/2)}
-.font40 {font-size:calc(40px/2)}
+.font8 {font-size:calc(8px/1.5)}
+.font9 {font-size:calc(9px/1.5)}
+.font10 {font-size:calc(10px/1.5)}
+.font11 {font-size:calc(11px/1.5)}
+.font12 {font-size:calc(12px/1.5)}
+.font13 {font-size:calc(13px/1.5)}
+.font14 {font-size:calc(14px/1.5)}
+.font15 {font-size:calc(15px/1.5)}
+.font16 {font-size:calc(16px/1.5)}
+.font17 {font-size:calc(17px/1.5)}
+.font18 {font-size:calc(18px/1.5)}
+.font19 {font-size:calc(19px/1.5)}
+.font20 {font-size:calc(20px/1.5)}
+.font21 {font-size:calc(21px/1.5)}
+.font22 {font-size:calc(22px/1.5)}
+.font23 {font-size:calc(23px/1.5)}
+.font24 {font-size:calc(24px/1.5)}
+.font25 {font-size:calc(25px/1.5)}
+.font26 {font-size:calc(26px/1.5)}
+.font27 {font-size:calc(27px/1.5)}
+.font28 {font-size:calc(28px/1.5)}
+.font30 {font-size:calc(30px/1.5)}
+.font32 {font-size:calc(32px/1.5)}
+.font40 {font-size:calc(40px/1.5)}
 
 /* 간격 */
 .mgt0  {margin-top:0 !important}
