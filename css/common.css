@@ -1257,5 +1257,6 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     /* 수정 v2 09.08 ================================================== */
     .tab-content>.tab-pane {padding-left: 0; padding-right: 0;}
     .font18.f16 {font-size: calc(18px/1.6);}
-    .font18.f17 {font-size: calc(18px/1.7);}
+    .font18.f20 {font-size: calc(18px/2);}
+    .font18 {font-size: calc(18px/1.7);}
 } 
