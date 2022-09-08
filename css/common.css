@@ -779,7 +779,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
 }
 
 @media (max-width: 575px) {
-    body {overflow-x: hidden; letter-spacing: -.5px;}
+    body {overflow-x: hidden;}
     .nav_blankheight {height: calc(14vh / 2); min-height: calc(135px /2 );}
     .nav_blankheightnone {min-height: calc(130px/2);}
     .back-to-top {right: 15px;}
@@ -1257,6 +1257,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     /* 수정 v2 09.08 ================================================== */
     .tab-content>.tab-pane {padding-left: 0; padding-right: 0;}
     .font18.f16 {font-size: calc(18px/1.6);}
+    .font18.f165 {font-size: calc(18px/1.65);}
     .font18.f20 {font-size: calc(18px/2);}
     .font18 {font-size: calc(18px/1.7);}
 } 
