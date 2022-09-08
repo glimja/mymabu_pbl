@@ -874,7 +874,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     a.btn_type3,button.btn_type3,
     a.btn.btn_type3,button.btn.btn_type3 {width:calc(380px/2);height:calc(60px/2);font-size:calc(28px/1.7);border: 1px solid rgba(41, 61, 108, 0.7);border-radius: calc(10px/2);}
     a.btn_type4,button.btn_type4,
-    a.btn.btn_type4,button.btn.btn_type4 {min-width:calc(160px/2);height:calc(46px/2);padding: calc(13px/2) calc(4px/2);font-size: calc(20px/1.7);border-radius: calc(20px/2);}
+    a.btn.btn_type4,button.btn.btn_type4 {min-width:calc(160px/2);height:calc(46px/2);padding: calc(13px/2) calc(18px/2);font-size: calc(20px/1.7);border-radius: calc(20px/2);}
     a.btn_type4.btn_type4_5, button.btn_type4.btn_type4_5 {border-radius: calc(4px/2);}
     a.btn_type4.btn_type4_6,button.btn_type4.btn_type4_6 {min-width:calc(165px/2);margin:calc(5px/2) 0;}
     a.btn_type4.btn_type4_8,button.btn_type4.btn_type4_8,
@@ -995,6 +995,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .originthumimg {margin: calc(25px/2) calc(45px/2); padding:calc(10px/2); border-radius: calc(40px/2);font-size:calc(20px/1.7)}
     .available {margin: calc(20px/2) calc(56px/2);padding: calc(10px/2) 0 calc(8px/2); font-size: calc(18px/1.7);border-radius: calc(4px/2);}
     /* 차량검사팝업 popup ================================================== */
+    #carreport_tab4 {padding-left: 0; padding-right: 0;}
     #carreport_tab4 .nav-item {margin-left: calc(10px/2)}
     #carreport_tab4 .nav {top:calc(-25px/2); left:50%; margin: 0 calc(-275px/2);}
     #carreport_tab4 .nav.tabea2 {top:calc(-25px/2); left:50%; margin: 0 calc(-245px/2);}
