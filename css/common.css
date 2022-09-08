@@ -1007,7 +1007,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .navsubtit {padding: calc(8px/2) 0 0 calc(10px/2);font-size: calc(24px/1.7);vertical-align: baseline;}
     .wrap_alarm {padding-left: 2%;}
     .wrap_alarm .btn_alarm {width:calc(32px/2);height:calc(32px/2);}
-    .wrap_alarm .new {top:-2px; right:-3px; padding: 0 calc(2px/2); min-width:calc(23px/2);height:calc(23px/2);font-size:calc(14px/1.7);border-radius:calc(15px/2);}
+    .wrap_alarm .new {top:-2px; right:-3px; padding: 0 calc(2px/2); min-width:calc(23px/2);height:calc(23px/2);font-size:calc(12px/1.7);border-radius:calc(15px/2);line-height: 1.1;}
     .iocn_arrowserviceopen {width:calc(18px/2); height:calc(12px/2);vertical-align: calc(4px/2);}
     .sapbtnfixed {top:calc(130px/2);margin-bottom: calc(60px/2);}
     .wrap_chatbox {margin-bottom: calc(85px/2);}
