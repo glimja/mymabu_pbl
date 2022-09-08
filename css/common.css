@@ -350,8 +350,9 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
 /* 서비스신청시작하기 채팅창 ================================================== */
 .chatcontainer {padding-bottom: 100px;background: #F4F7FC;}
 .navsubtit {padding-left: 10px;font-weight: 700;font-size: 24px;color: #293D6C;vertical-align: middle;}
-.wrap_alarm {position: relative;}
-.wrap_alarm .btn_alarm {display:block;width:32px;height:32px;margin-left: auto;text-align: right;text-indent:-999999em;font:0 auto}
+.wrap_alarm {position: relative;padding-left: 8%;}
+.wrap_alarm .btn_alarm,
+.btn_alarm {display:block;width:32px;height:32px;margin-left: auto;text-align: right;text-indent:-999999em;font:0 auto}
 .wrap_alarm .new {position: absolute;top:1px;right:0;padding:0 2px;min-width:17px;height:17px;font-family: "Roboto";font-size:12px;font-weight:700;color:#fff;background-color: #FE2525;text-align: center;border-radius:15px; border:1px solid #fff;}
 .iocn_arrowserviceopen {display:inline-block; width:18px; height:12px; background: url("../images/common/iocn_arrowserviceopen.png"); background-size: 100%; background-repeat: no-repeat; background-position: center center;vertical-align: 4px;}
 .sapbtnfixed {position:fixed;top:130px;left: 1%; width:100%; margin-bottom: 60px; z-index: 9;}
@@ -1004,6 +1005,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     /* 서비스신청시작하기 채팅창 ================================================== */
     .chatcontainer {padding-bottom: calc(100px/2);}
     .navsubtit {padding: calc(8px/2) 0 0 calc(10px/2);font-size: calc(24px/1.7);vertical-align: baseline;}
+    .wrap_alarm {padding-left: 2%;}
     .wrap_alarm .btn_alarm {width:calc(32px/2);height:calc(32px/2);}
     .wrap_alarm .new {top:-2px; right:-3px; padding: 0 calc(2px/2); min-width:calc(23px/2);height:calc(23px/2);font-size:calc(12px/1.7);border-radius:calc(15px/2);line-height: 1.1;}
     .iocn_arrowserviceopen {width:calc(18px/2); height:calc(12px/2);vertical-align: calc(4px/2);}
