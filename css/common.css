@@ -1256,8 +1256,6 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .box_memberauthcheck.type1 {padding: calc(15px/2) calc(20px/2)}
     /* 수정 v2 09.08 ================================================== */
     .tab-content>.tab-pane {padding-left: 0; padding-right: 0;}
-    a.btn_type1.btn_type1_1,button.btn_type1.btn_type1_1 {width: calc(18rem/2);line-height:0}
-    .modal-content .btn {font-size: calc(3.0rem/3.1);line-height: 0;}
-    .dl_txt.type2 {font-size: calc(1.8rem/3.1); line-height: initial;}
-    .dl_txt_type2_end {padding: calc(10px/2) calc(8px/2) calc(10px/2) calc(10px/2);font-size: calc(1.8rem/3.1);line-height: initial;}
+    .font18.f16 {font-size: calc(18px/1.6);}
+    .font18.f17 {font-size: calc(18px/1.7);}
 } 
