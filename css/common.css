@@ -864,11 +864,11 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .flex_btn>a,
     .flex_btn>button {margin-right:calc(10px/2)}
     .btn_wrap.ctr {margin:calc(30px/2) 0;}
-    a.btn_type1,button.btn_type1 {width:calc(260px/2); height:calc(70px/2); line-height:initial; font-size:calc(30px/1.7); border-radius:calc(4px/2);}
+    a.btn_type1,button.btn_type1 {width:calc(260px/2); height:calc(70px/2); line-height:0; font-size:calc(30px/1.7); border-radius:calc(4px/2);}
     a.btn_type1.btn_type1_1,button.btn_type1.btn_type1_1 {width: calc(360px/2);line-height:0}
     a.btn_type1.btn_type1_sm,button.btn_type1.btn_type1_sm {height:calc(34px/2); padding:0 calc(15px/2); font-size: calc(18px/1.7); border-radius:calc(6px/2); letter-spacing: calc(-0.04em/2);}
     a.btn_type1.btn_type1_2_sm,button.btn_type1.btn_type1_2_sm,
-    a.btn_type1.btn_type1_3_sm,button.btn_type1.btn_type1_3_sm {width: calc(120px/2); height:calc(34px/2); padding: 0 calc(15px/2); font-size: calc(20px/1.7); border-radius:calc(6px/2);letter-spacing: calc(-0.04em/2); line-height: auto;}
+    a.btn_type1.btn_type1_3_sm,button.btn_type1.btn_type1_3_sm {width: calc(120px/2); height:calc(34px/2); padding: 0 calc(15px/2); font-size: calc(20px/1.7); border-radius:calc(6px/2);letter-spacing: calc(-0.04em/2);}
     .modal-content a.btn.btn_type2,.modal-content button.btn.btn_type2,
     a.btn_type2,button.btn_type2 {width:calc(260px/2); height:calc(50px/2);font-size:calc(20px/1.7); border-radius:calc(6px/2);border:0}
     a.btn_type2.btn_type2_2,button.btn_type2.btn_type2_2 {min-width: calc(150px/2); height: calc(34px/2); font-size: calc(18px/1.7);}
