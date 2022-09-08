@@ -85,7 +85,7 @@ a.btn_type1.btn_type1_sm,button.btn_type1.btn_type1_sm {width: auto; height:34px
 a.btn_type1.btn_type1_2_sm,button.btn_type1.btn_type1_2_sm {width: 120px; height:34px; padding:0 15px; font-size: 20px; font-weight:inherit; color:#666; border-radius:6px;background: #FFFFFF;border: 1px solid #EAEAEA; letter-spacing: -0.04em; line-height: 0;}
 a.btn_type1.btn_type1_3_sm,button.btn_type1.btn_type1_3_sm {width: 120px; height:34px; padding:0 15px; font-size: 20px; font-weight:inherit; color:#fff; border-radius:6px;background: #293D6C; letter-spacing: -0.04em; line-height: 0;}
 .modal-content a.btn.btn_type2,.modal-content button.btn.btn_type2,
-a.btn_type2,button.btn_type2 {width:260px; height:50px; line-height:0; box-sizing:border-box; background:#8A8F9B; color:#fff; font-weight: 400; font-size:20px; border-radius:6px; text-align:center;letter-spacing: -.5px;}
+a.btn_type2,button.btn_type2 {width:260px; height:50px; line-height:0; box-sizing:border-box; background:#8A8F9B; color:#fff; font-weight: 400; font-size:20px; border-radius:6px; text-align:center;letter-spacing: -.5px;border:0}
 .modal-content a.btn.btn_type2.btn_type2_1,.modal-content button.btn.btn_type2.btn_type2_1,
 a.btn_type2.btn_type2_1,button.btn_type2.btn_type2_1 {background: #F4F4F4;border: 1px solid #D9D9D9;color:#202020}
 a.btn_type2.btn_type2_2,button.btn_type2.btn_type2_2 {width: auto; min-width: 150px; height: 34px; font-size: 18px;line-height: 0;letter-spacing: -1px;}
@@ -856,7 +856,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .modal-dialog.full .modal-content {border: 0; border-radius: 0; box-shadow:none;}
     
     /* button ================================================== */
-    .btn.btn-primary {line-height: 0;}
+    /* .btn.btn-primary {line-height: 0;} 메인 버튼 깨짐 */
     .btn {padding: calc(15px/2) calc(20px/2);}
     .modal-content .btn {font-size: calc(30px/1.7);line-height: 0;}
     .flex_btn {margin: calc(30px/2) 0 calc(20px/2) 0;}
@@ -1254,4 +1254,10 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     /* 회원탈퇴 */
     .icon_person {width: calc(21px/2); height: calc(19px/2);} 
     .box_memberauthcheck.type1 {padding: calc(15px/2) calc(20px/2)}
+    /* 수정 v2 09.08 ================================================== */
+    .tab-content>.tab-pane {padding-left: 0; padding-right: 0;}
+    a.btn_type1.btn_type1_1,button.btn_type1.btn_type1_1 {width: calc(18rem/2);line-height:0}
+    .modal-content .btn {font-size: calc(3.0rem/3.1);line-height: 0;}
+    .dl_txt.type2 {font-size: calc(1.8rem/3.1); line-height: initial;}
+    .dl_txt_type2_end {padding: calc(10px/2) calc(8px/2) calc(10px/2) calc(10px/2);font-size: calc(1.8rem/3.1);line-height: initial;}
 } 
