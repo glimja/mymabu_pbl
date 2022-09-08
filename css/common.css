@@ -779,7 +779,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
 }
 
 @media (max-width: 575px) {
-    body {overflow-x: hidden;}
+    body {overflow-x: hidden; letter-spacing: -.5px;}
     .nav_blankheight {height: calc(14vh / 2); min-height: calc(135px /2 );}
     .nav_blankheightnone {min-height: calc(130px/2);}
     .back-to-top {right: 15px;}
@@ -803,7 +803,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .burger.active:after {top: 40%;}
     .site-footer {padding: calc(58px /2) 0 calc(62px/2);}
     .site-footer .foot_logo {width:13px}
-    .site-footer .cotxt {padding-left: calc(15px / 2); font-size: calc(16px/1.7);}
+    .site-footer .cotxt {padding-left: calc(15px / 2); font-size: calc(16px/1.7);font-weight: normal;}
     .site-footer .cotxt .strongtxt {font-size: calc(26px/1.7);}
     .site-footer .list_txt > li {font-size: calc(16px/1.7); line-height: initial;}
     .site-footer .list_txt > li:before {margin: calc(13px / 2 ) calc(7px / 2 ) 0 0;}
@@ -847,7 +847,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .modal-header {padding: calc(20px/2) calc(20px/1.7);}
     .modal-header .btn-close {margin: 0 0 -0.5rem auto;}
     .modal-body {padding: calc(1rem/2)}
-    .modal-body .modal-title {font-size: calc(28px/1.7);}
+    .modal-body .modal-title {font-size: calc(28px/1.7);font-weight: normal;}
     .btn-close {width:calc(26px/2); height:calc(26px/2);}
     .box_popinfo {margin-top: calc(30px/2); padding:calc(30px/2) calc(20px/2); font-size: calc(20px/1.7); border-radius: calc(20px/2);}
     .box_popinfo.head {padding: calc(14px/2) calc(30px/2);border-radius: calc(10px/2);}
@@ -938,7 +938,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .dl_txt.type2 dt:before,
     .dl_txt.type2_2 dt:before {width:calc(4px/2); height:calc(4px/2); border-radius: calc(4px/2);}
     .dl_txt.type2_2 {font-size: calc(22px/1.7);}
-    .dl_txt.type2_2 dt {padding: calc(10px/2) calc(8px/2) calc(10px/2) calc(10px/2);}
+    .dl_txt.type2_2 dt {padding: calc(10px/2) calc(8px/2) calc(10px/2) calc(10px/2);font-weight: normal;}
     .num.type1 {font-size: calc(22px/1.7);}
     .num.type2 {font-size: calc(40px/1.7);}
     .num.type2_1 {font-size: calc(20px/1.7);line-height: initial;}
@@ -1256,8 +1256,33 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .box_memberauthcheck.type1 {padding: calc(15px/2) calc(20px/2)}
     /* 수정 v2 09.08 ================================================== */
     .tab-content>.tab-pane {padding-left: 0; padding-right: 0;}
-    .font18.f16 {font-size: calc(18px/1.6);}
+    /* 폰트 테스트 */
+    /* .font18.f16 {font-size: calc(18px/1.6);}
     .font18.f165 {font-size: calc(18px/1.65);}
     .font18.f20 {font-size: calc(18px/2);}
-    .font18 {font-size: calc(18px/1.7);}
+    .font18 {font-size: calc(18px/1.7);} */
+    /* 폰트 rem 단위로 변경할 경우 */
+    /* .font18 {font-size: calc(1.8rem/2.7);} */
+    #accordionMainservice .btn,
+    .h6_tit,
+    .h7_tit,
+    .chatdesc_type1,
+    .txt_type2,
+    .txt_type7,
+    .txt_type10, 
+    .main_info .dd_desc,
+    #accordionMainservice .tit,
+    .modal-body.full .nav-tabs .nav-link.active, .modal-body.full .nav-tabs .nav-item.show .nav-link,
+    .car_tit,
+    .dl_txt.type2_2 dt,
+    .navsubtit,
+    .r_side .wrap_chatbox .replychatbox,
+    .dl_txt.type5 dt,
+    .box_selectitem .selectitem,
+    .mo_quickBox .quickmenu .item li a,
+    .maymabulogin .tit,
+    .serviceinfo .tit,
+    .loginstart .txt,
+    .inspectionstatusinfo .info_area .num,
+    .site-footer .cotxt {font-weight: normal;}
 } 
