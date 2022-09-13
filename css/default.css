@@ -245,11 +245,11 @@ iframe.ifr_full {height:calc(100vmax - 56px);}
 .font11 {font-size:calc(11px/1.7)}
 .font12 {font-size:calc(12px/1.7)}
 .font13 {font-size:calc(13px/1.7)}
-.font14 {font-size:calc(14px/1.7)}
-.font15 {font-size:calc(15px/1.7)}
-.font16 {font-size:calc(16px/1.5)}
-.font17 {font-size:calc(17px/1.5)}
-.font18 {font-size:calc(18px/1.5)}
+.font14 {font-size:calc(14px/1.3)}
+.font15 {font-size:calc(15px/1.3)}
+.font16 {font-size:calc(16px/1.3)}
+.font17 {font-size:calc(17px/1.3)}
+.font18 {font-size:calc(18px/1.3)}
 .font19 {font-size:calc(19px/1.7)}
 .font20 {font-size:calc(20px/1.7)}
 .font21 {font-size:calc(21px/1.7)}

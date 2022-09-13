@@ -1013,7 +1013,7 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .wrap_chatbox {margin-bottom: calc(85px/2);}
     .wrap_chatbox .chatbox {padding:calc(20px/2);font-size: calc(18px/1.7); line-height: initial;border-radius: calc(10px/2);box-shadow: calc(4px/2) calc(3px/2) calc(3px/2) rgba(199,208,221, 0.9);}
     .wrap_chatbox .chatbox:before {bottom:calc(-21px/2); left:calc(12px/2);width:calc(50px/2);height:calc(25px/2);}
-    .wrap_chatbox .time {padding-left:calc(10px/2); font-size: calc(16px/1.7);}
+    .wrap_chatbox .time {padding-left:calc(10px/2); font-size: calc(16px/1.5);}
     .r_side .wrap_chatbox .time {padding-right: calc(10px/2);}
     .r_side .wrap_chatbox .replychatbox {min-width:calc(182px/2);padding:calc(10px/2) calc(22px/2);border-radius: calc(20px/2);font-size: calc(20px/1.7);letter-spacing: calc(-0.04em/2);}
     .r_side .wrap_chatbox .replychatbox:before {bottom:calc(-14px/2); right:calc(4px/2);width:calc(74px/2);height:calc(43px/2);}
@@ -1285,4 +1285,5 @@ h6.bline {padding-bottom: 15px;border-bottom: 1px solid #EFEFEF;}
     .loginstart .txt,
     .inspectionstatusinfo .info_area .num,
     .site-footer .cotxt {font-weight: normal;}
+    .container {padding-right: 2%; padding-left: 2%;}
 } 
