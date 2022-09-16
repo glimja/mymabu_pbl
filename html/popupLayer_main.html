@@ -29,106 +29,108 @@
 <!-- <body class="modal-open" style="overflow: hidden; padding-right: 0px;"> -->
 <body>
 
+<div class="contentWrapper"> <!-- addFix_202209 -->
+	<!-- content -->
 
-<!-- content -->
-
-<!-- popup layer -->
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LayerPop">
-	Layer Popup 서비스를 자세히 알고 싶어요
-  </button>
-<!-- Modal -->
-<div class="modal fade" id="LayerPop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="LayerPopLabel" aria-hidden="true" style="display: none"> <!-- 적용시 : show class 삭제, style="display:none" -->
-	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="LayerPopLabel"><!-- 타이틀 --></h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div class="modal-body">
-			<h5 class="modal-title" id="LayerPopLabel"><strong class="font40">서비스를 자세히 알고 싶어요!</strong></h5>
-			<div class="box_popinfo">
-				<dl class="pop_main">
-					<dt class="tit pb30"><strong class="font30">서비스 소개</strong><span class="font22">(Contents 정적페이지)</span></dt>
-					<dd class="desc">
-						<ul class="list_txt">
-							<li class="pb10">서비스를 각 단계별로 구체적으로 설명함<br />
-								(전산조회, 상세조사, 거래확인, 차량검사) 각 과정의 소개는
-								실제 관리툴과 앱의 처리과정을 함께 담아서 설명함
-							</li>
-							<li class="pb10">
-								탭메뉴 형태로 구성되거나 앵커 이동으로 컨텐츠가 이동을 처리함
-								예상되는 서비스 목록 영상컨텐츠 각 단계별 리포트 되는 영상 
-								컨텐츠
-							</li>
-							<li class="pb10">
-								차량 검사 영상 컨텐츠 카바조 마이마부 스튜디오 촬영 또는
-								카바조와 같이 연출된 세트장에서 촬영
-							</li>
-							<li class="pb10">고객 인터뷰 사진컨텐츠</li>
-							<li class="pb10">마이마부 스튜디오 소개 고객 리뷰 및 인터뷰 사진</li>
-						</ul>
-					</dd>
-				</dl>
+	<!-- popup layer -->
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LayerPop">
+		Layer Popup 서비스를 자세히 알고 싶어요
+	</button>
+	<!-- Modal -->
+	<div class="modal fade" id="LayerPop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="LayerPopLabel" aria-hidden="true" style="display: none"> <!-- 적용시 : show class 삭제, style="display:none" -->
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="LayerPopLabel"><!-- 타이틀 --></h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
-		</div>
-		<div class="modal-footer">
-			<div class="flex_btn">
-				<!-- <button type="button" class="btn btn-secondary btn_type1" data-bs-dismiss="modal">취소</button> -->
-		 		<button type="button" class="btn btn-primary btn_type1">확인</button>
+			<div class="modal-body">
+				<h5 class="modal-title" id="LayerPopLabel"><strong class="font20">서비스를 자세히 알고 싶어요!</strong></h5><!-- addFix_202209 -->
+				<div class="box_popinfo">
+					<dl class="pop_main">
+						<dt class="tit pb15"><strong class="font18">서비스 소개</strong><span class="font13">(Contents 정적페이지)</span></dt><!-- addFix_202209 -->
+						<dd class="desc">
+							<ul class="list_txt">
+								<li class="pb10">서비스를 각 단계별로 구체적으로 설명함<br />
+									(전산조회, 상세조사, 거래확인, 차량검사) 각 과정의 소개는
+									실제 관리툴과 앱의 처리과정을 함께 담아서 설명함
+								</li>
+								<li class="pb10">
+									탭메뉴 형태로 구성되거나 앵커 이동으로 컨텐츠가 이동을 처리함
+									예상되는 서비스 목록 영상컨텐츠 각 단계별 리포트 되는 영상 
+									컨텐츠
+								</li>
+								<li class="pb10">
+									차량 검사 영상 컨텐츠 카바조 마이마부 스튜디오 촬영 또는
+									카바조와 같이 연출된 세트장에서 촬영
+								</li>
+								<li class="pb10">고객 인터뷰 사진컨텐츠</li>
+								<li class="pb10">마이마부 스튜디오 소개 고객 리뷰 및 인터뷰 사진</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
 			</div>
-		</div>
-	  </div>
-	</div>
-</div>
-
-
-<!-- footer -->
-<div class="site-footer">
-	<div class="container">
-		<div class="accordion accordion-flush" id="accordionFlushFooter">
-			<div class="accordion-item">
-			  <h2 class="accordion-header" id="flush-footer">
-				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-footer" aria-expanded="false" aria-controls="flush-collapseOne-footer">
-					<img class="foot_logo" src="../images/common/footer_logo.png" alt="" /> <span class="cotxt">(<strong>주</strong>)<span class="strongtxt">마이마부</span></span>
-				</button>
-			  </h2>
-			</div>
-			<div id="flush-collapseOne-footer" class="accordion-collapse collapse" aria-labelledby="flush-footer" data-bs-parent="#accordionFlushFooter">
-				<div class="accordion-body">
-					<ul class="list_txt">
-						<li>대표이사 : 양인수</li>
-						<li>사업자 등록번호 : 845-88-00487</li>
-						<li>통신판매신고번호 : 2016-서울서초-1653호</li>
-						<li class="dotnone">
-							<dl class="address_txt">
-								<dt>주소 :</dt>
-								<dd>
-									<ul class="">
-										<li>(본사) 서울시 강서구 마곡중앙로 161-8, 두산더랜드파크 B동1205호</li>
-										<li>(서울 스튜디오) 서울시 서초구 양재대로 11길36, 서울오토갤러리 은관 B1-119호</li>
-										<li>(부산 스튜디오) 부산광역시 부산진구 진남로 581-1</li>
-									</ul>
-								</dd>
-							</dl>
-						</li>
-						<li>고객지원센터 : 1522-8007 / maymabu@maymabu@.com</li>
-					</ul>
+			<div class="modal-footer">
+				<div class="flex_btn">
+					<!-- <button type="button" class="btn btn-secondary btn_type1" data-bs-dismiss="modal">취소</button> -->
+					<button type="button" class="btn btn-primary btn_type1">확인</button>
 				</div>
 			</div>
 		</div>
-		<ul class="footer_menu">
-			<li><a href="#none">개인정보취급방침</a></li>
-			<li><a href="#none">이용약관</a></li>
-		</ul>
-		<p class="copyright">Copyright(c)2022 MAYMABU Co., Ltd. All Rights Reserved</p>
-		<a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
-    </div>
-</div> <!--// site-footer -->
+		</div>
+	</div>
+
+
+	<!-- footer -->
+	<div class="site-footer">
+		<div class="container">
+			<div class="accordion accordion-flush" id="accordionFlushFooter">
+				<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-footer">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-footer" aria-expanded="false" aria-controls="flush-collapseOne-footer">
+						<img class="foot_logo" src="../images/common/footer_logo.png" alt="" /> <span class="cotxt">(<strong>주</strong>)<span class="strongtxt">마이마부</span></span>
+					</button>
+				</h2>
+				</div>
+				<div id="flush-collapseOne-footer" class="accordion-collapse collapse" aria-labelledby="flush-footer" data-bs-parent="#accordionFlushFooter">
+					<div class="accordion-body">
+						<ul class="list_txt">
+							<li>대표이사 : 양인수</li>
+							<li>사업자 등록번호 : 845-88-00487</li>
+							<li>통신판매신고번호 : 2016-서울서초-1653호</li>
+							<li class="dotnone">
+								<dl class="address_txt">
+									<dt>주소 :</dt>
+									<dd>
+										<ul class="">
+											<li>(본사) 서울시 강서구 마곡중앙로 161-8, 두산더랜드파크 B동1205호</li>
+											<li>(서울 스튜디오) 서울시 서초구 양재대로 11길36, 서울오토갤러리 은관 B1-119호</li>
+											<li>(부산 스튜디오) 부산광역시 부산진구 진남로 581-1</li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+							<li>고객지원센터 : 1522-8007 / maymabu@maymabu@.com</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<ul class="footer_menu">
+				<li><a href="#none">개인정보취급방침</a></li>
+				<li><a href="#none">이용약관</a></li>
+			</ul>
+			<p class="copyright">Copyright(c)2022 MAYMABU Co., Ltd. All Rights Reserved</p>
+			<a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
+		</div>
+	</div> <!--// site-footer -->
+
+</div> <!--// addFix_202209 -->
 
 <!-- script 위치 이동시 navigation, backtoop 작동안함 -->
-<script src="../js/navbar.js"></script>
-<script src="../js/backtotop.js"></script>
+<!-- <script src="../js/navbar.js"></script>
+<script src="../js/backtotop.js"></script> -->
 
 </body>
 </html>
