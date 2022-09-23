@@ -167,7 +167,7 @@ function __fn_pcquickboxOpen(){
 		$target2 = $(".quick_menu");
 
 	$target.on("click", function(){
-		$pcitem.stop().animate({"left":"0"}, 300).show();
+		$pcitem.stop().animate({"left":"-57px"}, 300).show();
 		$target2.stop().animate({"margin-left":"-10px"}, 200).fadeOut();
 	})
 }
@@ -178,7 +178,7 @@ function __fn_pcquickboxClose(){
 		$target2 = $(".quick_menu");
 
 	$target.on("click", function(){
-		$pcitem.stop().animate({"left":"20px"}, 200).fadeOut();
+		$pcitem.stop().animate({"left":"-40px"}, 200).fadeOut();
 		$target2.stop().animate({"margin-left":"0"}, 200).show();
 	})
 }

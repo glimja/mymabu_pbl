@@ -35,30 +35,30 @@ input[type="tel"]::placeholder,
 input[type="text"]::placeholder,
 input[type="password"]::placeholder {color:#999;}
 
-.font8 {font-size:8px}
-.font9 {font-size:9px}
-.font10 {font-size:10px}
-.font11 {font-size:11px}
-.font12 {font-size:12px}
-.font13 {font-size:13px}
-.font14 {font-size:14px}
-.font15 {font-size:15px}
-.font16 {font-size:16px}
-.font17 {font-size:17px}
-.font18 {font-size:18px}
-.font19 {font-size:19px}
-.font20 {font-size:20px}
-.font21 {font-size:21px}
-.font22 {font-size:22px}
-.font23 {font-size:23px}
-.font24 {font-size:24px}
-.font25 {font-size:25px}
-.font26 {font-size:26px}
-.font27 {font-size:27px}
-.font28 {font-size:28px}
-.font30 {font-size:30px}
-.font32 {font-size:32px}
-.font40 {font-size:40px}
+.font8 {font-size:8px !important}
+.font9 {font-size:9px !important}
+.font10 {font-size:10px !important}
+.font11 {font-size:11px !important}
+.font12 {font-size:12px !important}
+.font13 {font-size:13px !important}
+.font14 {font-size:14px !important}
+.font15 {font-size:15px !important}
+.font16 {font-size:16px !important}
+.font17 {font-size:17px !important}
+.font18 {font-size:18px !important}
+.font19 {font-size:19px !important}
+.font20 {font-size:20px !important}
+.font21 {font-size:21px !important}
+.font22 {font-size:22px !important}
+.font23 {font-size:23px !important}
+.font24 {font-size:24px !important}
+.font25 {font-size:25px !important}
+.font26 {font-size:26px !important}
+.font27 {font-size:27px !important}
+.font28 {font-size:28px !important}
+.font30 {font-size:30px !important}
+.font32 {font-size:32px !important}
+.font40 {font-size:40px !important}
 
 /* 간격 */
 .mgt0  {margin-top:0 !important}
@@ -237,3 +237,4 @@ select.full {width:100%;}
 iframe.ifr_full {height:calc(100vmax - 56px);}
 .scroll_fix {width:100%; overflow:hidden; position:fixed; top:0; bottom:0;}
 .hr_divided {background:#F8F8F8; height:5px; margin:20px -18px;}
+.fontnormal {font-weight: normal !important}

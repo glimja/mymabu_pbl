@@ -27,123 +27,214 @@
 	<title>마이마부 - 중고차동행서비스</title>
 </head>
 <body>
+<div class="contentWrapper"> <!-- addFix_202210 -->
+	<!-- slide gnb menu -->
+	<div class="site-mobile-menu site-navbar-target" >
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<button type="button" class="btn-close js-menu-toggle"></button>
+			</div>
+			<div class="sidenav_head">
+				<button type="button" class="btn btn-primary btn_type4 btn_type4_11"><span class="icon_loginlock"></span> 로그인</button>
+				<!-- <button type="button" class="btn btn-primary btn_type4 btn_type4_11">로그아웃</button> -->
+				<button type="button" class="btn btn-primary btn_type4 btn_type4_12"><span class="icon_signup"></span> 회원가입</button>
+			</div>
+		</div>
+		<div class="box_sideservice">
+			<p class="txt_type1">이용 중 서비스</p>
+			<div class="sidedesc">
+				<div class="swiper sideheadSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="sidehead">
+								<div class="nologin">
+									로그인 후, 현재 이용중인<br />
+									서비스를 확인 할 수 있습니다.
+								</div>
+							</div>
+							<div class="mt10 text-center"> <!-- addFix_202210 -->	
+								<button type="button" class="btn btn-primary btn_type4 btn_type4_5 w70">새로운 서비스 신청</button>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="sidehead">
+								<div class="text-start">
+									<h7 class="h7_tit">구매동행 기본형</h7>
+									<dl class="dl_txt type4">
+										<dt>[ 차량번호표시 ] </dt>
+										<dd><span class="txt_color1">상세조사 - 진행중</span></dd>
+									</dl>
+									<dl class="dl_txt type4">
+										<dt>검사일정 :</dt>
+										<dd><span class="num txt_blk20">2022 - 08 - 25, 오후 08 :25</span></dd>
+									</dl>
+									<dl class="dl_txt type4 ">
+										<dt>검차장소 :</dt>
+										<dd><span class="txt_6">서울시 강서구 마곡 중앙로 161-8, 두산더랜드파크 B동 1205호</span></dd>
+									</dl>
+									<div class="bdb_af dashed mt10"></div> <!-- addFix_202210 -->	
+								</div>
+							</div>
+							<div class="mt10 text-center"> <!-- addFix_202210 -->	
+								<button type="button" class="btn btn-primary btn_type4 btn_type4_5 w70">새로운 서비스 신청</button>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+		<script>
+			$(function(){
+				// side head swiper
+				__fn_sideheadSwiper();
+				function __fn_sideheadSwiper(){
+					var swiper = new Swiper(".sideheadSwiper", {
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
+						},
+					});
+				}
+			});
+		</script>
+		</div>
+		<div class="site-mobile-menu-body">
+			<ul class="site-nav-wrap">
+				<li class="active"><a href="#none">결제내역</a></li>
+				<li><a href="#none">자주하는 질문</a></li>
+				<li><a href="#none">이용후기</a></li>
+				<li><a href="#none">점검사례</a></li>
+				<li><a href="#none">검차영상</a></li>
+				<li><a href="#none">이벤트 &middot; 공지</a></li>
+			</ul>
+		</div>
+	</div>
 
-<!-- top navigation -->
-<nav class="site-nav stickywrap"><!-- stickywrap : 클래스 추가 fiexd -->
-	<div class="container">
-		<div class="menu-bg-wrap">
-			<div class="site-navigation">
-				<div class="row g-0 align-items-center">
-					<h1 class="col navlogo pl20">
-						<a href="#none" class="logo m-0 float-start"><img src="../images/common/header_logo.png" alt="" /></a>
-						<span class="navsubtit">검차프로그램</span>
-					</h1>
-					<span class="col-1 wrap_alarm mr10"><a href="#none" class="btn_alarm" data-bs-toggle="modal" data-bs-target="#회사계정로그인후레이어팝업"><img src="../images/common/icon_managertop.png" alt="" />담당자</a></span>
+	<!-- top navigation -->
+	<nav class="site-nav stickywrap"><!-- stickywrap : 클래스 추가 fiexd -->
+		<div class="container">
+			<div class="menu-bg-wrap">
+				<div class="site-navigation">
+					<!-- addFix_202210 -->
+					<div class="row g-0 align-items-start">
+						<div class="col-auto">
+							<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block light">
+								<span>&nbsp;</span>
+							</a>
+						</div>
+						<h1 class="col-10 navlogo">
+							<a href="#none" class="logo m-0 float-start"><img src="../images/common/header_logo.png" alt="" /></a>
+							<span class="navsubtit">검차프로그램</span>
+						</h1>
+						<span class="col-auto wrap_alarm"><a href="#none" class="btn_alarm type2" data-bs-toggle="modal" data-bs-target="#회사계정로그인후레이어팝업"><img src="../images/common/icon_managertop.png" alt="" />담당자</a></span> 
+					</div><!--// addFix_202210 -->
 				</div>
 			</div>
 		</div>
-	</div>
-</nav>
-<div class="nav_blankheight bgwhite"><!-- top area fixed --></div>
+	</nav>
+	<div class="nav_blankheight bgwhite"><!-- top area fixed --></div>
 
-<!-- content -->
-<div class="container">
-	<div class="row">
-		<div class="col">
-			<h2 class="faqtit bd0 mb0"><span class="icon_arrow_title"></span>[ 검차 시작 차량의 차량번호 표시 ]</h2>
-		</div>
-		<div class="col-4 text-end">
-			<span class="pb20">
-				<button type="button" class="btn btn-primary btn_type2 btn_type2_2 btn_type2_2_1">처리목록</button>
-			</span>
-		</div>
-	</div>
-	<div class="hr_line type1 mb30"><!-- 구분선 --></div>
-	<div class="box_info_white">
-		<h6 class="h6_tit18 bline mb0 mt5 txt_color1">[대분류] > [중분류] > [소분류]</h6>
-		<ul class="list_bline dlw100">
-			<li>
-				<div class="row">
-					<div class="col">
-						<dl class="dl_txt type2 type2_1">
-							<dt class="txt_45 dotnone pl0">• 검사명<span>:</span></dt>
-							<dd>
-								검사명표시
-							</dd>
-						</dl>
-					</div>
-				</div>
-			</li>
-			<li class="bd0">
-				<div class="flex_btn full w80 mt20 mb0">
-					<button type="button" class="btn btn-primary btn_type4 btn_type4_8 btn_type4_8_2">검사보증대상 YES</button>
-					<button type="button" class="btn btn-primary btn_type4 btn_type4_8 btn_type4_8_2">감가율 99%</button>
-					<button type="button" class="btn btn-primary btn_type4 btn_type4_8 btn_type4_8_2">보험사보장 NO</button>
-				</div>
-			</li>
-		</ul>
-	</div>
-
-	<div class="box_info_white">
-		<img src="../images/temp/temp_car.png" alt="">
-		<div class="flex_btn full w80 mt30 mb40">
-			<button type="button" class="btn btn-primary btn_type4 btn_type4_8 btn_type4_8_3">결함 표기</button>
-			<button type="button" class="btn btn-primary btn_type4 btn_type4_8 btn_type4_8_3">재촬영</button>
-		</div>
-	</div>
-
-	<div class="box_info_white">
-		<h6 class="h6_tit18 bline mb0 mt5 txt_color1">검사 결과 입력</h6>
+	<!-- content -->
+	<div class="container">
 		<div class="row">
 			<div class="col">
-				<div class="area_linebtn mt20">
-					<button type="button" class="btn btn-primary btn_type4 btn_type4_6 btnToggle">양호</button>
-					<button type="button" class="btn btn-primary btn_type4 btn_type4_6 btnToggle">수리 요망</button>
+				<h2 class="faqtit bd0 mb0"><span class="icon_arrow_title"></span>[ 검차 시작 차량의 차량번호 표시 ]</h2>
+			</div>
+			<div class="col-4 text-end">
+				<span class=""> <!-- addfix_202210 -->
+					<button type="button" class="btn btn-primary btn_type2 btn_type2_2 btn_type2_2_1 pad0 minWauto pr20 pl20">처리목록</button> <!-- addfix_202210 -->
+				</span>
+			</div>
+		</div>
+		<div class="hr_line type1 mb30"><!-- 구분선 --></div>
+		<div class="box_info_white">
+			<h6 class="h6_tit18 bline mb0 mt5 txt_color1">[대분류] > [중분류] > [소분류]</h6>
+			<ul class="list_bline dlw100">
+				<li>
+					<div class="row">
+						<div class="col">
+							<dl class="dl_txt type2 type2_1">
+								<dt class="txt_45 dotnone pl0">• 검사명<span>:</span></dt>
+								<dd>
+									검사명표시
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</li>
+				<li class="bd0">
+					<div class="flex_btn full w80 mt20 mb0">
+						<button type="button" class="btn btn-primary btn_type4 btn_type4_8 btn_type4_8_2">검사보증대상 YES</button>
+						<button type="button" class="btn btn-primary btn_type4 btn_type4_8 btn_type4_8_2">감가율 99%</button>
+						<button type="button" class="btn btn-primary btn_type4 btn_type4_8 btn_type4_8_2">보험사보장 NO</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="box_info_white">
+			<img src="../images/temp/temp_car.png" alt="">
+			<div class="flex_btn full w90 mt15 mb5"> <!-- addFix_202210 -->
+				<button type="button" class="btn btn-primary btn_type4 btn_type4_8 btn_type4_8_3">결함 표기</button>
+				<button type="button" class="btn btn-primary btn_type4 btn_type4_8 btn_type4_8_3">재촬영</button>
+			</div>
+		</div>
+
+		<div class="box_info_white">
+			<h6 class="h6_tit18 bline mb0 mt5 txt_color1">검사 결과 입력</h6>
+			<div class="row">
+				<div class="col">
+					<div class="area_linebtn mt5"> <!-- addFix_202210 -->
+						<button type="button" class="btn btn-primary btn_type4 btn_type4_6 btnToggle">양호</button>
+						<button type="button" class="btn btn-primary btn_type4 btn_type4_6 btnToggle">수리 요망</button>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div class="flex_btn full w80 mb50">
-		<button type="button" class="btn btn-primary btn_type4 btn_type4_8 btn_type4_8_1">저장</button>
-		<button type="button" class="btn btn-primary btn_type4 btn_type4_9">다음단계</button>
-	</div>
-</div>	
 
-<!-- footer -->
-<div class="site-footer bgwhite">
-	<div class="container">
-		<!-- Footer -->
-	</div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="회사계정로그인후레이어팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none"> <!-- 적용시 : show class 삭제, style="display:none" -->
-	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="LayerPopLabelServicestart"><!-- 타이틀 --></h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		<div class="flex_btn mb50">
+			<button type="button" class="btn btn-primary btn_type1 btn_type1_1 w90">촬영</button>
 		</div>
-		<div class="modal-body">
-			<div class="box_laypopinfo">
-				<span class="font20 txt_75 pb15">최근 로그인 : 2022 - 08 - 30   15:45</span>
-				<div class="box_popinfo mt0">
-					<strong class="txt_color1 font28">[ 부서명 ] / [ 이름+직급 ]</strong>
+	</div>	
+
+	<!-- footer -->
+	<div class="site-footer bgwhite">
+		<div class="container">
+			<!-- Footer -->
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="회사계정로그인후레이어팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none"> <!-- 적용시 : show class 삭제, style="display:none" -->
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="LayerPopLabelServicestart"><!-- 타이틀 --></h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<!-- addFix_202210 -->
+				<div class="box_laypopinfo text-center">
+					<span class="font15 txt_75 pb10">최근 로그인 : 2022 - 08 - 30   15:45</span>
+					<div class="box_popinfo mt0">
+						<strong class="txt_color1 font18">[ 부서명 ] / [ 이름+직급 ]</strong>
+					</div>
+				</div> <!--// addFix_202210 -->
+			</div>
+			<div class="modal-footer">
+				<div class="flex_btn">
+					<button type="button" class="btn btn-primary btn_type1">로그아웃</button>
 				</div>
-			</div>			
-		</div>
-		<div class="modal-footer">
-			<div class="flex_btn">
-		 		<button type="button" class="btn btn-primary btn_type1">로그아웃</button>
 			</div>
 		</div>
-	  </div>
+		</div>
 	</div>
-</div>
+
+</div> <!--// addFix_202210 -->
 
 <!-- script 위치 이동시 navigation, backtoop 작동안함 -->
-<!-- <script src="../js/navbar.js"></script> -->
+<script src="../js/navbar.js"></script>
 <script src="../js/backtotop.js"></script>
 
 </body>

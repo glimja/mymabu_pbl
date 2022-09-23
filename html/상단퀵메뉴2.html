@@ -27,14 +27,14 @@
 	<title>마이마부 - 중고차동행서비스</title>
 </head>
 <body>
-
-<!-- content -->
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#상단퀵메뉴">
-	Layer Popup 상단퀵메뉴
-</button>
 <div class="contentWrapper"> <!-- addFix_202210 -->
+	<!-- content -->
+
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#상단퀵메뉴">
+		Layer Popup 상단퀵메뉴
+	</button>
+
 	<!-- Modal -->
 	<div class="modal fade show" id="상단퀵메뉴" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display:block"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
 		<!-- popup full -->
@@ -44,8 +44,14 @@
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<div class="box_quickmenu listnone text-center">
-						<span class="">진행이 완료된 상태를 <br />한 눈에 확인할 수 있습니다.</span>
+					<div class="box_quickmenu">
+						<ul class="quickstatus">
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu1_off"></span></span><span class="txt">서비스신청<span class="pop_qtag tag_fin">완료</span></span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu2_off"></span></span><span class="txt">전산조회<span class="pop_qtag tag_fin">완료</span></span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu3_off"></span></span><span class="txt">상세조사<span class="pop_qtag tag_ing">진행중</span></span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu4_off"></span></span><span class="txt">거래확인</span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu5_off"></span></span><span class="txt">차량검사</span></a></li>
+						</ul>
 					</div>
 				</div>
 				<div class="modal-footer">

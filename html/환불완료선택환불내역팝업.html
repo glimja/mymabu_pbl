@@ -27,102 +27,105 @@
 	<title>마이마부 - 중고차동행서비스</title>
 </head>
 <body>
-<!-- content -->
+<div class="contentWrapper"> <!-- addFix_202210 -->
+	<!-- content -->
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#환불완료선택환불내역팝업">
-	Layer Popup 환불완료선택환불내역팝업
-</button>
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#환불완료선택환불내역팝업">
+		Layer Popup 환불완료선택환불내역팝업
+	</button>
 
-<!-- Modal -->
-<div class="modal fade show" id="환불완료선택환불내역팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display:block"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
-	<!-- popup full -->
-	<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
-		<div class="modal-content">
-			<div class="modal-header">
-			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body">
-				<h5 class="modal-title">환불내역</h5>
-				<div class="box_popinfo">
-					
-					<div class="box_info_white">
-						<div class="row">
-							<div class="col">
-								<h7 class="h7_tit blnone">환불 완료 일시</h7>
+	<!-- Modal -->
+	<div class="modal fade show" id="환불완료선택환불내역팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display:block"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h5 class="modal-title">환불내역</h5>
+					<div class="box_popinfo">
+						
+						<div class="box_info_white">
+							<div class="row">
+								<div class="col">
+									<h7 class="h7_tit blnone">환불 완료 일시</h7>
+								</div>
+								<div class="col-7 text-end"> <!-- addFix_202210 -->
+									<span class="txt_6 font14"><span class="roboto">2022-05-20 <span class="pl5">오전 05:30</span></span></span> <!-- addFix_202210 -->
+								</div>
 							</div>
-							<div class="col text-end">
-								<span class="txt_6 font18"><span class="roboto">2022-05-20 <span class="pl10">오전 05:30</span></span></span>
-							</div>
+							<div class="hr_line_gray mt10"><!-- 구분선 --></div>
+							<dl class="dl_txt type3 pt5 pb5"> <!-- addFix_202210 -->
+								<dt><span class="font13 txt_blk20">환불 금액</span></dt> <!-- addFix_202210 -->
+								<dd><strong class="num font18 txt_redcolor">990,000</strong>원</dd> <!-- addFix_202210 -->
+							</dl>
 						</div>
-						<div class="hr_line_gray mt10"><!-- 구분선 --></div>
-						<dl class="dl_txt type3 pt20 pb20">
-							<dt><span class="font20 txt_blk20">환불 금액</span></dt>
-							<dd><span class="num font28 txt_redcolor">990,000</span>원</dd>
-						</dl>
-					</div>
-					<div class="box_info_white">
-						<div class="row">
-							<div class="col">
-								<h7 class="h7_tit blnone"><span class="txt_blk20">결제금액</span></h7>
+						<div class="box_info_white">
+							<div class="row">
+								<div class="col">
+									<h7 class="h7_tit blnone"><span class="txt_6">결제금액</span></h7> <!-- addFix_202210 -->
+								</div>
+								<div class="col text-end">
+									<strong class="txt_6 font15"><span class="num font18">9,990,000</span>원</strong> <!-- addFix_202210 -->
+								</div>
 							</div>
-							<div class="col text-end">
-								<span class="txt_6 font24"><strong class="num">990,000</strong>원</span>
+							<div class="hr_line_gray mt10"><!-- 구분선 --></div>
+							<div class="rs_desc pb20">
+								<div class="wrap_detail bd0">
+									<dl class="dl_detail text-end">
+										<dt class="tit">[환불내역_항목#1]</dt>
+										<dd class="desc pr10"> <!-- addFix_202210 -->
+											<span class="num txt_6 font16">9,900,000</span><span class="txt_6 font15">원</span> <!-- addFix_202210 -->
+										</dd>
+									</dl>
+									<dl class="dl_detail text-end">
+										<dt class="tit">[환불내역_항목#2]</dt>
+										<dd class="desc pr10"> <!-- addFix_202210 -->
+											<span class="num txt_6 font16">9,900,000</span><span class="txt_6 font15">원</span> <!-- addFix_202210 -->
+										</dd>
+									</dl>
+									<dl class="dl_detail text-end">
+										<dt class="tit">[환불내역_항목#3]</dt>
+										<dd class="desc pr10"> <!-- addFix_202210 -->
+											<span class="num txt_6 font16">9,900,000</span><span class="txt_6 font15">원</span> <!-- addFix_202210 -->
+										</dd>
+									</dl>
+								</div>
 							</div>
+							<div class="hr_line_gray"><!-- 구분선 --></div>
+							<dl class="dl_txt type3 pt5 pb5"> <!-- addFix_202210 -->
+								<dt><span class="font13 txt_blk20">환불 금액</span></dt> <!-- addFix_202210 -->
+								<dd><strong class="num font18 txt_redcolor">990,000</strong>원</dd> <!-- addFix_202210 -->
+							</dl>
 						</div>
-						<div class="hr_line_gray mt10"><!-- 구분선 --></div>
-						<div class="rs_desc pb20">
-							<div class="wrap_detail bd0">
-								<dl class="dl_detail text-end">
-									<dt class="tit">[환불내역_항목#1]</dt>
-									<dd class="desc">
-										<span class="num txt_6 font20">9,900,000</span><span class="txt_6 font18">원</span>
-									</dd>
-								</dl>
-								<dl class="dl_detail text-end">
-									<dt class="tit">[환불내역_항목#2]</dt>
-									<dd class="desc">
-										<span class="num txt_6 font20">9,900,000</span><span class="txt_6 font18">원</span>
-									</dd>
-								</dl>
-								<dl class="dl_detail text-end">
-									<dt class="tit">[환불내역_항목#3]</dt>
-									<dd class="desc">
-										<span class="num txt_6 font20">9,900,000</span><span class="txt_6 font18">원</span>
-									</dd>
-								</dl>
-							</div>
-						</div>
-						<div class="hr_line_gray"><!-- 구분선 --></div>
-						<dl class="dl_txt type3 pt20 pb20">
-							<dt><span class="font20 txt_blk20">환불 금액</span></dt>
-							<dd><span class="num font24 txt_redcolor">990,000</span>원</dd>
-						</dl>
-					</div>
-					<div class="box_info_white">
-						<div class="row">
-							<div class="col">
-								<h2 class="h7_tit blnone"><span class="txt_blk20">매니저 메시지</span></h2>
-								<div class="box_textarea">
-									고객 설명 글 예시) 브레이크  패드 잔여량은 제조자, 내장 센서 위치에 따라 다르기 때문에 양호/교환 요망으로 표기합니다. 고객 설명 글 예시) 브레이크  패드 잔여량은 제조자, 내장 센서 위치에 따라 다르기 때문에 양호/교환 요망으로 표기합니다. 고객 설명 글 예시) 브레이크  패드 잔여량은 제조자, 내장 센서 위치에 따라 다르기 
+						<div class="box_info_white">
+							<div class="row">
+								<div class="col">
+									<h2 class="h7_tit blnone"><span class="txt_blk20">매니저 메시지</span></h2>
+									<div class="box_textarea">
+										고객 설명 글 예시) 브레이크  패드 잔여량은 제조자, 내장 센서 위치에 따라 다르기 때문에 양호/교환 요망으로 표기합니다. 고객 설명 글 예시) 브레이크  패드 잔여량은 제조자, 내장 센서 위치에 따라 다르기 때문에 양호/교환 요망으로 표기합니다. 고객 설명 글 예시) 브레이크  패드 잔여량은 제조자, 내장 센서 위치에 따라 다르기 
+									</div>
 								</div>
 							</div>
 						</div>
+						
 					</div>
-					
 				</div>
-			</div>
-			<div class="modal-footer">
-				<div class="flex_btn">
-					<button type="button" class="btn btn-primary btn_type1">확인</button>
+				<div class="modal-footer">
+					<div class="flex_btn">
+						<button type="button" class="btn btn-primary btn_type1">확인</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+
+</div> <!--// addFix_202210 -->
 
 <!-- script 위치 이동시 navigation, backtoop 작동안함 -->
-<script src="../js/navbar.js"></script>
+<!-- <script src="../js/navbar.js"></script> -->
 <script src="../js/backtotop.js"></script>
 
 </body>

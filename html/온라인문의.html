@@ -27,112 +27,116 @@
 	<title>마이마부 - 중고차동행서비스</title>
 </head>
 <body>
-<!-- content -->
+<div class="contentWrapper"> <!-- addFix_202210 -->
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#온라인문의">
-	Layer Popup 온라인문의
-</button>
+		<!-- content -->
 
-<!-- Modal -->
-<div class="modal fade show" id="온라인문의" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display:block"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
-	<!-- popup full -->
-	<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
-		<div class="modal-content">
-			<div class="modal-header">
-			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body">
-				<h5 class="modal-title">온라인 문의</h5>
-				<div class="box_popinfo">
-					<div class="top_date">2022 - 08 - 15</div>
-					<div class="box_chat">
-						<div class="">
-							<div class="chatid">고객 ID</div>
-							<div class="wrap_cont">
-								<div class="cont">
-									검차 관련하여 문의내용<br />
-									검차 관련하여 문의내용<br />
-									검차 관련하여 문의내용<br />
-									검차 관련하여 문의내용<br />
-									검차 관련하여 문의내용
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#온라인문의">
+		Layer Popup 온라인문의
+	</button>
+
+	<!-- Modal -->
+	<div class="modal fade show" id="온라인문의" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display:block"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h5 class="modal-title">온라인 문의</h5>
+					<div class="box_popinfo">
+						<div class="top_date">2022 - 08 - 15</div>
+						<div class="box_chat">
+							<div class="">
+								<div class="chatid">고객 ID</div>
+								<div class="wrap_cont">
+									<div class="cont">
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용
+									</div>
+									<div class="time">오후 8:58</div>
 								</div>
-								<div class="time">오후 8:58</div>
+							</div>
+							<div class="r_side">
+								<div class="chatid">고객 매니저</div>
+								<div class="wrap_cont">
+									<div class="cont">
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용
+									</div>
+									<div class="time">오후 9:01</div>
+								</div>
+							</div>
+							<div class="">
+								<div class="chatid">고객 ID</div>
+								<div class="wrap_cont">
+									<div class="cont">
+										<img src="../images/temp/temp_car.png" alt="" />
+									</div>
+									<div class="time">오후 8:58</div>
+								</div>
 							</div>
 						</div>
-						<div class="r_side">
-							<div class="chatid">고객 매니저</div>
-							<div class="wrap_cont">
-								<div class="cont">
-									검차 관련하여 문의내용<br />
-									검차 관련하여 문의내용<br />
-									검차 관련하여 문의내용<br />
-									검차 관련하여 문의내용<br />
-									검차 관련하여 문의내용
-								</div>
-								<div class="time">오후 9:01</div>
+					</div>
+					<div class="box_chatinput">
+						<label for="chatcontentInupt" class="form-label"></label>
+						<input type="text" class="form-control" id="chatcontentInupt" placeholder="내용을 입력해주세요" />
+						<div class="flex_btn justify-space-between mt10"> <!-- addFix_202210 -->
+							<div class="flex_btn mt0"> <!-- addFix_202210 -->
+								<button type="button" class="btn btn-secondary btn_type1 btn_type1_sm" data-bs-dismiss="modal">이미지파일 선택</button>
+								<button type="button" class="btn btn-secondary btn_type1 btn_type1_sm">PDF</button>
+							</div>
+							<div class="flex_btn"> <!-- addFix_202210 -->
+								<button type="button" class="btn btn-primary btn-sm btn_type1 btn_type1_sm mw140">보내기</button>
 							</div>
 						</div>
-						<div class="">
-							<div class="chatid">고객 ID</div>
-							<div class="wrap_cont">
-								<div class="cont">
+					</div>
+					<div class="box_chatinput">
+						<div class="wrap_selectcontent_item">
+							<div class="selectcontent_item">
+								<span class="img_item">
 									<img src="../images/temp/temp_car.png" alt="" />
-								</div>
-								<div class="time">오후 8:58</div>
+									<button class="del_item">삭제</button>
+								</span>
+								<span class="img_item">
+									<img src="../images/temp/temp_car.png" alt="" />
+									<button class="del_item">삭제</button>
+								</span>
+								<span class="img_item">
+									<img src="../images/temp/temp_car.png" alt="" />
+									<button class="del_item">삭제</button>
+								</span>
+							</div>
+						</div>
+						<div class="flex_btn justify-space-between mt10"> <!-- addFix_202210 -->
+							<div class="flex_btn mt0"> <!-- addFix_202210 -->
+								<button type="button" class="btn btn-secondary btn_type1 btn_type1_sm" data-bs-dismiss="modal">이미지파일 선택</button>
+								<button type="button" class="btn btn-secondary btn_type1 btn_type1_sm">PDF</button>
+							</div>
+							<div class="flex_btn"> <!-- addFix_202210 -->
+								<button type="button" class="btn btn-primary btn-sm btn_type1 btn_type1_sm mw140">보내기</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="box_chatinput">
-					<label for="chatcontentInupt" class="form-label"></label>
-					<input type="text" class="form-control" id="chatcontentInupt" placeholder="내용을 입력해주세요" />
-					<div class="flex_btn justify-space-between mt15">
-						<div class="">
-							<button type="button" class="btn btn-secondary btn_type1 btn_type1_sm" data-bs-dismiss="modal">이미지파일 선택</button>
-							<button type="button" class="btn btn-secondary btn_type1 btn_type1_sm">PDF</button>
-						</div>
-						<div class="">
-							<button type="button" class="btn btn-primary btn-sm btn_type1 btn_type1_sm mw140">보내기</button>
-						</div>
+				<div class="modal-footer linetype">
+					<div class="flex_btn full w50"> <!-- addFix_202210 -->
+						<button type="button" class="btn btn-primary btn_type1 btn_type1_1">온라인문의 종료</button>
 					</div>
-				</div>
-				<div class="box_chatinput">
-					<div class="wrap_selectcontent_item">
-						<div class="selectcontent_item">
-							<span class="img_item">
-								<img src="../images/temp/temp_car.png" alt="" />
-								<button class="del_item">삭제</button>
-							</span>
-							<span class="img_item">
-								<img src="../images/temp/temp_car.png" alt="" />
-								<button class="del_item">삭제</button>
-							</span>
-							<span class="img_item">
-								<img src="../images/temp/temp_car.png" alt="" />
-								<button class="del_item">삭제</button>
-							</span>
-						</div>
-					</div>
-					<div class="flex_btn justify-space-between mt15">
-						<div class="">
-							<button type="button" class="btn btn-secondary btn_type1 btn_type1_sm" data-bs-dismiss="modal">이미지파일 선택</button>
-							<button type="button" class="btn btn-secondary btn_type1 btn_type1_sm">PDF</button>
-						</div>
-						<div class="">
-							<button type="button" class="btn btn-primary btn-sm btn_type1 btn_type1_sm mw140">보내기</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="modal-footer linetype">
-				<div class="flex_btn">
-					<button type="button" class="btn btn-primary btn_type1 btn_type1_1">온라인문의 종료</button>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+
+</div> <!--// addFix_202210 -->
 
 <!-- script 위치 이동시 navigation, backtoop 작동안함 -->
 <script src="../js/navbar.js"></script>

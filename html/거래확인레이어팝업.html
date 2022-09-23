@@ -27,257 +27,260 @@
 	<title>마이마부 - 중고차동행서비스</title>
 </head>
 <body>
-<!-- content -->
+<div class="contentWrapper"> <!-- addFix_202210 -->
+	<!-- content -->
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#거래확인레이어팝업">
-	Layer Popup 거래확인레이어팝업
-</button>
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#거래확인레이어팝업">
+		Layer Popup 거래확인레이어팝업
+	</button>
 
-<!-- Modal -->
-<div class="modal fade show" id="거래확인레이어팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display:block"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
-	<!-- popup full -->
-	<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
-		<div class="modal-content">
-			<div class="modal-header">
-			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body full">
-				<h5 class="modal-title">[ 차량번호표시 ] 차량 리포트</h5>
-				<div class="box_popinfo head">
-					<strong>거래확인 - 진행</strong>
+	<!-- Modal -->
+	<div class="modal fade show" id="거래확인레이어팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display:block"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
+				<div class="modal-body full">
+					<h5 class="modal-title">[ 차량번호표시 ] 차량 리포트</h5>
+					<div class="box_popinfo head">
+						<strong>거래확인 - 진행</strong>
+					</div>
 
-				<!-- Nav tabs -->
-				<ul class="nav nav-tabs nav-justified nav_tabtype1">
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="tab" href="#carreport_tab1">전산조회</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="tab" href="#carreport_tab2">상세조사</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" data-bs-toggle="tab" href="#carreport_tab3">거래확인</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="tab" href="#carreport_tab4">차량검사</a>
-					</li>
-				</ul>
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs nav-justified nav_tabtype1">
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#carreport_tab1">전산조회</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#carreport_tab2">상세조사</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" data-bs-toggle="tab" href="#carreport_tab3">거래확인</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#carreport_tab4">차량검사</a>
+						</li>
+					</ul>
 
-				<!-- Tab panes -->
-				<div class="tab-content nav_tabtype1">
-					<!-- 전산조회 -->
-					<div class="tab-pane container fade" id="carreport_tab1">전산조회 내용</div>
-					<!-- 상세조사 -->
-					<div class="tab-pane container fade" id="carreport_tab2">					
-						<div class="box_tabinfo">
-							<div class="box_info_gray">
-								<h7 class="h7_tit">조회결과 요약</h7>							
-								<div class="row">
-									<div class="col">
-										<dl class="dl_txt type2_2">
-											<dt>정상 매물</dt>
-											<dd></dd>
-										</dl>
-									</div>
-									<div class="col-7">
-										<dl class="dl_txt type2_2">
-											<dt>구매가능</dt>
-											<dd></dd>
-										</dl>
-									</div>
-								</div>
-							</div>
-							<!-- 자동차 원부 -->
-							<div class="box_info_gray">
-								<h7 class="h7_tit mb20">자동차 원부</h7>
-								<div class="box_info_white">
+					<!-- Tab panes -->
+					<div class="tab-content nav_tabtype1">
+						<!-- 전산조회 -->
+						<div class="tab-pane container fade" id="carreport_tab1">전산조회 내용</div>
+						<!-- 상세조사 -->
+						<div class="tab-pane container fade" id="carreport_tab2">					
+							<div class="box_tabinfo">
+								<div class="box_info_gray">
+									<h7 class="h7_tit">조회결과 요약</h7>							
 									<div class="row">
 										<div class="col">
-											<span class="txt_6 font20">압류 건수</span>
+											<dl class="dl_txt type2_2">
+												<dt>정상 매물</dt>
+												<dd></dd>
+											</dl>
 										</div>
-										<div class="col-4 text-end">
-											<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_3_sm">상세</button>
+										<div class="col-7">
+											<dl class="dl_txt type2_2">
+												<dt>구매가능</dt>
+												<dd></dd>
+											</dl>
 										</div>
 									</div>
 								</div>
-								<div class="box_info_white">
-									<div class="row">
-										<div class="col">
-											<span class="txt_6 font20">저당 건수</span>
+								<!-- 자동차 원부 -->
+								<div class="box_info_gray">
+									<h7 class="h7_tit mb20">자동차 원부</h7>
+									<div class="box_info_white">
+										<div class="row">
+											<div class="col">
+												<span class="txt_6 font20">압류 건수</span>
+											</div>
+											<div class="col-4 text-end">
+												<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_3_sm">상세</button>
+											</div>
 										</div>
-										<div class="col-4 text-end">
-											<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_2_sm">없음</button>
+									</div>
+									<div class="box_info_white">
+										<div class="row">
+											<div class="col">
+												<span class="txt_6 font20">저당 건수</span>
+											</div>
+											<div class="col-4 text-end">
+												<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_2_sm">없음</button>
+											</div>
+										</div>
+									</div>
+									<div class="box_info_white">
+										<div class="row">
+											<div class="col">
+												<span class="txt_6 font20">구조 변경</span>
+											</div>
+											<div class="col-4 text-end">
+												<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_3_sm">상세</button>
+											</div>
+										</div>
+									</div>
+									<div class="box_info_white">
+										<div class="row">
+											<div class="col">
+												<span class="txt_6 font20">영업용</span>
+											</div>
+											<div class="col-4 text-end">
+												<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_2_sm">없음</button>
+											</div>
+										</div>
+									</div>
+									<div class="box_info_white">
+										<div class="row">
+											<div class="col">
+												<span class="txt_6 font20">부활 유무</span>
+											</div>
+											<div class="col-4 text-end">
+												<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_3_sm">상세</button>
+											</div>
+										</div>
+									</div>
+									<div class="box_info_white">
+										<div class="row">
+											<div class="col">
+												<span class="txt_6 font20">전문가 의견</span>
+											</div>
+											<div class="col-4 text-end">
+												<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_3_sm">상세</button>
+											</div>
+										</div>
+									</div>
+									<div class="box_info_white">
+										<div class="row">
+											<div class="col">
+												<span class="txt_6 font20">자동차 원부 썸네일 이미지</span>
+												<span class="pt10"><img src="../images/temp/temp_car.png" alt="" style="width:50%" /></span>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="box_info_white">
-									<div class="row">
-										<div class="col">
-											<span class="txt_6 font20">구조 변경</span>
-										</div>
-										<div class="col-4 text-end">
-											<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_3_sm">상세</button>
-										</div>
-									</div>
-								</div>
-								<div class="box_info_white">
-									<div class="row">
-										<div class="col">
-											<span class="txt_6 font20">영업용</span>
-										</div>
-										<div class="col-4 text-end">
-											<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_2_sm">없음</button>
+								<!-- 리콜 내역 -->
+								<div class="box_info_gray">
+									<h7 class="h7_tit mb20">리콜 내역</h7>
+									<div class="box_info_white">
+										<div class="row">
+											<div class="col">
+												<span class="txt_6 font20">전문가 의견</span>
+											</div>
+											<div class="col-4 text-end">
+												<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_3_sm">상세</button>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="box_info_white">
-									<div class="row">
-										<div class="col">
-											<span class="txt_6 font20">부활 유무</span>
-										</div>
-										<div class="col-4 text-end">
-											<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_3_sm">상세</button>
-										</div>
-									</div>
-								</div>
-								<div class="box_info_white">
-									<div class="row">
-										<div class="col">
-											<span class="txt_6 font20">전문가 의견</span>
-										</div>
-										<div class="col-4 text-end">
-											<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_3_sm">상세</button>
-										</div>
-									</div>
-								</div>
-								<div class="box_info_white">
-									<div class="row">
-										<div class="col">
-											<span class="txt_6 font20">자동차 원부 썸네일 이미지</span>
-											<span class="pt10"><img src="../images/temp/temp_car.png" alt="" style="width:50%" /></span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- 리콜 내역 -->
-							<div class="box_info_gray">
-								<h7 class="h7_tit mb20">리콜 내역</h7>
-								<div class="box_info_white">
-									<div class="row">
-										<div class="col">
-											<span class="txt_6 font20">전문가 의견</span>
-										</div>
-										<div class="col-4 text-end">
-											<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_3_sm">상세</button>
-										</div>
-									</div>
-								</div>
-								<div class="box_info_white">
-									<div class="row">
-										<div class="col">
-											<span class="txt_6 font20">자동차 원부 썸네일 이미지</span>
-											<span class="pt10"><img src="../images/temp/temp_car.png" alt="" style="width:50%" /></span>
+									<div class="box_info_white">
+										<div class="row">
+											<div class="col">
+												<span class="txt_6 font20">자동차 원부 썸네일 이미지</span>
+												<span class="pt10"><img src="../images/temp/temp_car.png" alt="" style="width:50%" /></span>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- 거래확인 -->
-					<div class="tab-pane container active" id="carreport_tab3">
-						<div class="box_tabinfo">
-							<div class="box_info_gray">
-								<h7 class="h7_tit mb20">성능기록부 <span class="font16">(원본)</span></h7>
-								<div class="flex_btn ">
-									<button type="button" class="btn btn-primary btn_type4 btn_type4_4 w90">성능기록부 원본 썸네일 이미지</button>
-								</div>						
-							</div>
-							<h5 class="h5_tit">거래 정보</h5>
-							<div class="box_info_gray">
-								<h7 class="h7_tit">거래 유형</h7>
-								<div class="row">
-									<div class="col">
-										<dl class="dl_txt type2_2">
-											<dt>현금 구매</dt>
-											<dd></dd>
-										</dl>
+						<!-- 거래확인 -->
+						<div class="tab-pane container active" id="carreport_tab3">
+							<div class="box_tabinfo">
+								<div class="box_info_gray">
+									<h7 class="h7_tit mb10">성능기록부 <span class="font16">(원본)</span></h7> <!-- addFix_202210 -->
+									<div class="flex_btn ">
+										<button type="button" class="btn btn-primary btn_type4 btn_type4_6 w90">성능기록부 원본 썸네일 이미지</button> <!-- addFix_202210 -->
+									</div>						
+								</div>
+								<h5 class="h5_tit">거래 정보</h5>
+								<div class="box_info_gray">
+									<h7 class="h7_tit">거래 유형</h7>
+									<div class="row">
+										<div class="col">
+											<dl class="dl_txt type2_2">
+												<dt>현금 구매</dt>
+												<dd></dd>
+											</dl>
+										</div>
+									</div>
+									<div class="bdb_af dashed"><!-- 점선 --></div>
+								</div>
+								<div class="box_info_gray">
+									<h7 class="h7_tit mb10">매도자 정보</h7> <!-- addFix_202210 -->
+									<dl class="dl_txt type4 type4_1"> <!-- addFix_202210 -->
+										<dt>구분</dt>
+										<dd>: 딜러</dd>
+									</dl>
+									<dl class="dl_txt type4 type4_1"> <!-- addFix_202210 -->
+										<dt>이름</dt>
+										<dd>: 홍길동</dd>
+									</dl>
+									<dl class="dl_txt type4 type4_1"> <!-- addFix_202210 -->
+										<dt>연락처</dt>
+										<dd>: <span class="num">010 - 1234 - 1258</span></dd>
+									</dl>
+									<dl class="dl_txt type4 alignbaseline type4_1"> <!-- addFix_202210 -->
+										<dt>차량주소</dt>
+										<dd class="txt_6">: 서울시 강서구 마곡 중앙로 161-8, 두산더랜드파크 B동 1205호</dd> <!-- addFix_202210 -->
+									</dl>
+									<div class="bdb_af dashed mt20"><!-- 점선 --></div>
+								</div>
+								<div class="box_info_white">
+									<div class="row">
+										<div class="col">
+											<span class="txt_6 font15">가격 협상</span> <!-- addFix_202210 -->
+										</div>
+										<div class="col-4 text-end">
+											<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_3_sm">상세</button>
+										</div>
 									</div>
 								</div>
-								<div class="bdb_af dashed"><!-- 점선 --></div>
-							</div>
-							<div class="box_info_gray">
-								<h7 class="h7_tit mb20">매도자 정보</h7>
-								<dl class="dl_txt type4">
-									<dt>구분</dt>
-									<dd>: 딜러</dd>
-								</dl>
-								<dl class="dl_txt type4">
-									<dt>이름</dt>
-									<dd>: 홍길동</dd>
-								</dl>
-								<dl class="dl_txt type4">
-									<dt>연락처</dt>
-									<dd>: <span class="num">010 - 1234 - 1258</span></dd>
-								</dl>
-								<dl class="dl_txt type4 alignbaseline">
-									<dt>차량주소</dt>
-									<dd>: 서울시 강서구 마곡 중앙로 161-8, 두산더랜드파크 B동 1205호</dd>
-								</dl>
-								<div class="bdb_af dashed mt20"><!-- 점선 --></div>
-							</div>
-							<div class="box_info_white">
-								<div class="row">
-									<div class="col">
-										<span class="txt_6 font20">가격 협상</span>
-									</div>
-									<div class="col-4 text-end">
-										<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_3_sm">상세</button>
+								<div class="box_info_white">
+									<div class="row">
+										<div class="col">
+											<span class="txt_6 font15">매도 비용</span> <!-- addFix_202210 -->
+										</div>
+										<div class="col-5 text-end">
+											<span class="font18 num txt_6">990,000</span><span class="font15 txt_6">원</span> <!-- addFix_202210 -->
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="box_info_white">
-								<div class="row">
-									<div class="col">
-										<span class="txt_6 font20">매도 비용</span>
-									</div>
-									<div class="col-5 text-end">
-										<span class="font26 num txt_6">990,000</span><span class="font20 txt_6">원</span>
-									</div>
-								</div>
-							</div>
-							<div class="box_info_white">
-								<div class="row">
-									<div class="col">
-										<span class="txt_6 font20">수수료</span>
-									</div>
-									<div class="col-5 text-end">
-										<span class="font26 num txt_6">99,000</span><span class="font20 txt_6">원</span>
+								<div class="box_info_white">
+									<div class="row">
+										<div class="col">
+											<span class="txt_6 font15">수수료</span> <!-- addFix_202210 -->
+										</div>
+										<div class="col-5 text-end">
+											<span class="font18 num txt_6">990,000</span><span class="font15 txt_6">원</span> <!-- addFix_202210 -->
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="box_info_gray">
-								<h7 class="h7_tit">리프트 사용여부</h7>
-								<p class="desc_gray16 pt20">리프트 사용이 불가 할 경우, 차량 하부 검사가 불가합니다</p>
-								<div class="available">
-									사용가능
-								</div>	
+								<div class="box_info_gray">
+									<h7 class="h7_tit">리프트 사용여부</h7>
+									<p class="desc_gray16 pt20">리프트 사용이 불가 할 경우, 차량 하부 검사가 불가합니다</p>
+									<div class="available">
+										사용가능
+									</div>	
+								</div>
 							</div>
 						</div>
+						<!-- 차량검사 -->
+						<div class="tab-pane container fade" id="carreport_tab4">차량검사 내용</div>
 					</div>
-					<!-- 차량검사 -->
-					<div class="tab-pane container fade" id="carreport_tab4">차량검사 내용</div>
 				</div>
-			</div>
-			<div class="modal-footer">
-				<div class="flex_btn w90">
-					<button type="button" class="btn btn-secondary btn_type1 btn_type1_1" data-bs-dismiss="modal">차량 리스트 보기</button>
-					<button type="button" class="btn btn-primary btn_type1">확인</button>
+				<div class="modal-footer">
+					<div class="flex_btn w90">
+						<button type="button" class="btn btn-secondary btn_type1 btn_type1_1" data-bs-dismiss="modal">차량 리스트 보기</button>
+						<button type="button" class="btn btn-primary btn_type1">확인</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+
+</div> <!--// addFix_202210 -->
 
 <!-- script 위치 이동시 navigation, backtoop 작동안함 -->
 <script src="../js/navbar.js"></script>

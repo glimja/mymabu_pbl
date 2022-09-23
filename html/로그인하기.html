@@ -27,87 +27,89 @@
 	<title>마이마부 - 중고차동행서비스</title>
 </head>
 <body>
+<div class="contentWrapper"> <!-- addFix_202210 -->
 
-<!-- slide gnb menu -->
-<div class="site-mobile-menu site-navbar-target">
-	<div class="site-mobile-menu-header">
-		<div class="site-mobile-menu-close">
-			<span class="icofont-close js-menu-toggle"></span>
+	<!-- slide gnb menu -->
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body">
+			<ul class="site-nav-wrap">
+				<li class="active"><a href="#none">Home</a></li>
+				<li><a href="#none">Menu</a></li>
+				<li><a href="#none">Menu</a></li>
+			</ul>
 		</div>
 	</div>
-	<div class="site-mobile-menu-body">
-		<ul class="site-nav-wrap">
-			<li class="active"><a href="#none">Home</a></li>
-			<li><a href="#none">Menu</a></li>
-			<li><a href="#none">Menu</a></li>
-		</ul>
-	</div>
-</div>
-<!-- top navigation -->
-<nav class="site-nav stickywrap"><!-- stickywrap : 클래스 추가 fiexd -->
-	<div class="container">
-		<div class="menu-bg-wrap">
-			<div class="site-navigation">
-				<div class="row g-0 align-items-center">
-					<div class="col-auto">
-						<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block light">
-							<span>&nbsp;</span>
-						</a>
+	<!-- top navigation -->
+	<nav class="site-nav stickywrap"><!-- stickywrap : 클래스 추가 fiexd -->
+		<div class="container">
+			<div class="menu-bg-wrap">
+				<div class="site-navigation">
+					<div class="row g-0 align-items-start"> <!-- addFix_202210 -->
+						<div class="col-auto">
+							<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block light">
+								<span>&nbsp;</span>
+							</a>
+						</div>
+						<h1 class="col-10 navlogo">
+							<a href="#none" class="logo m-0 float-start"><img src="../images/common/header_logo.png" alt="" /></a>
+							<span class="navsubtit">구매동행 기본형</span>
+						</h1>
+						<span class="col-auto wrap_alarm"><a href="#none" class="btn_alarm"><img src="../images/common/icon_alarm.png" alt="" />알람</a><em class="new">3</em></span>
 					</div>
-					<h1 class="col-10 navlogo">
-						<a href="#none" class="logo m-0 float-start"><img src="../images/common/header_logo.png" alt="" /></a>
-						<span class="navsubtit">구매동행 기본형</span>
-					</h1>
-					<span class="col-auto wrap_alarm"><a href="#none" class="btn_alarm"><img src="../images/common/icon_alarm.png" alt="" />알람</a><em class="new">3</em></span>
 				</div>
 			</div>
 		</div>
-	</div>
-</nav>
-<div class="nav_blankheight stickywrap bgwhite"><!-- top area fixed --></div>
+	</nav>
+	<div class="nav_blankheight stickywrap bgwhite"><!-- top area fixed --></div>
 
-<!-- content -->
-<div class="container">
-	<dl class="maymabulogin">
-		<dt class="tit">MAYMABU LOGIN</dt>
-		<dd class="desc">
-			마이마부는 네이버 또는 카카오계정으로 간편하게 이용하실 수 있습니다.<br />
-			네이버 또는 카카오계정이 없는 고객께서는 실명인증으로 이용하실 수 있습니다.
-			<br /><br />
-			마이마부의 이용 중인 서비스가 있는 경우 로그인 후<br />
-			이용 중인 서비스로 이동 됩니다.
-		</dd>
-	</dl>
-	<div class="row wrap_box_login ml30 mr30">
-		<div class="col">
-			<dl class="box_login mr10">
-				<dt>
-					<span class="icon_logowrap naver_bg"><span class="icon_naver"></span></span>
-				</dt>
-				<dd class="desc">
-					네이버 ID로<br />회원가입
-				</dd>
-			</dl>
-			<dl class="box_login mr10">
-				<dt>
-					<span class="icon_logowrap kakao_bg"><span class="icon_kakao"></span></span>
-				</dt>
-				<dd class="desc">
-					카카오 ID로<br />회원가입
-				</dd>
-			</dl>
-			<dl class="box_login">
-				<dt>
-					<span class="icon_logowrap login_bg"><span class="icon_login"></span></span>
-				</dt>
-				<dd class="desc">
-					실명인증<br />로그인
-				</dd>
-			</dl>
+	<!-- content -->
+	<div class="container">
+		<dl class="maymabulogin">
+			<dt class="tit">MAYMABU LOGIN</dt>
+			<dd class="desc">
+				마이마부는 네이버 또는 카카오계정으로 간편하게 이용하실 수 있습니다.<br />
+				네이버 또는 카카오계정이 없는 고객께서는 실명인증으로 이용하실 수 있습니다.
+				<br /><br />
+				마이마부의 이용 중인 서비스가 있는 경우 로그인 후<br />
+				이용 중인 서비스로 이동 됩니다.
+			</dd>
+		</dl>
+		<div class="row wrap_box_login"> <!-- addFix_202210 -->
+			<div class="col">
+				<dl class="box_login mr10">
+					<dt>
+						<span class="icon_logowrap naver_bg"><span class="icon_naver"></span></span>
+					</dt>
+					<dd class="desc">
+						네이버 ID로<br />회원가입
+					</dd>
+				</dl>
+				<dl class="box_login mr10">
+					<dt>
+						<span class="icon_logowrap kakao_bg"><span class="icon_kakao"></span></span>
+					</dt>
+					<dd class="desc">
+						카카오 ID로<br />회원가입
+					</dd>
+				</dl>
+				<dl class="box_login">
+					<dt>
+						<span class="icon_logowrap login_bg"><span class="icon_login"></span></span>
+					</dt>
+					<dd class="desc">
+						실명인증<br />로그인
+					</dd>
+				</dl>
+			</div>
 		</div>
-	</div>
-</div>	
+	</div>	
 
+</div> <!--// addFix_202210 -->
 
 <!-- script 위치 이동시 navigation, backtoop 작동안함 -->
 <script src="../js/navbar.js"></script>
