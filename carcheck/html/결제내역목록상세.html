@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />  
+	<meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="shortcut icon" href="../favicon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+	<!-- css -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/swiper.min.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/default.css" />
+	<link rel="stylesheet" href="../css/common.css" />
+	<!-- js -->
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/common.js"></script>
+ 
+	<title>마이마부 - 중고차동행서비스</title>
+</head>
+<body>
+<div class="contentWrapper"> <!-- addFix_202210 -->
+
+		<!-- content -->
+
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#결제내역목록상세">
+		Layer Popup 결제내역목록상세
+	</button>
+
+	<!-- Modal -->
+	<div class="modal fade show" id="결제내역목록상세" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display:block"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h5 class="modal-title">상세내역</h5>
+					<div class="box_popinfo">
+						<div class="box_info_white">
+							<div class="row">
+								<div class="col">
+									<h7 class="h7_tit bdb_ef">차량 구분</h7>	
+								</div>
+							</div>
+							<ul class="list_dashedtop">
+								<li>
+									<span class="font15 roboto txt_6 txt_dot mt5 mb5">[차량 구분] <span class="num">( 999,999원 )</span></span> <!-- addFix_202210 -->
+								</li>
+							</ul>
+							<div class="bdb_af dashed"><!-- 점선 --></div>
+							<div class="row">
+								<!-- addFix_202210 -->
+								<div class="row mt5">
+									<div class="col">
+										<dl class="dl_txt type2_2">
+											<dt class="">전산 조회 [ <em class="txt_redcolor"><span class="roboto">2</span>회</em> ],</dt>
+											<dd></dd>
+											<dt class="ml20">차량 상세 조사 [ <em class="txt_redcolor"><span class="roboto">2</span>회</em> ]</dt>
+											<dd></dd>
+										</dl>
+									</div>
+								</div>
+								<div class="row mb10">
+									<div class="col">
+										<dl class="dl_txt type2_2">
+											<dt class="">거래 확인 [ <em class="txt_redcolor"><span class="roboto">2</span>회</em> ],</dt>
+											<dd></dd>
+											<dt class="ml20">차량 검사 [ <em class="txt_redcolor"><span class="roboto">2</span>회</em> ]</dt> 
+											<dd></dd>
+										</dl>
+									</div>
+								</div>
+								<!--// addFix_202210 -->
+							</div>
+							<div class="bdb_af dashed mb5"><!-- 점선 --></div><!-- addFix_202210 -->
+						</div>
+						<div class="box_info_white">
+							<div class="row">
+								<div class="col">
+									<h7 class="h7_tit bdb_ef">추가 요금</h7>
+								</div>
+							</div>
+							<ul class="list_dashedtop">
+								<li>
+									<span class="font15 roboto txt_6 txt_dot mt10">[추가 서비스 항목 ] <span class="num">( + 999,999원 )</span></span> <!-- addFix_202210 -->
+								</li>
+							</ul>
+						</div>
+						<div class="box_info_white">
+							<div class="row">
+								<div class="col">
+									<h7 class="h7_tit blnone">할인 혜택</h7>
+								</div>
+								<div class="col text-end">
+									<span class="txt_6 font15"><span class="roboto txt_dot">05-20 ~ 05-30일 까지</span></span> <!-- addFix_202210 -->
+								</div>
+							</div>
+							<div class="hr_line_gray"><!-- 구분선 --></div>
+							<ul class="list_dashedtop">
+								<li>
+									<span class="font15 roboto txt_6 txt_dot mt10">이벤트 할인 <span class="num">( - 999,999원 )</span></span> <!-- addFix_202210 -->
+								</li>
+							</ul>
+						</div>
+						<div class="box_info_white">
+							<div class="row">
+								<div class="col">
+									<h7 class="h7_tit bdb_ef">지역</h7>
+								</div>
+							</div>
+							<ul class="list_dashedtop">
+								<li>
+									<span class="font15 roboto txt_6 txt_dot mt10">[ 지역이름 ] <span class="num">( + 999,999원 )</span></span> <!-- addFix_202210 -->
+								</li>
+							</ul>
+						</div>
+						<div class="box_info_white">
+							<div class="row">
+								<div class="col">
+									<h7 class="h7_tit bdb_ef">동행 방식</h7>
+								</div>
+							</div>
+							<ul class="list_dashedtop">
+								<li>
+									<span class="font15 roboto txt_6 txt_dot mt10">[동행형태] [동행자명] [동행자_연락처]</span> <!-- addFix_202210 -->
+								</li>
+							</ul>
+						</div>
+						<div class="box_info_white">
+							<div class="row">
+								<div class="col">
+									<h7 class="h7_tit bdb_ef">검사일정</h7>
+								</div>
+							</div>
+							<ul class="list_dashedtop">
+								<li>
+									<span class="font15 roboto txt_6 txt_dot mt10">2022-05-20 <span class="pl10">오전 12:00</span></span> <!-- addFix_202210 -->
+								</li>
+							</ul>
+						</div>
+						<div class="box_info_white">
+							<div class="row">
+								<div class="col">
+									<h7 class="h7_tit bdb_ef">결제정보</h7>
+								</div>
+							</div>
+							<ul class="">
+								<li>
+									<span class="font15 roboto txt_6 txt_dot mt5">가상계좌 <span class="txt_redcolor">[ 미입금 ]</span></span> <!-- addFix_202210 -->
+								</li>
+								<li>
+									<span class="font15 roboto txt_6 txt_dot mt5">입금계좌 : 신한은행 <span class="num">202-2052-5230</span></span> <!-- addFix_202210 -->
+								</li>
+								<li>
+									<span class="font15 roboto txt_6 txt_dot mt5">입금기한 : <span class="num">2022-09-10</span>, <span class="pl10 num">오전15:00</span></span> <!-- addFix_202210 -->
+								</li>
+							</ul>
+						</div>
+						<dl class="dl_txt type3 pt10 pb20">
+							<dt>총 결제 예정금액</dt>
+							<dd><span class="num type2">990,000</span>원</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="flex_btn">
+						<button type="button" class="btn btn-primary btn_type1">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div> <!--// addFix_202210 -->
+
+<!-- script 위치 이동시 navigation, backtoop 작동안함 -->
+<script src="../js/navbar.js"></script>
+<script src="../js/backtotop.js"></script>
+
+</body>
+</html>

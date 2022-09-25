@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />  
+	<meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="shortcut icon" href="../favicon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+	<!-- css -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/swiper.min.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/default.css" />
+	<link rel="stylesheet" href="../css/common.css" />
+	<!-- js -->
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	<title>마이마부 - 중고차동행서비스</title>
+</head>
+<body>
+<div class="contentWrapper"> <!-- addFix_202210 -->
+<!-- content -->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#알림목록팝업">
+	Layer Popup 알림목록팝업
+</button>
+
+	<!-- Modal -->
+	<div class="modal fade show" id="알림목록팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display:block"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h5 class="modal-title">[ 상품명 표시 ] - 알림 목록</h5>
+					<div class="box_popinfo notitype">
+						<dl class="area_notilist first"> <!-- addFix_202210 -->
+							<dt class="date"><span class="wrap_cir "><span class="cir redtype"></span></span>08. 27</dt>
+							<dd class="notibox">
+								<span class="time">오전 08 : 25</span>
+								<p class="desc">차량 검수가 완료되었습니다.</p>
+							</dd>
+						</dl>
+						<dl class="area_notilist">
+							<dt class="date"><span class="wrap_cir"><span class="cir"></span></span>08. 27</dt>
+							<dd class="notibox">
+								<span class="time">오후 05 : 40</span>
+								<p class="desc">보험이력 조회 추가 결제가 요청 되었습니다.</p>
+							</dd>
+							<dd class="notibox">
+								<span class="time">오후 05 : 40</span>
+								<p class="desc">보험이력 조회 추가 결제가 요청 되었습니다.</p>
+							</dd>
+						</dl>
+						<dl class="area_notilist">
+							<dt class="date"><span class="wrap_cir"><span class="cir"></span></span>08. 25</dt>
+							<dd class="notibox">
+								<span class="time">오후 05 : 40</span>
+								<p class="desc">
+									2단계까지 전산 조회가 모두 완료되었습니다. <br />
+									내용을 상세하게 확인해주시기 바랍니다.
+								</p>
+							</dd>
+							<dd class="notibox">
+								<span class="time">오후 05 : 30</span>
+								<p class="desc">
+									1단계까지 전산 조회가 모두 완료되었습니다. <br />
+									내용을 상세하게 확인해주시기 바랍니다.
+								</p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="flex_btn">
+						<button type="button" class="btn btn-primary btn_type1">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> <!--// addFix_202210 -->
+
+<!-- script 위치 이동시 navigation, backtoop 작동안함 -->
+<script src="../js/navbar.js"></script>
+<script src="../js/backtotop.js"></script>
+
+</body>
+</html>

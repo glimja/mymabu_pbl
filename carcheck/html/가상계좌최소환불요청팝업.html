@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />  
+	<meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="shortcut icon" href="../favicon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+	<!-- css -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/swiper.min.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/default.css" />
+	<link rel="stylesheet" href="../css/common.css" />
+	<!-- js -->
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/common.js"></script>
+ 
+	<title>마이마부 - 중고차동행서비스</title>
+</head>
+<body>
+<div class="contentWrapper"> <!-- addFix_202210 -->
+	<!-- content -->
+
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#가상계좌최소환불요청팝업">
+		Layer Popup 가상계좌최소환불요청팝업
+	</button>
+
+	<!-- Modal 1 : 가상계좌최소환불요청팝업 -->
+	<div class="modal fade " id="가상계좌최소환불요청팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h5 class="modal-title">환불을 요청 하시겠습니까?</h5>
+					<div class="box_popinfo">
+						<span class="text-center w100 txt_type3 pb15">환불 받을 계좌정보를 입력해 주세요. </span>
+						<div class="inner">
+							<div class="row bankinfo">
+								<div class="tit"> <!-- addFix_202210 -->
+									입금은행
+								</div>
+								<div class="desc"> <!-- addFix_202210 -->
+									<select class="form-select form-select-lg txt_6 selectbank" data-bs-target="#가상계좌최소환불은행선택" data-bs-toggle="modal">
+										<option selected="">입금 은행 선택</option>
+									</select>
+								</div>
+							</div>
+							<div class="hr_line_gray mt20 mb20"><!-- 구분선 --></div>
+							<div class="row bankinfo">
+								<div class="tit"> <!-- addFix_202210 -->
+									계좌번호
+								</div>
+								<div class="desc"> <!-- addFix_202210 -->
+									<input class="form-control form-control-lg mb0" type="text" placeholder="'-' 없이 계좌번호 입력" />
+								</div>
+							</div>
+							<div class="hr_line_gray mt20 mb20"><!-- 구분선 --></div>
+							<div class="row bankinfo">
+								<div class="tit"> <!-- addFix_202210 -->
+									예금주
+								</div>
+								<div class="desc"> <!-- addFix_202210 -->
+									<input class="form-control form-control-lg mb0" type="text" placeholder="예금주 이름 입력" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="flex_btn">
+						<button type="button" class="btn btn-secondary btn_type1" data-bs-dismiss="modal">취소</button>
+						<button type="button" class="btn btn-primary btn_type1">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal 2 : 가상계좌최소환불은행선택 -->
+	<div class="modal fade" id="가상계좌최소환불은행선택" aria-hidden="true" aria-labelledby="staticBackdropLabel" tabindex="-1">
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-target="#가상계좌최소환불요청팝업" data-bs-toggle="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h5 class="modal-title mb10">은행 선택</h5> <!-- addFix_202210 -->
+					<div class="box_info_white">
+						<ul class="row wrap_bankitem">
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_01.png" alt="" />
+										</dt>
+										<dd class="bankname">SC제일은행</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_02.png" alt="" />
+										</dt>
+										<dd class="bankname">KB국민은행</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_03.png" alt="" />
+										</dt>
+										<dd class="bankname">신한은행</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_04.png" alt="" />
+										</dt>
+										<dd class="bankname">우리은행</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_05.png" alt="" />
+										</dt>
+										<dd class="bankname">하나은행</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_06.png" alt="" />
+										</dt>
+										<dd class="bankname">기업은행</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_07.png" alt="" />
+										</dt>
+										<dd class="bankname">농협은행</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_08.png" alt="" />
+										</dt>
+										<dd class="bankname">한국씨티은행</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_09.png" alt="" />
+										</dt>
+										<dd class="bankname">경남은행</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_10.png" alt="" />
+										</dt>
+										<dd class="bankname">광주은행</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_11.png" alt="" />
+										</dt>
+										<dd class="bankname">지역농협</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_12.png" alt="" />
+										</dt>
+										<dd class="bankname">대구은행</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_13.png" alt="" />
+										</dt>
+										<dd class="bankname">부산은행</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_14.png" alt="" />
+										</dt>
+										<dd class="bankname">산업은행</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_15.png" alt="" />
+										</dt>
+										<dd class="bankname">제주은행</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_16.png" alt="" />
+										</dt>
+										<dd class="bankname">전북은행</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_17.png" alt="" />
+										</dt>
+										<dd class="bankname">토스뱅크</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_18.png" alt="" />
+										</dt>
+										<dd class="bankname">카카오뱅크</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_19.png" alt="" />
+										</dt>
+										<dd class="bankname">케이뱅크</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_20.png" alt="" />
+										</dt>
+										<dd class="bankname">새마을금고</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_21.png" alt="" />
+										</dt>
+										<dd class="bankname">신협</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_22.png" alt="" />
+										</dt>
+										<dd class="bankname">수협중앙회</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_23.png" alt="" />
+										</dt>
+										<dd class="bankname">우체국</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_24.png" alt="" />
+										</dt>
+										<dd class="bankname">저축은행</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_25.png" alt="" />
+										</dt>
+										<dd class="bankname">BNK투자증권</dd>
+									</dl>
+								</a>
+								<a href="#none">
+									<dl class="bankitem">
+										<dt class="banklogo">
+											<img src="../images/common/icon_bank_26.png" alt="" />
+										</dt>
+										<dd class="bankname">유안타증권</dd>
+									</dl>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="flex_btn">
+						<button type="button" class="btn btn-secondary btn_type1" data-bs-target="#가상계좌최소환불요청팝업" data-bs-toggle="modal" aria-label="Close">취소</button>
+						<button type="button" class="btn btn-primary btn_type1">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div> <!--// addFix_202210 -->
+
+<!-- script 위치 이동시 navigation, backtoop 작동안함 -->
+<!-- <script src="../js/navbar.js"></script> -->
+<script src="../js/backtotop.js"></script>
+
+</body>
+</html>

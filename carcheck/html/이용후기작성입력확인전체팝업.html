@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />  
+	<meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="shortcut icon" href="../favicon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+	<!-- css -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/swiper.min.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/default.css" />
+	<link rel="stylesheet" href="../css/common.css" />
+	<!-- js -->
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	<title>마이마부 - 중고차동행서비스</title>
+</head>
+<body>
+
+<!-- slide gnb menu -->
+<div class="site-mobile-menu site-navbar-target">
+	<div class="site-mobile-menu-header">
+		<div class="site-mobile-menu-close">
+			<span class="icofont-close js-menu-toggle"></span>
+		</div>
+	</div>
+	<div class="site-mobile-menu-body">
+		<ul class="site-nav-wrap">
+			<li class="active"><a href="#none">Home</a></li>
+			<li><a href="#none">Menu</a></li>
+			<li><a href="#none">Menu</a></li>
+		</ul>
+	</div>
+</div>
+<!-- top navigation -->
+<nav class="site-nav stickywrap"><!-- stickywrap : 클래스 추가 fiexd -->
+	<div class="container">
+		<div class="menu-bg-wrap">
+			<div class="site-navigation">
+				<div class="row g-0 align-items-start">
+					<div class="col-auto">
+						<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block light">
+							<span>&nbsp;</span>
+						</a>
+					</div>
+					<h1 class="col-10 navlogo">
+						<a href="#none" class="logo m-0 float-start"><img src="../images/common/header_logo.png" alt="" /></a>
+						<span class="navsubtit">구매동행 기본형</span>
+					</h1>
+					<span class="col-auto wrap_alarm"><a href="#none" class="btn_alarm"><img src="../images/common/icon_alarm.png" alt="" />알람</a><em class="new">3</em></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<div class="nav_blankheight"><!-- top area fixed : stickywrap --></div>
+
+<!-- content -->
+<div class="chatcontainer">
+	<div class="container ">
+		<!-- <div class="row sapbtnfixed"><!-- stickywrap : 클래스 추가 fiexd
+			<div class="col text-center">
+				<button type="button" class="btn btn-primary btn_type3" data-bs-toggle="modal" data-bs-target="#ServiceAppProcess">차량검사 진행 <span class="iocn_arrowserviceopen"></span></button>
+			</div>
+		</div> -->
+		<!-- chat window -->
+		<div class="box_chatwindow">
+			<!-- date -->
+			<!-- <div class="row">
+				<div class="col wrap_chatdate"><span class="centerline"><span class="chatdate">2022년 08월 25일</span></span></div>
+			</div> -->
+
+			<div class="">
+				<p class="chatdesc_type1 ">
+					마이마부 서비스 이용 후기
+				</p>
+				<div class="wrap_chatbox">
+					<div class="chatbox"> 
+						<div class="">
+							<div class="box_info_gray bd1">								
+								<div class="row pb15 mb15">
+									<div class="col text-center">
+										<span class="txt_6 font20 pt20 pb20">서비스 이용에 얼마나 만족하시나요?</span>
+										<div class="review_score">
+											<div class="bx_score">
+												<div class="star_rate">
+													<button type="button" class="star starR1 on"><em>별1점</em></button>
+													<button type="button" class="star starR2 "><em>별2점</em></button>
+													<button type="button" class="star starR1 "><em>별3점</em></button>
+													<button type="button" class="star starR2 "><em>별4점</em></button>
+													<button type="button" class="star starR1 "><em>별5점</em></button>
+												</div>
+											</div>
+										</div>				
+									</div>
+								</div>
+							</div>
+							<dl class="box_reviewconfirm">
+								<dt class="tit">마이마부 이용후기 내용 최대 30자</dt>
+								<dd class="desc">
+									후기 내용은 진한컬러로 써짐<br />
+									상세 이용후기 작성 내용 화면 표시, 최대 100자 허용
+								</dd>
+							</dl>
+							<div class="row">
+								<div class="col text-center">
+									<div class="btn_wrap mtnone pb20">
+										<button type="button" class="btn btn-secondary btn_type4 btn_type4_8" data-bs-dismiss="modal">작성 후기 삭제</button>
+										<button type="button" class="btn btn-primary btn_type4 btn_type4_9">작성 후기 편집</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="time">오후 8:58</div>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+</div>
+
+<!-- 상단퀵메뉴팝업 -->
+<div class="modal fade" id="ServiceAppProcess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ServiceAppProcessLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="box_quickmenu">
+					<ul class="quickstatus">
+						<li><a href="#none"><span class="status_before">[ 차량검사 -  진행 전 ]</span></a></li>
+						<li><a href="#none"><span class="status_progress">[ 전산조회 -  진행중 ]</span></a></li>
+						<li><a href="#none"><span class="status_disabled">[ 상세조사- 완료 ]</span></a></li>
+						<li><a href="#none"><span class="status_disabled">[ 상세조사 - 진행전 ]</span></a></li>
+						<li><a href="#none"><span class="status_disabled">[ 서비스신청 - 완료 ]</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="flex_btn">
+					<button type="button" class="btn btn-outline-primary btn_type1" data-bs-dismiss="modal" aria-label="Close">닫기 <span class="icon_quickclose"></span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- footer -->
+<div class="site-footer">
+	<div class="container">
+		<div class="accordion accordion-flush" id="accordionFlushFooter">
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="flush-footer">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-footer" aria-expanded="false" aria-controls="flush-collapseOne-footer">
+					<img class="foot_logo" src="../images/common/footer_logo.png" alt="" /> <span class="cotxt">(<strong>주</strong>)<span class="strongtxt">마이마부</span></span>
+				</button>
+			  </h2>
+			</div>
+			<div id="flush-collapseOne-footer" class="accordion-collapse collapse" aria-labelledby="flush-footer" data-bs-parent="#accordionFlushFooter">
+				<div class="accordion-body">
+					<ul class="list_txt">
+						<li>대표이사 : 양인수</li>
+						<li>사업자 등록번호 : 845-88-00487</li>
+						<li>통신판매신고번호 : 2016-서울서초-1653호</li>
+						<li class="dotnone">
+							<dl class="address_txt">
+								<dt>주소 :</dt>
+								<dd>
+									<ul class="">
+										<li>(본사) 서울시 강서구 마곡중앙로 161-8, 두산더랜드파크 B동1205호</li>
+										<li>(서울 스튜디오) 서울시 서초구 양재대로 11길36, 서울오토갤러리 은관 B1-119호</li>
+										<li>(부산 스튜디오) 부산광역시 부산진구 진남로 581-1</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>고객지원센터 : 1522-8007 / maymabu@maymabu@.com</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<ul class="footer_menu">
+			<li><a href="#none">개인정보취급방침</a></li>
+			<li><a href="#none">이용약관</a></li>
+		</ul>
+		<p class="copyright">Copyright(c)2022 MAYMABU Co., Ltd. All Rights Reserved</p>
+		<a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
+    </div>
+</div> <!--// site-footer -->
+
+<!-- script 위치 이동시 navigation, backtoop 작동안함 -->
+<script src="../js/navbar.js"></script>
+<script src="../js/backtotop.js"></script>
+
+</body>
+</html>
