@@ -34,7 +34,9 @@ function onload(){
 	__fn_quickboxClose();
 	__fn_chkboxAll();
 	__fn_selectBank();
-	__fn_resultoverlapcheck()
+	__fn_resultoverlapcheck();
+	__fn_selectCategoryMain();
+	__fn_selectCategoryMiddle();
 }
  
 // 지인이 차량검사 동행 선택
@@ -222,9 +224,7 @@ function __fn_selectBank() {
 
 	$target.on("click", function(){
 		var item = $(this).find(".bankname").text();
-		// console.log($(this).find(".bankname").text())
 		$selitem.text(item);
-		// console.log($selitem.text(item))
 	});
 }
 
@@ -243,5 +243,26 @@ function __fn_resultoverlapcheck(){
 			$(this).find("button").removeClass("btn_type1_3_sm").addClass("btn_type1_2_sm");
 			return false;
 		}
+	});
+}
+
+// 대분류선택
+function __fn_selectCategoryMain() {
+	var $target = $(".wrap_selectItemMain a"),
+		$selitem = $(".selectItemMain option");
+
+	$target.on("click", function(){
+		var item = $(this).text();
+		$selitem.text(item);
+	});
+}
+// 중분류선택
+function __fn_selectCategoryMiddle() {
+	var $target = $(".wrap_selectItemMiddle a"),
+		$selitem = $(".selectItemMiddle option");
+
+	$target.on("click", function(){
+		var item = $(this).text();
+		$selitem.text(item);
 	});
 }

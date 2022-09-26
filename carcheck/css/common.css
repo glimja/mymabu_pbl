@@ -94,7 +94,7 @@ a.btn_type1.btn_type1_3_sm,button.btn_type1.btn_type1_3_sm {width: 80px; height:
 a.btn_type2,button.btn_type2 {width:150px; height:26px; line-height:0; box-sizing:border-box; background:#8A8F9B; color:#fff; font-weight: 400; font-size:15px; border-radius:6px; text-align:center;letter-spacing: -.5px;border:0}
 .modal-content a.btn.btn_type2.btn_type2_1,.modal-content button.btn.btn_type2.btn_type2_1,
 a.btn_type2.btn_type2_1,button.btn_type2.btn_type2_1 {background: #F4F4F4;border: 1px solid #D9D9D9;color:#202020}
-a.btn_type2.btn_type2_2,button.btn_type2.btn_type2_2 {width: auto; min-width: 130px; height: 20px; font-size: 15px;line-height: 0;letter-spacing: -1px;}
+a.btn_type2.btn_type2_2,button.btn_type2.btn_type2_2 {width: auto; height: 20px; font-size: 15px;line-height: 0;letter-spacing: -1px;}
 a.btn_type2.btn_type2_2.btn_type2_2_1,button.btn_type2.btn_type2_2.btn_type2_2_1 {background:#fff;border: 1px solid #EAEAEA;color:#666;;}
 a.btn_type3,button.btn_type3,
 a.btn.btn_type3,button.btn.btn_type3 {width:160px;height:32px;padding:0; line-height:0; box-sizing:border-box;font-size:15px;background-color: #F4F7FC;border: 1px solid rgba(41, 61, 108, 0.7);border-radius: 10px;color:#293D6C; text-align:center;}
@@ -827,7 +827,7 @@ a.btn_type2.btn_type2_2.pad0, button.btn_type2.btn_type2_2.pad0 {padding: 9px 0 
 a.btn_type2.btn_type2_2.btn_type2_2_1.pad0, button.btn_type2.btn_type2_2.btn_type2_2_1.pad0 {padding: 10px 0}
 .box_info_white .form-control-lg.font13 {height: 40px}
 @media (max-width: 575px) {
-    .wrap_alarm {padding-left: 6%;}
+    .wrap_alarm {padding-left: 4%;}
     .pc_quick_Box {display: none}
     .modal-dialog {max-width: 350px; margin: 0.4rem auto;}
     .modal-dialog.full {display:none; position: fixed;top: 0;max-width: 100%;height: 100%;width: 100%;margin:0;z-index: 98;background-color: #FFF;}
