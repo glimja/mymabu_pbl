@@ -88,8 +88,8 @@ a.btn_type1.btn_type1_2,button.btn_type1.btn_type1_2 {width: 100%}
 a.btn_type1.btn_type1_3,button.btn_type1.btn_type1_3 {background: #8A8F9B;color:#fff; border:0}
 a.btn_type1.btn_type1_4,button.btn_type1.btn_type1_4 {background: #DEDEDE;color:#666; border:0}
 a.btn_type1.btn_type1_sm,button.btn_type1.btn_type1_sm {width: auto; height:24px; padding:0 10px; font-size: 14px; font-weight:inherit; color:#fff; border-radius:3px; letter-spacing: -0.04em; line-height: 0;}
-a.btn_type1.btn_type1_2_sm,button.btn_type1.btn_type1_2_sm {width: 80px; height:28px; padding:0 15px; font-size: 15px; font-weight:inherit; color:#666; border-radius:6px;background: #FFFFFF;border: 1px solid #EAEAEA; letter-spacing: -0.04em; line-height: 0;}
-a.btn_type1.btn_type1_3_sm,button.btn_type1.btn_type1_3_sm {width: 80px; height:28px; padding:0 15px; font-size: 15px; font-weight:inherit; color:#fff; border-radius:6px;background: #293D6C; letter-spacing: -0.04em; line-height: 0;}
+a.btn_type1.btn_type1_2_sm,button.btn_type1.btn_type1_2_sm {width: auto; height:28px; padding:0 15px; font-size: 15px; font-weight:inherit; color:#666; border-radius:6px;background: #FFFFFF;border: 1px solid #EAEAEA; letter-spacing: -0.04em; line-height: 0;}
+a.btn_type1.btn_type1_3_sm,button.btn_type1.btn_type1_3_sm {width: auto; height:28px; padding:0 15px; font-size: 15px; font-weight:inherit; color:#fff; border-radius:6px;background: #293D6C; letter-spacing: -0.04em; line-height: 0;}
 .modal-content a.btn.btn_type2,.modal-content button.btn.btn_type2,
 a.btn_type2,button.btn_type2 {width:150px; height:26px; line-height:0; box-sizing:border-box; background:#8A8F9B; color:#fff; font-weight: 400; font-size:15px; border-radius:6px; text-align:center;letter-spacing: -.5px;border:0}
 .modal-content a.btn.btn_type2.btn_type2_1,.modal-content button.btn.btn_type2.btn_type2_1,
