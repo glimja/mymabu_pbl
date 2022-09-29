@@ -56,7 +56,7 @@ dt {font-weight: initial;}
 /* modal popup ================================================== */
 .modal-content {border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 10px;box-shadow: 1px 10px 34px rgba(0, 0, 0, 0.6);}
 .modal-content .btn {font-size:16px;}
-.modal-header {border-bottom: 0;padding: 10px 10px;}
+.modal-header {border-bottom: 0;padding: 10px 10px;margin-bottom: 10px;}
 .modal-footer {padding:0; border-top: 0;}
 .modal-dialog.full .modal-footer {padding:0; margin-top: 15px; border-top: 0;/*position: fixed;*/width: 100%;bottom: 0;background: #fff;}
 .btn-close {width:18px; height:19px; background: url("../images/common/icon_btnclose1.png"); background-size: 100%; background-repeat:no-repeat}
@@ -847,7 +847,8 @@ a.btn_type2.btn_type2_2.btn_type2_2_1.pad0, button.btn_type2.btn_type2_2.btn_typ
     .mo_quickBox .quickmenu .item li:first-child {padding-left: calc(35px/2);}
     .mo_quickBox .quickmenu .item li a {font-size: calc(28px/2);line-height: initial;}
     .mo_quickBox .quickmenu .item li a span {margin-right: calc(10px/2);}
-
+    
+    .modal-header {margin-bottom: 0;}
 }
 
 
