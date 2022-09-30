@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<div class="contentWrapper"> <!-- addFix_202210 -->	
+<div class="contentWrapper chatarea"> <!-- addFix_202210 -->	
 	<!-- slide gnb menu -->
 	<div class="site-mobile-menu site-navbar-target" >
 		<div class="site-mobile-menu-header">
@@ -141,7 +141,7 @@
 		<div class="container ">
 			<div class="row sapbtnfixed"><!-- sapbtnfixed : 클래스 추가 fiexd -->
 				<div class="col text-center">
-					<button type="button" class="btn btn-primary btn_type3" data-bs-toggle="modal" data-bs-target="#ServiceAppProcess">서비스 신청 진행 <span class="iocn_arrowserviceopen"><!-- open arrow --></span></button>
+					<button type="button" class="btn btn-primary btn_type3" data-bs-toggle="modal" data-bs-target="#상단퀵메뉴">서비스 신청 진행 <span class="iocn_arrowserviceopen"><!-- open arrow --></span></button> <!-- addFix_202210 -->
 				</div>
 			</div>
 			<!-- chat window -->
@@ -270,20 +270,21 @@
 	</div>
 
 	<!-- 상단퀵메뉴팝업 -->
-	<div class="modal fade" id="ServiceAppProcess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ServiceAppProcessLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+	<div class="modal fade " id="상단퀵메뉴" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<div class="box_quickmenu">
 						<ul class="quickstatus">
-							<li><a href="#none"><span class="status_before">[ 차량검사 -  진행 전 ]</span></a></li>
-							<li><a href="#none"><span class="status_progress">[ 전산조회 -  진행중 ]</span></a></li>
-							<li><a href="#none"><span class="status_disabled">[ 상세조사- 완료 ]</span></a></li>
-							<li><a href="#none"><span class="status_disabled">[ 상세조사 - 진행전 ]</span></a></li>
-							<li><a href="#none"><span class="status_disabled">[ 서비스신청 - 완료 ]</span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu1_off"></span></span><span class="txt">서비스신청<span class="pop_qtag tag_fin">완료</span></span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu2_off"></span></span><span class="txt">전산조회<span class="pop_qtag tag_fin">완료</span></span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu3_off"></span></span><span class="txt">상세조사<span class="pop_qtag tag_ing">진행중</span></span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu4_off"></span></span><span class="txt">거래확인</span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu5_off"></span></span><span class="txt">차량검사</span></a></li>
 						</ul>
 					</div>
 				</div>

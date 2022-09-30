@@ -364,7 +364,7 @@ h6.bline {padding-bottom: 10px;border-bottom: 1px solid #EFEFEF;}
 /* 서비스신청시작하기 채팅창 ================================================== */
 .chatcontainer {padding-bottom: 50px;background: #F4F7FC;}
 .navsubtit {padding-left: 3px;font-weight: 700;font-size: 14px;color: #293D6C;vertical-align: 5px;}
-.wrap_alarm {position: relative;padding-left: 9%; padding-top: 1%;}
+.wrap_alarm {position: relative;padding-left: calc(100% - 480px); padding-top: 1%;}
 .wrap_alarm .btn_alarm,
 .btn_alarm {display:block;width:15px;height:16px;margin-left: auto;text-align: right;text-indent:-999999em;font:0 auto}
 .wrap_alarm .new {position: absolute;top:-1%;right:-8px;padding:0 2px;width:14px;height:14px;font-family: "Roboto";font-size:8px;font-weight:700;color:#fff;background-color: #FE2525;text-align: center;border-radius:15px; border:1px solid #fff;}

@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<div class="contentWrapper"> <!-- addFix_202210 -->
+<div class="contentWrapper chatarea"> <!-- addFix_202210 -->	
 	<!-- slide gnb menu -->
 	<div class="site-mobile-menu site-navbar-target" >
 		<div class="site-mobile-menu-header">
@@ -111,12 +111,13 @@
 			</ul>
 		</div>
 	</div>
+
 	<!-- top navigation -->
 	<nav class="site-nav stickywrap"><!-- stickywrap : 클래스 추가 fiexd -->
 		<div class="container">
 			<div class="menu-bg-wrap">
 				<div class="site-navigation">
-					<div class="row g-0 align-items-start">
+					<div class="row g-0 align-items-start"> <!-- addFix_202210 -->
 						<div class="col-auto">
 							<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block light">
 								<span>&nbsp;</span>
@@ -128,18 +129,6 @@
 						</h1>
 						<span class="col-auto wrap_alarm"><a href="#none" class="btn_alarm"><img src="../images/common/icon_alarm.png" alt="" />알람</a><em class="new">3</em></span>
 					</div>
-					<!-- <div class="row g-0 align-items-center">
-						<div class="col-auto">
-							<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block light">
-								<span>&nbsp;</span>
-							</a>
-						</div>
-						<h1 class="col-10 navlogo">
-							<a href="#none" class="logo m-0 float-start"><img src="../images/common/header_logo.png" alt="" /></a>
-							<span class="navsubtit">구매동행 기본형</span>
-						</h1>
-						<span class="col-auto wrap_alarm"><a href="#none" class="btn_alarm"><img src="../images/common/icon_alarm.png" alt="" />알람</a><em class="new">3</em></span>
-					</div> -->
 				</div>
 			</div>
 		</div>
@@ -152,147 +141,35 @@
 		<div class="container ">
 			<div class="row sapbtnfixed"><!-- sapbtnfixed : 클래스 추가 fiexd -->
 				<div class="col text-center">
-					<button type="button" class="btn btn-primary btn_type3" data-bs-toggle="modal" data-bs-target="#ServiceAppProcess">차량검사 진행 <span class="iocn_arrowserviceopen"><!-- open arrow --></span></button>
+					<button type="button" class="btn btn-primary btn_type3" data-bs-toggle="modal" data-bs-target="#상단퀵메뉴">서비스 신청 진행 <span class="iocn_arrowserviceopen"><!-- open arrow --></span></button> <!-- addFix_202210 -->
 				</div>
 			</div>
 			<!-- chat window -->
 			<div class="box_chatwindow">
 				<!-- date -->
-				<!-- <div class="row">
+				<div class="row">
 					<div class="col wrap_chatdate"><span class="centerline"><span class="chatdate">2022년 08월 25일</span></span></div>
-				</div> -->
-
-				<div class="">
-					<p class="chatdesc_type1 ">
-						구매동행 <br />차량 검사를 진행합니다.
-					</p>
-					<div class="wrap_chatbox">
-						<div class="chatbox">
-							<p class="chatdesc_type2">
-								<strong class="txt_blk20">[차량번호표시]</strong> 차량의 차량검사 요청을 고객매니저가 접수하였습니다. 차량검사는 차량의 사고유무 및 다양한 상태를 검차 매니저가 직접 검사합니다
-							</p>
-						</div>
-						<div class="time">오후 8:58</div>
-					</div>
-					<div class="btn_wrap">
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_7">차량검사 일정</button>
-					</div>
-				</div>
-
-				<div class="r_side">
-					<div class="wrap_chatbox">
-						<dl class="flex_revsend">
-							<dt>
-								<span class="replychatbox">차량 검사 일정</span>
-							</dt>
-							<dd>
-								<span class="time">오후 8:58</span>
-							</dd>
-						</dl>
-					</div>
 				</div>
 
 				<div class="">
 					<div class="wrap_chatbox">
 						<div class="chatbox">
-							<div class="">
-								<h6 class="h6_tit18"><strong class="txt_blk20">[ 차량번호표시 ]</strong> 차량의 차량검사 동행 형태 및 희망하는 일정을 선택해주세요.</h6>
-								<div class="box_info_gray">
-									<h7 class="h7_tit mb20">동행방식</h7>
-									<div class="box_info_white">
-										<div class="row">
-											<div class="col">
-												<span class="txt_6 font15">차량검사 시 함께 동행</span>
-											</div>
-											<div class="col-4 text-end">
-												<button type="button" class="btn btn-primary btn_type1 btn_type1_3_sm">선택</button>
-											</div>
-										</div>
-									</div>
-									<div class="box_info_white">
-										<div class="row">
-											<div class="col">
-												<span class="txt_6 font15">검차매니저만 방문</span>
-											</div>
-											<div class="col-4 text-end">
-												<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_2_sm">선택</button>
-											</div>
-										</div>
-									</div>
-									<div class="box_info_white">
-										<div class="row">
-											<div class="col">
-												<span class="txt_6 font15">지인이 차량검사 동행</span>
-											</div>
-											<div class="col-4 text-end">
-												<button type="button" class="btn btn-primary btn_type1 btn_type1_3_sm">선택</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="box_info_gray">
-									<h7 class="h7_tit mb20">희망하는 일정</h7>
-									<div class="box_info_white">
-										<a href="#none" class="disblock">
-											<div class="row">
-												<div class="col">
-													<span class="txt_6 font15">일자 선택</span>
-												</div>
-												<div class="col-4 text-end">
-													<span class="icon_quickclose rotate90"></span>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="box_info_white">
-										<a href="#none" class="disblock">
-											<div class="row">
-												<div class="col">
-													<span class="txt_6 font15">시간 선택</span>
-												</div>
-												<div class="col-4 text-end">
-													<span class="icon_quickclose rotate90"></span>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
-								
-								<div class="box_info_gray">
-									<h7 class="h7_tit mb20">지원서비스 (중복선택 가능)</h7>
-									<div class="box_info_white">
-										<div class="row">
-											<div class="col">
-												<span class="txt_6 font15">자동차보험 가격비교 신청</span>
-											</div>
-											<div class="col-4 text-end">
-												<button type="button" class="btn btn-primary btn_type1 btn_type1_3_sm">선택</button>
-											</div>
-										</div>
-									</div>
-									<div class="box_info_white">
-										<div class="row">
-											<div class="col">
-												<span class="txt_6 font15">자동차할부금용 금리비교 신청</span>
-											</div>
-											<div class="col-4 text-end">
-												<button type="button" class="btn btn-outline-primary btn_type1 btn_type1_2_sm">선택</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="flex_btn">
-									<button type="button" class="btn btn-primary btn_type4 btn_type4_5 w90">고객 매니저에게 전송</button>
-								</div>
-
-							</div>
+							<div class="pl7 pr7"> <!-- addFix_202210 -->
+								<dl class="font15"> <!-- addFix_202210 -->
+									<dt class="txt_blk20 pb15 font16"><strong>안녕하세요?</strong></dt> <!-- addFix_202210 -->
+									<dd>
+										<strong class="txt_color1">구매동행일반 서비스</strong>의 전산 조회는 최대5대의 차량까지 조회를 진행하며 검차진행은 1대만 진행합니다. <br />검차 소요시간은 약 1 시간 정도 소요됩니다. <br />오늘 날짜로 검차를 원하시는 경우 일정 확인이 필요합니다. 상담문의를 이용하여 진행하시기 바랍니다.
+									</dd>
+								</dl>
+							</div> <!--// addFix_202210 -->
 						</div>
 						<div class="time">오후 8:58</div>
 					</div>
+					<div class="btn_wrap mb50">
+						<button type="button" class="btn btn-primary btn_type4 btn_type4_1">나중에 다시 할래요.</button>
+						<button type="button" class="btn btn-primary btn_type4 ml10">서비스신청 시작</button>
+					</div>
 				</div>
-
 			</div>
 			
 		</div>
@@ -326,54 +203,62 @@
 		</div>
 	</div>
 
-	<!-- footer -->
-	<div class="site-footer">
-		<div class="container">
-			<div class="accordion accordion-flush" id="accordionFlushFooter">
-				<div class="accordion-item">
-				<h2 class="accordion-header" id="flush-footer">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-footer" aria-expanded="false" aria-controls="flush-collapseOne-footer">
-						<img class="foot_logo" src="../images/common/footer_logo.png" alt="" /> <span class="cotxt">(<strong>주</strong>)<span class="strongtxt">마이마부</span></span>
-					</button>
-				</h2>
-				</div>
-				<div id="flush-collapseOne-footer" class="accordion-collapse collapse" aria-labelledby="flush-footer" data-bs-parent="#accordionFlushFooter">
-					<div class="accordion-body">
-						<ul class="list_txt">
-							<li>대표이사 : 양인수</li>
-							<li>사업자 등록번호 : 845-88-00487</li>
-							<li>통신판매신고번호 : 2016-서울서초-1653호</li>
-							<li class="dotnone">
-								<dl class="address_txt">
-									<dt>주소 :</dt>
-									<dd>
-										<ul class="">
-											<li>(본사) 서울시 강서구 마곡중앙로 161-8, 두산더랜드파크 B동1205호</li>
-											<li>(서울 스튜디오) 서울시 서초구 양재대로 11길36, 서울오토갤러리 은관 B1-119호</li>
-											<li>(부산 스튜디오) 부산광역시 부산진구 진남로 581-1</li>
-										</ul>
-									</dd>
-								</dl>
-							</li>
-							<li>고객지원센터 : 1522-8007 / maymabu@maymabu@.com</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<ul class="footer_menu">
-				<li><a href="#none">개인정보취급방침</a></li>
-				<li><a href="#none">이용약관</a></li>
+	<!-- pc quickBox -->
+	<div class="pc_quick_Box ">
+		<div class="quick_menu">
+			<ul class="quickstatus">
+				<li><a href="#none"><span class="icon_qmenu1_off"></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu2_off"></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu3_off"></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu4_off"></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu5_off"></span></a></li>
 			</ul>
-			<p class="copyright">Copyright(c)2022 MAYMABU Co., Ltd. All Rights Reserved</p>
-			<a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
+			<ul class="item">
+				<li><a href="#none"><span class="icon_managerpc"></span></a></li>
+				<li><a href="#none"><span class="icon_inquirypc"></span></a></li>
+				<li><a href="#none"><span class="icon_reportpc"></span></a></li>
+			</ul>
+			<p class="quick_box_open "><span class="icon_arrow_quickboxopenpc"><!-- open box --></span></p>
 		</div>
-	</div> <!--// site-footer -->
+		<!-- open menu -->
+		<div class="quick_menu_open">
+			<ul class="quickstatus">
+				<li><a href="#none"><span class="icon_qmenu1_off"></span><span class="txt">서비스신청<span class="qtag tag_fin">완료</span></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu2_off"></span><span class="txt">전산조회<span class="qtag tag_fin">완료</span></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu3_off"></span><span class="txt">상세조사<span class="qtag tag_ing">진행중</span></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu4_off"></span><span class="txt">거래확인</span></a></li>
+				<li><a href="#none"><span class="icon_qmenu5_off"></span><span class="txt">차량검사</span></a></li>
+			</ul>
+			<ul class="item">
+				<li><a href="#none"><span class="icon_managerpc"></span><span class="txt">담당자</span></a></li>
+				<li><a href="#none"><span class="icon_inquirypc"></span><span class="txt">온라인문의</span></a></li>
+				<li><a href="#none"><span class="icon_reportpc"></span><span class="txt">리포트</span></a></li>
+			</ul>
+			<span class="quick_box_close"><span class="icon_arrow_quickboxclosepc"><!-- close box --></span></span>
+		</div>
+		
+	</div>
+
+	<!-- mobile quickBox -->
+	<div class="mo_quickBox">
+		<div class="quickmenu">
+			<span class="quickbox_close"><span class="icon_arrow_quickboxclose"><!-- close box --></span></span>
+			<ul class="item">
+				<li><a href="#none"><span class="icon_manager"></span>담당자</a></li>
+				<li><a href="#none"><span class="icon_inquiry"></span>온라인문의</a></li>
+				<li><a href="#none"><span class="icon_report"></span>리포트
+				</a></li>
+			</ul>
+		</div>
+		<p class="quickbox_open"><span class="icon_arrow_quickboxopen"><!-- open box --></span></p>
+	</div>
 
 </div> <!--// addFix_202210 -->
 
+
 <!-- script 위치 이동시 navigation, backtoop 작동안함 -->
 <script src="../js/navbar.js"></script>
-<!-- <script src="../js/backtotop.js"></script> -->
+<script src="../js/backtotop.js"></script>
 
 </body>
 </html>

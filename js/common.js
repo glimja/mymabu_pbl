@@ -37,6 +37,8 @@ function onload(){
 	__fn_resultoverlapcheck();
 	__fn_selectCategoryMain();
 	__fn_selectCategoryMiddle();
+	__fn_oneactiveBtn();
+	__fn_oneactiveBtn1()
 }
  
 // 지인이 차량검사 동행 선택
@@ -70,6 +72,32 @@ function __fn_activeBtn() {
 			// 이벤트 버블링 방지
 			event.stopPropagation();
 			$(this).toggleClass('active')
+		})
+	});
+}
+
+// 버튼 하나 선택 active
+function __fn_oneactiveBtn(){
+	var $target = $('.area_OneSelect > button');
+	$target.each(function () {
+		$(this).off().on('click', function (event) {
+			$target.removeClass("active");
+			// 이벤트 버블링 방지
+			event.stopPropagation();
+			$(this).toggleClass('active');
+		})
+	});
+}
+
+// 버튼 하나 선택 active
+function __fn_oneactiveBtn1(){
+	var $target = $('.area_OneSelect1 > button');
+	$target.each(function () {
+		$(this).off().on('click', function (event) {
+			$target.removeClass("active");
+			// 이벤트 버블링 방지
+			event.stopPropagation();
+			$(this).toggleClass('active');
 		})
 	});
 }

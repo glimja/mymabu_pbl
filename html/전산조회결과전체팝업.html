@@ -27,145 +27,149 @@
 	<title>마이마부 - 중고차동행서비스</title>
 </head>
 <body>
-<!-- content -->
+<div class="contentWrapper chatarea"> <!-- addFix_202210 -->
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#전산조회결과전체팝업">
-	Layer Popup 전산조회결과전체팝업
-</button>
+	<!-- content -->
 
-<!-- Modal -->
-<div class="modal fade show" id="전산조회결과전체팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display:block"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
-	<!-- popup full -->
-	<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
-		<div class="modal-content">
-			<div class="modal-header">
-			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body">
-				<h5 class="modal-title">보험처리일 <span class="fontnomal">[ 2022 - 08 - 25 ]</span></h5>
-				<div class="box_popinfo">
-					<div class="area_result">
-						<div class="rs_top">
-							• [ <span class="num">254가 2465</span> ] 보험처리
-						</div>
-						<!-- 차량보험 -->
-						<div class="rs_tit">
-							차량보험
-						</div>
-						<div class="rs_desc">
-							<div class="row">
-								<div class="col">
-									<span class="txt_blk20 font20">총(견적) 비용</span>
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#전산조회결과전체팝업">
+		Layer Popup 전산조회결과전체팝업
+	</button>
+
+	<!-- Modal -->
+	<div class="modal fade show" id="전산조회결과전체팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display:block"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h5 class="modal-title">보험처리일 <span class="">[ 2022 - 08 - 25 ]</span></h5> <!-- addFix_202210 -->
+					<div class="box_popinfo">
+						<div class="area_result">
+							<div class="rs_top">
+								• [ <span class="num">254가 2465</span> ] 보험처리
+							</div>
+							<!-- 차량보험 -->
+							<div class="rs_tit">
+								차량보험
+							</div>
+							<div class="rs_desc">
+								<div class="row">
+									<div class="col">
+										<span class="txt_blk20 font15">총(견적) 비용</span> <!-- addFix_202210 -->
+									</div>
+									<div class="col-7 text-end">
+										<span class="num txt_redcolor font21">9,900,000</span><span class="txt_6 font18">원</span> <!-- addFix_202210 -->
+									</div>
 								</div>
-								<div class="col-7 text-end">
-									<span class="num txt_redcolor font24">9,900,000</span><span class="txt_6 font18">원</span>
+								<div class="wrap_detail">
+									<dl class="dl_detail text-end">
+										<dt class="tit">부품</dt>
+										<dd class="desc">
+											<span class="num txt_6 font18">9,900,000</span><span class="txt_6 font18">원</span> <!-- addFix_202210 -->
+										</dd>
+									</dl>
+									<dl class="dl_detail text-end">
+										<dt class="tit">공임</dt>
+										<dd class="desc">
+											<span class="num txt_6 font18">9,900,000</span><span class="txt_6 font18">원</span> <!-- addFix_202210 -->
+										</dd>
+									</dl>
+									<dl class="dl_detail text-end">
+										<dt class="tit">도장</dt>
+										<dd class="desc">
+											<span class="num txt_6 font18">9,900,000</span><span class="txt_6 font18">원</span> <!-- addFix_202210 -->
+										</dd>
+									</dl>
 								</div>
 							</div>
-							<div class="wrap_detail">
-								<dl class="dl_detail text-end">
-									<dt class="tit">부품</dt>
-									<dd class="desc">
-										<span class="num txt_6 font20">9,900,000</span><span class="txt_6 font18">원</span>
-									</dd>
-								</dl>
-								<dl class="dl_detail text-end">
-									<dt class="tit">공임</dt>
-									<dd class="desc">
-										<span class="num txt_6 font20">9,900,000</span><span class="txt_6 font18">원</span>
-									</dd>
-								</dl>
-								<dl class="dl_detail text-end">
-									<dt class="tit">도장</dt>
-									<dd class="desc">
-										<span class="num txt_6 font20">9,900,000</span><span class="txt_6 font18">원</span>
-									</dd>
-								</dl>
+							<!-- 상대보험 -->
+							<div class="rs_tit">
+								상대보험
 							</div>
-						</div>
-						<!-- 상대보험 -->
-						<div class="rs_tit">
-							상대보험
-						</div>
-						<div class="rs_desc">
-							<div class="row">
-								<div class="col">
-									<span class="txt_blk20 font20">총(견적) 비용</span>
+							<div class="rs_desc">
+								<div class="row">
+									<div class="col">
+										<span class="txt_blk20 font15">총(견적) 비용</span> <!-- addFix_202210 -->
+									</div>
+									<div class="col-7 text-end">
+										<span class="num txt_redcolor font21">9,900,000</span><span class="txt_6 font18">원</span> <!-- addFix_202210 -->
+									</div>
 								</div>
-								<div class="col-7 text-end">
-									<span class="num txt_redcolor font24">9,900,000</span><span class="txt_6 font18">원</span>
-								</div>
-							</div>
-							<div class="wrap_detail">
-								<dl class="dl_detail text-end">
-									<dt class="tit">부품</dt>
-									<dd class="desc">
-										<span class="num txt_6 font20">9,900,000</span><span class="txt_6 font18">원</span>
-									</dd>
-								</dl>
-								<dl class="dl_detail text-end">
-									<dt class="tit">공임</dt>
-									<dd class="desc">
-										<span class="num txt_6 font20">9,900,000</span><span class="txt_6 font18">원</span>
-									</dd>
-								</dl>
-								<dl class="dl_detail text-end">
-									<dt class="tit">도장</dt>
-									<dd class="desc">
-										<span class="num txt_6 font20">9,900,000</span><span class="txt_6 font18">원</span>
-									</dd>
-								</dl>
-							</div>
-						</div>
-					</div>
-					<div class="area_result">
-						<div class="rs_top">
-							• 상대차 보험처리
-						</div>
-						<div class="rs_tit">
-							차량보험
-						</div>
-						<div class="rs_desc">
-							<div class="row">
-								<div class="col">
-									<span class="txt_blk20 font20">총(견적) 비용</span>
-								</div>
-								<div class="col-7 text-end">
-									<span class="num txt_redcolor font24">9,900,000</span><span class="txt_6 font18">원</span>
+								<div class="wrap_detail">
+									<dl class="dl_detail text-end">
+										<dt class="tit">부품</dt>
+										<dd class="desc">
+											<span class="num txt_6 font18">9,900,000</span><span class="txt_6 font18">원</span> <!-- addFix_202210 -->
+										</dd>
+									</dl>
+									<dl class="dl_detail text-end">
+										<dt class="tit">공임</dt>
+										<dd class="desc">
+											<span class="num txt_6 font18">9,900,000</span><span class="txt_6 font18">원</span> <!-- addFix_202210 -->
+										</dd>
+									</dl>
+									<dl class="dl_detail text-end">
+										<dt class="tit">도장</dt>
+										<dd class="desc">
+											<span class="num txt_6 font18">9,900,000</span><span class="txt_6 font18">원</span> <!-- addFix_202210 -->
+										</dd>
+									</dl>
 								</div>
 							</div>
-							<div class="wrap_detail">
-								<dl class="dl_detail text-end">
-									<dt class="tit">부품</dt>
-									<dd class="desc">
-										<span class="num txt_6 font20">9,900,000</span><span class="txt_6 font18">원</span>
-									</dd>
-								</dl>
-								<dl class="dl_detail text-end">
-									<dt class="tit">공임</dt>
-									<dd class="desc">
-										<span class="num txt_6 font20">9,900,000</span><span class="txt_6 font18">원</span>
-									</dd>
-								</dl>
-								<dl class="dl_detail text-end">
-									<dt class="tit">도장</dt>
-									<dd class="desc">
-										<span class="num txt_6 font20">9,900,000</span><span class="txt_6 font18">원</span>
-									</dd>
-								</dl>
+						</div>
+						<div class="area_result">
+							<div class="rs_top">
+								• 상대차 보험처리
+							</div>
+							<div class="rs_tit">
+								차량보험
+							</div>
+							<div class="rs_desc">
+								<div class="row">
+									<div class="col">
+										<span class="txt_blk20 font15">총(견적) 비용</span> <!-- addFix_202210 -->
+									</div>
+									<div class="col-7 text-end">
+										<span class="num txt_redcolor font21">9,900,000</span><span class="txt_6 font18">원</span> <!-- addFix_202210 -->
+									</div>
+								</div>
+								<div class="wrap_detail">
+									<dl class="dl_detail text-end">
+										<dt class="tit">부품</dt>
+										<dd class="desc">
+											<span class="num txt_6 font18">9,900,000</span><span class="txt_6 font18">원</span> <!-- addFix_202210 -->
+										</dd>
+									</dl>
+									<dl class="dl_detail text-end">
+										<dt class="tit">공임</dt>
+										<dd class="desc">
+											<span class="num txt_6 font18">9,900,000</span><span class="txt_6 font18">원</span> <!-- addFix_202210 -->
+										</dd>
+									</dl>
+									<dl class="dl_detail text-end">
+										<dt class="tit">도장</dt>
+										<dd class="desc">
+											<span class="num txt_6 font18">9,900,000</span><span class="txt_6 font18">원</span> <!-- addFix_202210 -->
+										</dd>
+									</dl>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="modal-footer">
-				<div class="flex_btn">
-					<button type="button" class="btn btn-primary btn_type1 btn_type1_1">확인</button>
+				<div class="modal-footer">
+					<div class="flex_btn">
+						<button type="button" class="btn btn-primary btn_type1 btn_type1_1">확인</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+
+</div> <!--// addFix_202210 -->
 
 <!-- script 위치 이동시 navigation, backtoop 작동안함 -->
 <script src="../js/navbar.js"></script>

@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<div class="contentWrapper"> <!-- addFix_202210 -->	
+<div class="contentWrapper chatarea"> <!-- addFix_202210 -->	
 	<!-- slide gnb menu -->
 	<div class="site-mobile-menu site-navbar-target" >
 		<div class="site-mobile-menu-header">
@@ -111,6 +111,7 @@
 			</ul>
 		</div>
 	</div>
+
 	<!-- top navigation -->
 	<nav class="site-nav stickywrap"><!-- stickywrap : 클래스 추가 fiexd -->
 		<div class="container">
@@ -140,7 +141,7 @@
 		<div class="container ">
 			<div class="row sapbtnfixed"><!-- sapbtnfixed : 클래스 추가 fiexd -->
 				<div class="col text-center">
-					<button type="button" class="btn btn-primary btn_type3" data-bs-toggle="modal" data-bs-target="#ServiceAppProcess">서비스 신청 진행 <span class="iocn_arrowserviceopen"><!-- open arrow --></span></button>
+					<button type="button" class="btn btn-primary btn_type3" data-bs-toggle="modal" data-bs-target="#상단퀵메뉴">서비스 신청 진행 <span class="iocn_arrowserviceopen"><!-- open arrow --></span></button> <!-- addFix_202210 -->
 				</div>
 			</div>
 			<!-- chat window -->
@@ -153,64 +154,43 @@
 				<div class="">
 					<div class="wrap_chatbox">
 						<div class="chatbox">
-							<dl class="font18">
-								<dt class="txt_blk20 pb15">안녕하세요?</dt>
-								<dd>
-									<strong class="txt_color1">구매동행일반 서비스</strong>의 전산 조회는 최대5대의 차량까지 조회를 진행하며 검차진행은 1대만 진행합니다. <br />검차 소요시간은 약 1 시간 정도 소요됩니다. <br />오늘 날짜로 검차를 원하시는 경우 일정 확인이 필요합니다. 상담문의를 이용하여 진행하시기 바랍니다.
-								</dd>
-							</dl>
+							<div class="pl7 pr7"> <!-- addFix_202210 -->
+								<dl class="font15"> <!-- addFix_202210 -->
+									<dt class="txt_blk20 pb15 font16"><strong>안녕하세요?</strong></dt> <!-- addFix_202210 -->
+									<dd>
+										<strong class="txt_color1">구매동행일반 서비스</strong>의 전산 조회는 최대5대의 차량까지 조회를 진행하며 검차진행은 1대만 진행합니다. <br />검차 소요시간은 약 1 시간 정도 소요됩니다. <br />오늘 날짜로 검차를 원하시는 경우 일정 확인이 필요합니다. 상담문의를 이용하여 진행하시기 바랍니다.
+									</dd>
+								</dl>
+							</div> <!--// addFix_202210 -->
 						</div>
 						<div class="time">오후 8:58</div>
 					</div>
-					<div class="btn_wrap">
+					<div class="btn_wrap "> <!-- addFix_202210 -->
 						<button type="button" class="btn btn-primary btn_type4 btn_type4_1">나중에 다시 할래요.</button>
 						<button type="button" class="btn btn-primary btn_type4 ml10">서비스신청 시작</button>
 					</div>
-					<div class="btn_wrap mtnone">
-						<button type="button" class="btn btn-primary btn_type4">위치사진</button>
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_1">촬영사진1</button>
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_2">촬영사진2</button>
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_3">촬영사진3</button>
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_4">촬영사진4</button>
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_5">촬영사진5</button>
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_6">촬영사진6</button>
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_7">촬영사진7</button>
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_8">촬영사진8 font22</button>
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_9">촬영사진9 font22</button>
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_10">촬영사진10</button>
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_11">촬영사진11</button>
-						<button type="button" class="btn btn-primary btn_type4 btn_type4_12">촬영사진12</button>
-					</div>
-					<div class="row">
-						<div class="col">
-							<button type="button" class="btn btn-primary btn_type4 btn_type4_5 w100">촬영사진</button>
-							<button type="button" class="btn btn-primary btn_type4 btn_type4_5 w90">촬영사진</button>
-							<button type="button" class="btn btn-primary btn_type4 btn_type4_5 w80">촬영사진</button>
-						</div>
-					</div>
-					
 				</div>
-				
 			</div>
 			
 		</div>
 	</div>
 
 	<!-- 상단퀵메뉴팝업 -->
-	<div class="modal fade" id="ServiceAppProcess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ServiceAppProcessLabel" aria-hidden="true">
-		<div class="modal-dialog">
+	<div class="modal fade " id="상단퀵메뉴" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<div class="box_quickmenu">
 						<ul class="quickstatus">
-							<li><a href="#none"><span class="status_before">[ 차량검사 -  진행 전 ]</span></a></li>
-							<li><a href="#none"><span class="status_progress">[ 전산조회 -  진행중 ]</span></a></li>
-							<li><a href="#none"><span class="status_disabled">[ 상세조사- 완료 ]</span></a></li>
-							<li><a href="#none"><span class="status_disabled">[ 상세조사 - 진행전 ]</span></a></li>
-							<li><a href="#none"><span class="status_disabled">[ 서비스신청 - 완료 ]</span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu1_off"></span></span><span class="txt">서비스신청<span class="pop_qtag tag_fin">완료</span></span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu2_off"></span></span><span class="txt">전산조회<span class="pop_qtag tag_fin">완료</span></span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu3_off"></span></span><span class="txt">상세조사<span class="pop_qtag tag_ing">진행중</span></span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu4_off"></span></span><span class="txt">거래확인</span></a></li>
+							<li><a href="#none"><span class="qmenuwrap"><span class="icon_qmenu5_off"></span></span><span class="txt">차량검사</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -223,50 +203,58 @@
 		</div>
 	</div>
 
-	<!-- footer -->
-	<div class="site-footer">
-		<div class="container">
-			<div class="accordion accordion-flush" id="accordionFlushFooter">
-				<div class="accordion-item">
-				<h2 class="accordion-header" id="flush-footer">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-footer" aria-expanded="false" aria-controls="flush-collapseOne-footer">
-						<img class="foot_logo" src="../images/common/footer_logo.png" alt="" /> <span class="cotxt">(<strong>주</strong>)<span class="strongtxt">마이마부</span></span>
-					</button>
-				</h2>
-				</div>
-				<div id="flush-collapseOne-footer" class="accordion-collapse collapse" aria-labelledby="flush-footer" data-bs-parent="#accordionFlushFooter">
-					<div class="accordion-body">
-						<ul class="list_txt">
-							<li>대표이사 : 양인수</li>
-							<li>사업자 등록번호 : 845-88-00487</li>
-							<li>통신판매신고번호 : 2016-서울서초-1653호</li>
-							<li class="dotnone">
-								<dl class="address_txt">
-									<dt>주소 :</dt>
-									<dd>
-										<ul class="">
-											<li>(본사) 서울시 강서구 마곡중앙로 161-8, 두산더랜드파크 B동1205호</li>
-											<li>(서울 스튜디오) 서울시 서초구 양재대로 11길36, 서울오토갤러리 은관 B1-119호</li>
-											<li>(부산 스튜디오) 부산광역시 부산진구 진남로 581-1</li>
-										</ul>
-									</dd>
-								</dl>
-							</li>
-							<li>고객지원센터 : 1522-8007 / maymabu@maymabu@.com</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<ul class="footer_menu">
-				<li><a href="#none">개인정보취급방침</a></li>
-				<li><a href="#none">이용약관</a></li>
+	<!-- pc quickBox -->
+	<div class="pc_quick_Box ">
+		<div class="quick_menu">
+			<ul class="quickstatus">
+				<li><a href="#none"><span class="icon_qmenu1_off"></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu2_off"></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu3_off"></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu4_off"></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu5_off"></span></a></li>
 			</ul>
-			<p class="copyright">Copyright(c)2022 MAYMABU Co., Ltd. All Rights Reserved</p>
-			<a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
+			<ul class="item">
+				<li><a href="#none"><span class="icon_managerpc"></span></a></li>
+				<li><a href="#none"><span class="icon_inquirypc"></span></a></li>
+				<li><a href="#none"><span class="icon_reportpc"></span></a></li>
+			</ul>
+			<p class="quick_box_open "><span class="icon_arrow_quickboxopenpc"><!-- open box --></span></p>
 		</div>
-	</div> <!--// site-footer -->
+		<!-- open menu -->
+		<div class="quick_menu_open">
+			<ul class="quickstatus">
+				<li><a href="#none"><span class="icon_qmenu1_off"></span><span class="txt">서비스신청<span class="qtag tag_fin">완료</span></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu2_off"></span><span class="txt">전산조회<span class="qtag tag_fin">완료</span></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu3_off"></span><span class="txt">상세조사<span class="qtag tag_ing">진행중</span></span></a></li>
+				<li><a href="#none"><span class="icon_qmenu4_off"></span><span class="txt">거래확인</span></a></li>
+				<li><a href="#none"><span class="icon_qmenu5_off"></span><span class="txt">차량검사</span></a></li>
+			</ul>
+			<ul class="item">
+				<li><a href="#none"><span class="icon_managerpc"></span><span class="txt">담당자</span></a></li>
+				<li><a href="#none"><span class="icon_inquirypc"></span><span class="txt">온라인문의</span></a></li>
+				<li><a href="#none"><span class="icon_reportpc"></span><span class="txt">리포트</span></a></li>
+			</ul>
+			<span class="quick_box_close"><span class="icon_arrow_quickboxclosepc"><!-- close box --></span></span>
+		</div>
+		
+	</div>
+
+	<!-- mobile quickBox -->
+	<div class="mo_quickBox">
+		<div class="quickmenu">
+			<span class="quickbox_close"><span class="icon_arrow_quickboxclose"><!-- close box --></span></span>
+			<ul class="item">
+				<li><a href="#none"><span class="icon_manager"></span>담당자</a></li>
+				<li><a href="#none"><span class="icon_inquiry"></span>온라인문의</a></li>
+				<li><a href="#none"><span class="icon_report"></span>리포트
+				</a></li>
+			</ul>
+		</div>
+		<p class="quickbox_open"><span class="icon_arrow_quickboxopen"><!-- open box --></span></p>
+	</div>
 
 </div> <!--// addFix_202210 -->
+
 
 <!-- script 위치 이동시 navigation, backtoop 작동안함 -->
 <script src="../js/navbar.js"></script>
