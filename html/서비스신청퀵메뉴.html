@@ -127,7 +127,7 @@
 							<a href="#none" class="logo m-0 float-start"><img src="../images/common/header_logo.png" alt="" /></a>
 							<span class="navsubtit">구매동행 기본형</span>
 						</h1>
-						<span class="col-auto wrap_alarm"><a href="#none" class="btn_alarm"><img src="../images/common/icon_alarm.png" alt="" />알람</a><em class="new">3</em></span>
+						<span class="col-auto wrap_alarm"><a href="#none" class="btn_alarm" data-bs-toggle="modal" data-bs-target="#알림목록팝업"><img src="../images/common/icon_alarm.png" alt="" />알람<em class="new img"><img src="../images/common/alarm_new.png" alt="" /></em></a></span>
 					</div>
 				</div>
 			</div>
@@ -163,7 +163,7 @@
 								</dl>
 							</div> <!--// addFix_202210 -->
 						</div>
-						<div class="time">오후 8:58</div>
+						<div class="time">오후 <span class="num">8:58</span></div> <!-- addFix_202210 -->
 					</div>
 					<div class="btn_wrap mb50">
 						<button type="button" class="btn btn-primary btn_type4 btn_type4_1">나중에 다시 할래요.</button>
@@ -214,9 +214,9 @@
 				<li><a href="#none"><span class="icon_qmenu5_off"></span></a></li>
 			</ul>
 			<ul class="item">
-				<li><a href="#none"><span class="icon_managerpc"></span></a></li>
-				<li><a href="#none"><span class="icon_inquirypc"></span></a></li>
-				<li><a href="#none"><span class="icon_reportpc"></span></a></li>
+				<li><a href="#none" data-bs-toggle="modal" data-bs-target="#담당자정보보기팝업"><span class="icon_managerpc"></span></a></li>
+				<li><a href="#none" data-bs-toggle="modal" data-bs-target="#온라인문의"><span class="icon_inquirypc"></span></a></li>
+				<li><a href="#none" data-bs-toggle="modal" data-bs-target="#전산조회팝업1"><span class="icon_reportpc"></span></a></li>
 			</ul>
 			<p class="quick_box_open "><span class="icon_arrow_quickboxopenpc"><!-- open box --></span></p>
 		</div>
@@ -230,9 +230,9 @@
 				<li><a href="#none"><span class="icon_qmenu5_off"></span><span class="txt">차량검사</span></a></li>
 			</ul>
 			<ul class="item">
-				<li><a href="#none"><span class="icon_managerpc"></span><span class="txt">담당자</span></a></li>
-				<li><a href="#none"><span class="icon_inquirypc"></span><span class="txt">온라인문의</span></a></li>
-				<li><a href="#none"><span class="icon_reportpc"></span><span class="txt">리포트</span></a></li>
+				<li><a href="#none" data-bs-toggle="modal" data-bs-target="#담당자정보보기팝업"><span class="icon_managerpc"></span><span class="txt">담당자</span></a></li>
+				<li><a href="#none" data-bs-toggle="modal" data-bs-target="#온라인문의"><span class="icon_inquirypc"></span><span class="txt">온라인문의</span></a></li>
+				<li><a href="#none" data-bs-toggle="modal" data-bs-target="#전산조회팝업1"><span class="icon_reportpc"></span><span class="txt">리포트</span></a></li>
 			</ul>
 			<span class="quick_box_close"><span class="icon_arrow_quickboxclosepc"><!-- close box --></span></span>
 		</div>
@@ -244,9 +244,9 @@
 		<div class="quickmenu">
 			<span class="quickbox_close"><span class="icon_arrow_quickboxclose"><!-- close box --></span></span>
 			<ul class="item">
-				<li><a href="#none"><span class="icon_manager"></span>담당자</a></li>
-				<li><a href="#none"><span class="icon_inquiry"></span>온라인문의</a></li>
-				<li><a href="#none"><span class="icon_report"></span>리포트
+				<li><a href="#none" data-bs-toggle="modal" data-bs-target="#담당자정보보기팝업"><span class="icon_manager"></span>담당자</a></li>
+				<li><a href="#none" data-bs-toggle="modal" data-bs-target="#온라인문의"><span class="icon_inquiry"></span>온라인문의</a></li>
+				<li><a href="#none" data-bs-toggle="modal" data-bs-target="#전산조회팝업1"><span class="icon_report"></span>리포트
 				</a></li>
 			</ul>
 		</div>
@@ -255,6 +255,482 @@
 
 </div> <!--// addFix_202210 -->
 
+
+<!-- Modal -->
+<div class="modal fade " id="알림목록팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+	<!-- popup full -->
+	<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
+		<div class="modal-content">
+			<div class="modal-header">
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<h5 class="modal-title">[ 상품명 표시 ] - 알림 목록</h5>
+				<div class="box_popinfo notitype">
+					<dl class="area_notilist first"> <!-- addFix_202210 -->
+						<dt class="date"><span class="wrap_cir "><span class="cir redtype"></span></span>08. 27</dt>
+						<dd class="notibox">
+							<span class="time">오전 08 : 25</span>
+							<p class="desc">차량 검수가 완료되었습니다.</p>
+						</dd>
+					</dl>
+					<dl class="area_notilist">
+						<dt class="date"><span class="wrap_cir"><span class="cir"></span></span>08. 27</dt>
+						<dd class="notibox">
+							<span class="time">오후 05 : 40</span>
+							<p class="desc">보험이력 조회 추가 결제가 요청 되었습니다.</p>
+						</dd>
+						<dd class="notibox">
+							<span class="time">오후 05 : 40</span>
+							<p class="desc">보험이력 조회 추가 결제가 요청 되었습니다.</p>
+						</dd>
+					</dl>
+					<dl class="area_notilist">
+						<dt class="date"><span class="wrap_cir"><span class="cir"></span></span>08. 25</dt>
+						<dd class="notibox">
+							<span class="time">오후 05 : 40</span>
+							<p class="desc">
+								2단계까지 전산 조회가 모두 완료되었습니다. <br />
+								내용을 상세하게 확인해주시기 바랍니다.
+							</p>
+						</dd>
+						<dd class="notibox">
+							<span class="time">오후 05 : 30</span>
+							<p class="desc">
+								1단계까지 전산 조회가 모두 완료되었습니다. <br />
+								내용을 상세하게 확인해주시기 바랍니다.
+							</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="flex_btn">
+					<button type="button" class="btn btn-primary btn_type1">확인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!-- Modal -->
+	<div class="modal fade " id="담당자정보보기팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" > <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h5 class="modal-title">담당자</h5>
+					<div class="box_popinfo">
+						<h6 class="h6_tit">• 고객 매니저</h6>
+						<div class="inner">
+							<ul class="inlineflex btline ">
+								<li>
+									<dl class="dl_txt">
+										<dt>이름 :&nbsp;</dt> <!-- addFix_202210 -->
+										<dd>홍길동</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="dl_txt">
+										<dt>연락처 :&nbsp;</dt> <!-- addFix_202210 -->
+										<dd><span class="num">010-0125-0125</span></dd>
+									</dl>
+								</li>
+							</ul>
+							<div class="flex_btn full"> <!-- addFix_202210 -->
+								<button onclick="location.href='온라인문의.html'" type="button" class="btn btn-primary btn_type2">온라인 문의</button>
+								<button onclick="location.href='담당자정보보기레이어팝업.html'" type="button" class="btn btn-primary btn_type2">전화 연결</button>
+							</div>
+						</div>
+						<h6 class="h6_tit mt20">• 검차 매니저</h6> <!-- addFix_202210 -->
+						<div class="inner">
+							<ul class="inlineflex btline ">
+								<li>
+									<dl class="dl_txt">
+										<dt>이름 :&nbsp;</dt> <!-- addFix_202210 -->
+										<dd>홍길동</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="dl_txt">
+										<dt>연락처 :&nbsp;</dt> <!-- addFix_202210 -->
+										<dd class="num">010-0125-0125</dd>
+									</dl>
+								</li>
+							</ul>
+							<div class="flex_btn full"> <!-- addFix_202210 -->
+								<button type="button" class="btn btn-primary btn_type2 disabled">온라인 문의</button>
+								<button type="button" class="btn btn-primary btn_type2">전화 연결</button>
+							</div>
+						</div>
+						<h6 class="h6_tit mt20">• 검차 매니저</h6> <!-- addFix_202210 -->
+						<div class="inner">
+							<div class="nodata">검차 매니저 배정 전 입니다.</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="flex_btn">
+						<button type="button" class="btn btn-primary btn_type1">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="온라인문의" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h5 class="modal-title">온라인 문의</h5>
+					<div class="box_popinfo">
+						<div class="top_date">2022 - 08 - 15</div>
+						<div class="box_chat">
+							<div class="">
+								<div class="chatid">고객 ID</div>
+								<div class="wrap_cont">
+									<div class="cont">
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용
+									</div>
+									<div class="time">오후 <span class="num">8:58</span></div> <!-- addFix_202210 -->
+								</div>
+							</div>
+							<div class="r_side">
+								<div class="chatid">고객 매니저</div>
+								<div class="wrap_cont">
+									<div class="cont">
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용<br />
+										검차 관련하여 문의내용
+									</div>
+									<div class="time">오후 <span class="num">9:01</span></div> <!-- addFix_202210 -->
+								</div>
+							</div>
+							<div class="">
+								<div class="chatid">고객 ID</div>
+								<div class="wrap_cont">
+									<div class="cont">
+										<img src="../images/temp/temp_car.png" alt="" />
+									</div>
+									<div class="time">오후 <span class="num">8:58</span></div> <!-- addFix_202210 -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box_chatinput">
+						<label for="chatcontentInupt" class="form-label"></label>
+						<input type="text" class="form-control" id="chatcontentInupt" placeholder="내용을 입력해주세요" />
+						<div class="flex_btn justify-space-between mt10"> <!-- addFix_202210 -->
+							<div class="flex_btn mt0"> <!-- addFix_202210 -->
+								<button type="button" class="btn btn-secondary btn_type1 btn_type1_sm" data-bs-dismiss="modal">이미지파일 선택</button>
+								<button type="button" class="btn btn-secondary btn_type1 btn_type1_sm">PDF</button>
+							</div>
+							<div class="flex_btn"> <!-- addFix_202210 -->
+								<button type="button" class="btn btn-primary btn-sm btn_type1 btn_type1_sm mw140">보내기</button>
+							</div>
+						</div>
+					</div>
+					<div class="box_chatinput">
+						<div class="wrap_selectcontent_item">
+							<div class="selectcontent_item">
+								<span class="img_item">
+									<img src="../images/temp/temp_car.png" alt="" />
+									<button class="del_item">삭제</button>
+								</span>
+								<span class="img_item">
+									<img src="../images/temp/temp_car.png" alt="" />
+									<button class="del_item">삭제</button>
+								</span>
+								<span class="img_item">
+									<img src="../images/temp/temp_car.png" alt="" />
+									<button class="del_item">삭제</button>
+								</span>
+							</div>
+						</div>
+						<div class="flex_btn justify-space-between mt10"> <!-- addFix_202210 -->
+							<div class="flex_btn mt0"> <!-- addFix_202210 -->
+								<button type="button" class="btn btn-secondary btn_type1 btn_type1_sm" data-bs-dismiss="modal">이미지파일 선택</button>
+								<button type="button" class="btn btn-secondary btn_type1 btn_type1_sm">PDF</button>
+							</div>
+							<div class="flex_btn"> <!-- addFix_202210 -->
+								<button type="button" class="btn btn-primary btn-sm btn_type1 btn_type1_sm mw140">보내기</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer linetype">
+					<div class="flex_btn full w50"> <!-- addFix_202210 -->
+						<button type="button" class="btn btn-primary btn_type1 btn_type1_1">온라인문의 종료</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade " id="전산조회팝업1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body full">
+					<h5 class="modal-title">[ 차량번호표시 ] 차량 리포트</h5>
+					<div class="box_popinfo head">
+						<strong>전산조회 - 진행</strong>
+					</div>
+
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs nav-justified nav_tabtype1">
+						<li class="nav-item">
+							<a class="nav-link active" data-bs-toggle="tab" href="#carreport_tab1">전산조회</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#carreport_tab2">상세조사</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#carreport_tab3">거래확인</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#carreport_tab4">차량검사</a>
+						</li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content nav_tabtype1">
+						<!-- 전산조회 -->
+						<div class="tab-pane container active" id="carreport_tab1">
+							<div class="box_tabinfo">
+								<div class="box_info_gray">
+									<h7 class="h7_tit">[ 제조사 ] | [ 등급 ] | [ 세부등급 ] </h7>
+									<p class="car_tit">기아 더 뉴레이 1.0 가솔린 시그니처</p>
+									<span class="car_img">
+										<img src="../images/temp/temp_car.png" alt="" />
+									</span>
+								</div>
+								<div class="box_info_gray">
+									<h7 class="h7_tit">최초등록일 : 2022-05-20</h7>
+									<div class="row">
+										<div class="col">
+											<dl class="dl_txt type2">
+												<dt>생산년도 : </dt>
+												<dd><span class="num type1">1990</span>년</dd>
+											</dl>
+										</div>
+										<div class="col-6">
+											<dl class="dl_txt type2">
+												<dt>단종년도 : </dt>
+												<dd><span class="num type1">2020</span>년</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="row wrap_cardetails"> <!-- addFix_202210 -->
+									<div class="col">
+										<a href="#none" class="car_bigtag ">색상</a>
+										<a href="#none" class="car_bigtag ">차종</a>
+										<a href="#none" class="car_bigtag ">연료</a>
+										<a href="#none" class="car_bigtag ">배기량</a>
+										<a href="#none" class="car_bigtag ">용도</a>
+										<a href="#none" class="car_bigtag ">변속기</a>
+									</div>
+								</div> <!--// addFix_202210 -->
+								<div class="box_info_gray type1">
+									<dl class="dl_txt type3">
+										<dt>총 결제 예정금액</dt>
+										<dd><span class="num type2">990,000</span>원</dd>
+									</dl>
+								</div>
+									<!-- addFix_202210 -->
+								<h6 class="h6_tit18 mt30">보험 개발원의 Car History 조회결과</h6>
+								<div class="box_info_gray">
+									<h7 class="h7_tit">조회결과 요약</h7>
+									<ul class="list_bline dlw100">
+										<li>
+											<div class="row">
+												<div class="col">
+													<dl class="dl_txt type2 ">
+														<dt>전손 보험사고 </dt>
+														<dd>: <span class="num type1">5</span>회</dd>
+													</dl>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="col">
+													<dl class="dl_txt type2">
+														<dt>도난 보험사고 </dt>
+														<dd>: <span class="num type1">5</span>회</dd>
+													</dl>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="col">
+													<dl class="dl_txt type2">
+														<dt>침수 보험사고 </dt>
+														<dd>: <span class="txt_blk20">없음</span></dd>
+													</dl>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="col">
+													<dl class="dl_txt type2">
+														<dt>특수 용도 이력 </dt>
+														<dd>: <span class="txt_blk20">없음</span></dd>
+													</dl>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="col">
+													<dl class="dl_txt type2">
+														<dt>내차 피해 </dt>
+														<dd>: <span class="num type1">5</span>회</dd>
+													</dl>
+												</div>
+												<div class="col-5">
+													<div class="dl_txt_type2_end text-end">
+														<span class="num type2_1">990,000</span>원
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="col">
+													<dl class="dl_txt type2">
+														<dt>상대차 피해 </dt>
+														<dd>: <span class="num type1">5</span>회</dd>
+													</dl>
+												</div>
+												<div class="col-5">
+													<div class="dl_txt_type2_end text-end">
+														<span class="num type2_1">990,000</span>원
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="col">
+													<dl class="dl_txt type2">
+														<dt>소유자 변경 </dt>
+														<dd>: <span class="num type1">5</span>회</dd>
+													</dl>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="col">
+													<dl class="dl_txt type2">
+														<dt>차량번호 변경 </dt>
+														<dd>: <span class="num type1">5</span>회</dd>
+													</dl>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="box_info_gray">
+									<h7 class="h7_tit">자동차 특수용도 이력</h7>
+									<ul class="list_bline">
+										<li>
+											<div class="row">
+												<div class="col">
+													<dl class="dl_txt type2">
+														<dt>렌터가 사용이력</dt>
+														<dd></dd>
+													</dl>
+												</div>
+												<div class="col-auto">
+													<span class="txt_blk20 font15">있음</span> <!-- addFix_202210 -->
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="col">
+													<dl class="dl_txt type2">
+														<dt>택사 사용이력</dt>
+														<dd></dd>
+													</dl>
+												</div>
+												<div class="col-auto">
+													<span class="txt_blk20 font15">없음</span> <!-- addFix_202210 -->
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="col">
+													<dl class="dl_txt type2">
+														<dt>관련용도 사용이력</dt>
+														<dd></dd>
+													</dl>
+												</div>
+												<div class="col-auto">
+													<span class="txt_blk20 font15">없음</span> <!-- addFix_202210 -->
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="row">
+												<div class="col">
+													<dl class="dl_txt type2">
+														<dt>특수 용도 이력</dt>
+														<dd></dd>
+													</dl>
+												</div>
+												<div class="col-auto">
+													<span class="txt_blk20 font15">없음</span> <!-- addFix_202210 -->
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!--// addFix_202210 -->
+							</div>
+						</div> 
+						<!-- 상세조사 -->
+						<div class="tab-pane container fade" id="carreport_tab2">상세조사 내용</div>
+						<!-- 거래확인 -->
+						<div class="tab-pane container fade" id="carreport_tab3">거래확인 내용</div>
+						<!-- 차량검사 -->
+						<div class="tab-pane container fade" id="carreport_tab4">차량검사 내용</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="flex_btn w90">
+						<button type="button" class="btn btn-secondary btn_type1 btn_type1_1 h36" data-bs-dismiss="modal">차량 리스트 보기</button> <!-- addFix_202210 -->
+						<button onclick="location.href='차량리스트보기팝업.html'" type="button" class="btn btn-primary btn_type1 h36">확인</button> <!-- addFix_202210 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
 <!-- script 위치 이동시 navigation, backtoop 작동안함 -->
 <script src="../js/navbar.js"></script>
