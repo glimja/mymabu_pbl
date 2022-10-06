@@ -629,11 +629,13 @@ hr {margin:0}
 .accordion-item .accordion-button {border-radius: 18px;}
 /* .accordion-item:first-of-type .accordion-button,
 .accordion-item:last-of-type .accordion-button {padding-bottom: 0;} */
-.accordionFaqstyle .accordion-item:last-of-type .accordion-collapse {padding-bottom: 50px;}
+/* .accordionFaqstyle .accordion-item:last-of-type .accordion-collapse {padding-bottom: 50px;} */
 .accordionFaqstyle .accordion-button::after {width: 18px;height: 18px; background-image: url("../images/common/icon_tabclose.png"); background-position: center center; background-size: 100%;}
-/* .accordionFaqstyle .accordion-button::after {transform: rotate(-90deg); -webkit-transform: rotate(-90deg);} */
+.accordionFaqstyle .accordion-button::after {transform: rotate(-90deg); -webkit-transform: rotate(-90deg);}
+.accordionFaqstyle .accordion-button:not(.collapsed)::after {transform: rotate(-180deg); -webkit-transform: rotate(-180deg);}
 .accordionFaqstyle.whitetype .accordion-button::after {width:26px; height:26px;background-image: url("../images/common/icon_tabclose_white.png"); }
-/* .accordionFaqstyle.whitetype .accordion-button::after {transform: rotate(-180deg); -webkit-transform: rotate(-180deg);} */
+.accordionFaqstyle.whitetype .accordion-button::after {transform: rotate(0deg); -webkit-transform: rotate(0deg);}
+.accordionFaqstyle.whitetype .accordion-button:not(.collapsed)::after {transform: rotate(-180deg); -webkit-transform: rotate(-180deg);}
 /* 이용후기 ================================================== */
 .reviewtabs {position: relative;}
 .reviewtabs .nav-item {width:48%; margin-left: 10px;}
