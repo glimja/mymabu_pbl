@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />  
+	<meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="shortcut icon" href="../favicon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+	<!-- css -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/swiper.min.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/default.css" />
+	<link rel="stylesheet" href="../css/common.css" />
+	<!-- js -->
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/common.js"></script>
+ 
+	<title>마이마부 - 중고차동행서비스</title>
+</head>
+<body>
+<div class="contentWrapper"> <!-- addFix_202210 -->
+	<!-- content -->
+
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#가상계좌환불요청신청팝업">
+		Layer Popup 가상계좌환불요청신청팝업
+	</button>
+
+	<!-- Modal : 가상계좌환불요청신청팝업 -->
+	<div class="modal fade show" id="가상계좌환불요청신청팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display:block"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+		<!-- popup full -->
+		<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
+			<div class="modal-content">
+				<div class="modal-header">                              
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h5 class="modal-title">환불신청</h5>
+					<div class="box_popinfo">
+						<span class="text-center w100 txt_type3 pb0 font13">환불 할 상품을 선택해 주세요.</span> <!-- addFix_202210 -->
+						<strong class="text-center w100 txt_type15 pb10 font13">기본서비스를 환불 요청하면 서비스가 종료됩니다.</strong> <!-- addFix_202210 -->
+							 
+						<div class="inner">
+							<div class="row bankinfo">
+								<dl class="dl_txt type3 "> 
+									<dt><strong class="font15 txt_color1 fw5">[ 서비스명 ]</strong></dt> <!-- addFix_202210 -->
+									<dd><strong class="num font18 txt_redcolor fw5">9,990,000</strong><span class="txt_type3 pb0">원</span></dd> <!-- addFix_202210 -->
+								</dl>
+							</div>
+							<div class="hr_line_gray mt5 mb15"><!-- 구분선 --></div> <!-- addFix_202210 -->
+							<div class="box_refundrequestcheck">
+								<dl class="dl_tbl "> 
+									<dt class="dt_tit">
+										<div class="form-check chkitem"> <!-- addFix_202210 -->
+											<input class="form-check-input" type="checkbox" value="" name="servicenamecheck" id="servicenamecheck1" checked="checked">
+											<label class="form-check-label" for="servicenamecheck1">
+												상품명 (기본서비스)
+											</label>
+										</div>
+									</dt>
+									<dd class="dd_desc">
+										<span class="num font17 txt_6">990,000</span><span class="txt_type3 pb0">원</span>
+									</dd>
+								</dl>
+								<dl class="dl_tbl type1"> 
+									<dt class="dt_tit">
+										<span class="txt_type3">할인항목</span>
+									</dt>
+									<dd class="dd_desc">
+										<span class="num font17 txt_6">- 990,000</span><span class="txt_type3 pb0">원</span>
+									</dd>
+								</dl>
+							</div>
+							<div class="hr_line_gray mt10 mb10"><!-- 구분선 --></div> <!-- addFix_202210 -->
+							<div class="box_refundrequestcheck">
+								<dl class="dl_tbl "> 
+									<dt class="dt_tit">
+										<div class="form-check chkitem"> <!-- addFix_202210 -->
+											<input class="form-check-input" type="checkbox" value="" name="servicenamecheck" id="servicenamecheck2" checked="checked">
+											<label class="form-check-label" for="servicenamecheck2">
+												추가요금
+											</label>
+										</div>
+									</dt>
+									<dd class="dd_desc">
+										<span class="num font17 txt_6">+ 990,000</span><span class="txt_type3 pb0">원</span>
+									</dd>
+								</dl>
+							</div>
+							<div class="hr_line_gray mt10 mb10"><!-- 구분선 --></div> <!-- addFix_202210 -->
+							<div class="box_refundrequestcheck">
+								<dl class="dl_tbl "> 
+									<dt class="dt_tit">
+										<div class="form-check chkitem"> <!-- addFix_202210 -->
+											<input class="form-check-input" type="checkbox" value="" name="servicenamecheck" id="servicenamecheck3" >
+											<label class="form-check-label" for="servicenamecheck3">
+												지역명
+											</label>
+										</div>
+									</dt>
+									<dd class="dd_desc">
+										<span class="num font17 txt_6">+ 990,000</span><span class="txt_type3 pb0">원</span>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="flex_btn">
+						<button type="button" class="btn btn-secondary btn_type1" data-bs-dismiss="modal">취소</button>
+						<button type="button" class="btn btn-primary btn_type1">환불요청</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div> <!--// addFix_202210 -->
+
+<!-- script 위치 이동시 navigation, backtoop 작동안함 -->
+<!-- <script src="../js/navbar.js"></script> -->
+<script src="../js/backtotop.js"></script>
+
+</body>
+</html>
