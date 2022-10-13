@@ -688,7 +688,8 @@ hr {margin:0}
 .servicestep {display:flex; flex-direction: column; align-items: center; white-space: initial;}
 .servicestep + .flex_btn {margin: 7px 0 0}
 .servicestep .desc {margin: 20px 0; color:#666}
-.list_scroll {margin-right: -40px; /*margin-left: -40px;*/} 
+.list_scroll {margin-right: -15px; /*margin-left: -40px;*/} 
+.list_scroll.studioimg {margin-right: -30px;}
 .list_scroll ul {overflow-x: scroll; white-space: nowrap;}
 .list_scroll li {display:inline-block; width: 330px; margin-right: 10px; vertical-align: top;}
 /* .list_scroll li:first-child {margin-left: 40px;} */
@@ -915,6 +916,7 @@ a.btn_type4.btn_type4_6.active,button.btn_type4.btn_type4_6.active {border: 0; b
 .box_paymenthistory .h3_tit .tit {font-size: 15px; font-weight: 500; color:#333;}
 .txt_blue {color: #2C61C1}
 a.btn.btn_type6,button.btn.btn_type6 {min-width:75px;height:20px;padding:0;line-height:0; box-sizing:border-box;font-weight: 400;font-size: 13px;color: #222;background: #fff;border:1px solid #283D6C; border-radius: 6px;text-align:center;letter-spacing: -.1px;}
+a.btn.btn_type6:hover,button.btn.btn_type6:hover {border:1px solid #283D6C;}
 .payamount.detail {padding:7px 5px; border-bottom: 1px solid #ddd;}
 .payamount.detail .tit {padding: 5px 0 5px 5px;font-size: 15px;color: #666;}
 .payamount.detail .desc {padding-top: 5px;font-size: 15px; color:#666;}
@@ -941,6 +943,24 @@ a.btn.btn_type6,button.btn.btn_type6 {min-width:75px;height:20px;padding:0;line-
 .dlw100 .dl_txt.type2.type2_1 dt.txt_blk20.dotnone {height: 40px; padding: 8px 8px 10px 7px;}
 .dlw100 .txtcenter a.btn_type2.btn_type2_2.pad0 {margin-bottom: 3px;}
 
+/* 구매동행서비스소개 Swiper scroll ================================================== */
+.list_swiperscroll .swiper-scrollbar-drag {position: relative; width: 100%; height: 100%;background: url("../images/common/bg_scrollbar.png");transform: matrix(0, -1, -1, 0, 0, 0);border-radius: 2px;left: 0;top: 0;}
+.list_swiperscroll .swiper-horizontal>.swiper-scrollbar, .list_swiperscroll .swiper-scrollbar.swiper-scrollbar-horizontal {position: absolute;left: 1%;bottom: -20px;width: 100%;height: 12px;z-index: 50;background: rgba(238, 238, 238, 0.3);box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);border-radius:0}
+/* 서비스는 어떻게 제공 되나요? */
+.list_swiperscroll.serviceIntroSwiper1 {overflow:visible;}
+.list_swiperscroll.serviceIntroSwiper1 li {display:inline-block; vertical-align: top;}
+/* 검사하는 영상 한번 보실까요? */
+.list_swiperscroll.serviceIntroSwiper2 {overflow:visible;}
+.list_swiperscroll.serviceIntroSwiper2 li {display:inline-block; vertical-align: top;}
+/* 마이마부 고객님이 인터뷰해 주셨습니다 */
+.list_swiperscroll.serviceIntroSwiper3 {overflow:visible;}
+.list_swiperscroll.serviceIntroSwiper3 li {display:inline-block; vertical-align: top;}
+/* 서울 양재 스튜디오 */
+.list_swiperscroll.serviceIntroStudioSwiper4 {overflow:visible;margin-bottom: 20px;}
+.list_swiperscroll.serviceIntroStudioSwiper4 li {display:inline-block; vertical-align: top;}
+/* 부산 스튜디오 */
+.list_swiperscroll.serviceIntroStudioSwiper5 {overflow:visible;margin-bottom: 20px;}
+.list_swiperscroll.serviceIntroStudioSwiper5 li {display:inline-block; vertical-align: top;}
 
 @media (max-width: 575px) {
     .wrap_alarm {padding-left: 7%;}
