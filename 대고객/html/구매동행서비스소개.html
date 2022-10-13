@@ -166,20 +166,6 @@
 							</ul>
 							<div class="swiper-scrollbar"></div>
 						</div>
-
-						<script>
-							// 서비스는 어떻게 제공 되나요?
-							var serviceIntroSwiper1 = new Swiper(".serviceIntroSwiper1", {
-								draggable: true,
-								slidesPerView: 1,
-								spaceBetween: 20,
-								centeredSlides: true,
-								scrollbar: {
-									el: ".swiper-scrollbar",
-									hide: false
-								},
-							});
-						</script>
 						<!--// addFix_202210 -->
 
 						<dl class="serviceinfo pt50 pb30"> <!-- addFix_202210 -->
@@ -232,25 +218,6 @@
 							</ul>
 							<div class="swiper-scrollbar"></div>
 						</div>
-
-						<script>
-							// 검사하는 영상 한번 보실까요?
-							var serviceIntroSwiper2 = new Swiper(".serviceIntroSwiper2", {
-								draggable: true,
-								slidesPerView: 1.2,
-								freeMode: true,
-								spaceBetween: 8,
-								breakpoints: {
-								575: {
-									slidesPerView: 1.7,
-								},
-								},
-								scrollbar: {
-									el: ".swiper-scrollbar",
-									hide: false,
-								},
-							});
-						</script>	
 						<!--// addFix_202210 -->
 
 						<p class="txt_type6 mt30 pb20 text-center">검사결과가 잘못되었다면?</p> <!-- addFix_202210 -->
@@ -379,25 +346,6 @@
 							</ul>
 							<div class="swiper-scrollbar"></div>
 						</div>
-
-						<script>
-							// 마이마부 고객님이 인터뷰해 주셨습니다
-							var serviceIntroSwiper3 = new Swiper(".serviceIntroSwiper3", {
-								draggable: true,
-								slidesPerView: 1.2,
-								freeMode: true,
-								spaceBetween: 8,
-								breakpoints: {
-								575: {
-									slidesPerView: 1.7,
-								},
-								},
-								scrollbar: {
-									el: ".swiper-scrollbar",
-									hide: false,
-								},
-							});
-						</script>	
 						<!--// addFix_202210 -->
 
 						<dl class="text-center pb20">
@@ -448,25 +396,6 @@
 								</ul>
 								<div class="swiper-scrollbar"></div>
 							</div>
-	
-							<script>
-								// 서울 양재 스튜디오
-								var serviceIntroStudioSwiper4 = new Swiper(".serviceIntroStudioSwiper4", {
-									draggable: true,
-									slidesPerView: 1.2,
-									freeMode: true,
-									spaceBetween: 8,
-									breakpoints: {
-										575: {
-											slidesPerView: 1.7,
-										},
-									},
-									scrollbar: {
-										el: ".swiper-scrollbar",
-										hide: false,
-									},
-								});
-							</script>	
 							<!--// addFix_202210 -->
 
 						</div>
@@ -527,25 +456,6 @@
 								</ul>
 								<div class="swiper-scrollbar"></div>
 							</div>
-	
-							<script>
-								// 부산 스튜디오
-								var serviceIntroStudioSwiper5 = new Swiper(".serviceIntroStudioSwiper5", {
-									draggable: true,
-									slidesPerView: 1.2,
-									freeMode: true,
-									spaceBetween: 8,
-									breakpoints: {
-										575: {
-											slidesPerView: 1.7,
-										},
-									},
-									scrollbar: {
-										el: ".swiper-scrollbar",
-										hide: false,
-									},
-								});
-							</script>	
 							<!--// addFix_202210 -->
 
 						</div> 
@@ -572,6 +482,87 @@
 		</div>
 	</div>
 </div> <!--// addFix_202210 -->
+
+<!-- addFix_202210 -->
+<script>
+	//* 구매동행서비스소개 Swiper scroll
+	// 서비스는 어떻게 제공 되나요?
+	var serviceIntroSwiper1 = new Swiper(".serviceIntroSwiper1", {
+		draggable: true,
+		slidesPerView: 1,
+		spaceBetween: 20,
+		centeredSlides: true,
+		scrollbar: {
+			el: ".swiper-scrollbar",
+			hide: false
+		},
+	});
+	// 검사하는 영상 한번 보실까요?
+	var serviceIntroSwiper2 = new Swiper(".serviceIntroSwiper2", {
+		draggable: true,
+		slidesPerView: 1.2,
+		freeMode: true,
+		spaceBetween: 8,
+		breakpoints: {
+		575: {
+			slidesPerView: 1.7,
+		},
+		},
+		scrollbar: {
+			el: ".swiper-scrollbar",
+			hide: false,
+		},
+	});
+	// 마이마부 고객님이 인터뷰해 주셨습니다
+	var serviceIntroSwiper3 = new Swiper(".serviceIntroSwiper3", {
+		draggable: true,
+		slidesPerView: 1.2,
+		freeMode: true,
+		spaceBetween: 8,
+		breakpoints: {
+		575: {
+			slidesPerView: 1.7,
+		},
+		},
+		scrollbar: {
+			el: ".swiper-scrollbar",
+			hide: false,
+		},
+	});
+	// 서울 양재 스튜디오
+	var serviceIntroStudioSwiper4 = new Swiper(".serviceIntroStudioSwiper4", {
+		draggable: true,
+		slidesPerView: 1.2,
+		freeMode: true,
+		spaceBetween: 8,
+		breakpoints: {
+			575: {
+				slidesPerView: 1.7,
+			},
+		},
+		scrollbar: {
+			el: ".swiper-scrollbar",
+			hide: false,
+		},
+	});
+	// 부산 스튜디오
+	var serviceIntroStudioSwiper5 = new Swiper(".serviceIntroStudioSwiper5", {
+		draggable: true,
+		slidesPerView: 1.2,
+		freeMode: true,
+		spaceBetween: 8,
+		breakpoints: {
+			575: {
+				slidesPerView: 1.7,
+			},
+		},
+		scrollbar: {
+			el: ".swiper-scrollbar",
+			hide: false,
+		},
+	});
+</script>	
+<!--// addFix_202210 -->
 
 <!-- Modal -->
 <div class="modal fade " id="공통결과화면팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
