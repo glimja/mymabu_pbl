@@ -189,33 +189,136 @@
 		</div>
 	</div>
 
-	<!-- Modal -->
-	<div class="modal fade" id="회사계정로그인후레이어팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none"> <!-- 적용시 : show class 삭제, style="display:none" -->
-		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+</div> <!--// addFix_202210 -->
+
+<!-- Modal -->
+<div class="modal fade" id="회사계정로그인후레이어팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none"> <!-- 적용시 : show class 삭제, style="display:none" -->
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+	<div class="modal-content">
+		<div class="modal-header">
+		<h5 class="modal-title" id="LayerPopLabelServicestart"><!-- 타이틀 --></h5>
+		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<!-- addFix_202210 -->
+			<div class="box_laypopinfo text-center">
+				<span class="font15 txt_75 pb10">최근 로그인 : 2022 - 08 - 30   15:45</span>
+				<div class="box_popinfo mt0">
+					<strong class="txt_color1 font18">[ 부서명 ] / [ 이름+직급 ]</strong>
+				</div>
+			</div> <!--// addFix_202210 -->
+		</div>
+		<div class="modal-footer">
+			<div class="flex_btn">
+				<button type="button" class="btn btn-primary btn_type1">로그아웃</button>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="차량처리목록팝업" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" > <!-- 적용시 : show class 삭제, style="display:block" 삭제 -->
+	<!-- popup full -->
+	<div class="modal-dialog full modal-dialog-scrollable" style="display:block"> <!-- style="display:block" : 모바일 전체화면 -->
 		<div class="modal-content">
 			<div class="modal-header">
-			<h5 class="modal-title" id="LayerPopLabelServicestart"><!-- 타이틀 --></h5>
 			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
-				<!-- addFix_202210 -->
-				<div class="box_laypopinfo text-center">
-					<span class="font15 txt_75 pb10">최근 로그인 : 2022 - 08 - 30   15:45</span>
-					<div class="box_popinfo mt0">
-						<strong class="txt_color1 font18">[ 부서명 ] / [ 이름+직급 ]</strong>
+				<h5 class="modal-title">[차량번호표시] 차량 처리 목록</h5>
+				<div class="box_popinfo">
+					<!-- 반복 -->
+					<div class="box_info_white mb10">
+						<div class="row bdb_ef pb10 mb5">
+							<div class="col">
+								<span class="txt_6 font14">[ 대분류 ]  >  [ 중분류 ]  >  [ 소분류 ]</span>
+							</div>
+						</div>
+						<dl class="dl_txt type4">
+							<dt>검사명 :</dt>
+							<dd class="txt_color1 fw7">검사명<span class="num">2567</span></dd>
+						</dl>
+						<dl class="dl_txt type4 position-relative">
+							<dt>결과값 :</dt>
+							<dd class="fw5">보상여무 정보 <button type="button" onclick="location.href='검차시작사진촬영보드.html'" class="btn btn_type1 btn_type1_12_sm btnActive active alignright">재검사</button></dd>
+						</dl>
+						<dl class="dl_txt type4">
+							<dt>보상여부 :</dt>
+							<dd class="fw5">값 표시</dd>
+						</dl>
 					</div>
-				</div> <!--// addFix_202210 -->
+					<!-- 반복 -->
+					<div class="box_info_white mb10">
+						<div class="row bdb_ef pb10 mb5">
+							<div class="col">
+								<span class="txt_6 font14">[ 대분류 ]  >  [ 중분류 ]  >  [ 소분류 ]</span>
+							</div>
+						</div>
+						<dl class="dl_txt type4">
+							<dt>검사명 :</dt>
+							<dd class="txt_color1 fw7">검사명<span class="num">2567</span></dd>
+						</dl>
+						<dl class="dl_txt type4 position-relative">
+							<dt>결과값 :</dt>
+							<dd class="fw5">보상여무 정보 <button type="button" class="btn btn_type1 btn_type1_12_sm btnActive alignright">재검사</button></dd>
+						</dl>
+						<dl class="dl_txt type4">
+							<dt>보상여부 :</dt>
+							<dd class="fw5">값 표시</dd>
+						</dl>
+					</div>
+					<!-- 반복 -->
+					<div class="box_info_white mb10">
+						<div class="row bdb_ef pb10 mb5">
+							<div class="col">
+								<span class="txt_6 font14">[ 대분류 ]  >  [ 중분류 ]  >  [ 소분류 ]</span>
+							</div>
+						</div>
+						<dl class="dl_txt type4">
+							<dt>검사명 :</dt>
+							<dd class="txt_color1 fw7">검사명<span class="num">2567</span></dd>
+						</dl>
+						<dl class="dl_txt type4 position-relative">
+							<dt>결과값 :</dt>
+							<dd class="fw5">보상여무 정보 <button type="button" class="btn btn_type1 btn_type1_12_sm btnActive active alignright">재검사</button></dd>
+						</dl>
+						<dl class="dl_txt type4">
+							<dt>보상여부 :</dt>
+							<dd class="fw5">값 표시</dd>
+						</dl>
+					</div>
+					<!-- 반복 -->
+					<div class="box_info_white mb10">
+						<div class="row bdb_ef pb10 mb5">
+							<div class="col">
+								<span class="txt_6 font14">[ 대분류 ]  >  [ 중분류 ]  >  [ 소분류 ]</span>
+							</div>
+						</div>
+						<dl class="dl_txt type4">
+							<dt>검사명 :</dt>
+							<dd class="txt_color1 fw7">검사명<span class="num">2567</span></dd>
+						</dl>
+						<dl class="dl_txt type4 position-relative">
+							<dt>결과값 :</dt>
+							<dd class="fw5">보상여무 정보 <button type="button" class="btn btn_type1 btn_type1_12_sm btnActive alignright">재검사</button></dd>
+						</dl>
+						<dl class="dl_txt type4">
+							<dt>보상여부 :</dt>
+							<dd class="fw5">값 표시</dd>
+						</dl>
+					</div>
+					
+				</div>
 			</div>
 			<div class="modal-footer">
 				<div class="flex_btn">
-					<button type="button" class="btn btn-primary btn_type1">로그아웃</button>
+					<button type="button" class="btn btn-primary btn_type1">확인</button>
 				</div>
 			</div>
 		</div>
-		</div>
 	</div>
-
-</div> <!--// addFix_202210 -->
+</div>
 
 <!-- script 위치 이동시 navigation, backtoop 작동안함 -->
 <script src="../js/navbar.js"></script>

@@ -859,6 +859,12 @@ a.btn_type2.btn_type2_2.btn_type2_2_1.pad0, button.btn_type2.btn_type2_2.btn_typ
 .dlw100 .dl_txt.type2.type2_1 dt.txt_blk20.dotnone {height: 40px; padding: 8px 8px 10px 7px;}
 .dlw100 .txtcenter a.btn_type2.btn_type2_2.pad0 {margin-bottom: 3px;}
 
+/* 차량처리목록 */
+a.btn_type1.btn_type1_12_sm,button.btn_type1.btn_type1_12_sm {width: 60px; height:20px; padding:0; font-size: 13px; font-weight: 500; color:#CFCFCF; border-radius:6px;background: #FFFFFF;border: 1px solid #E6E6E6; letter-spacing: -0.04em; line-height: 0;}
+a.btn_type1.btn_type1_12_sm.active,button.btn_type1.btn_type1_12_sm.active {color:#fff; background: #293D6C;border:0}
+.alignright {position: absolute; right:0}
+
+
 @media (max-width: 575px) {
     .wrap_alarm {padding-left: 10%;}
     .pc_quick_Box {display: none}
