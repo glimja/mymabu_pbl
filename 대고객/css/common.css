@@ -962,6 +962,55 @@ a.btn.btn_type6:hover,button.btn.btn_type6:hover {border:1px solid #283D6C;}
 .list_swiperscroll.serviceIntroStudioSwiper5 {padding-bottom: 20px;margin-bottom: 20px;}
 .list_swiperscroll.serviceIntroStudioSwiper5 li {display:inline-block; vertical-align: top;}
 
+
+/* 구매동행서비스소개 new 20221017  ================================================== */
+.btn-close.type1 {width:16px; height:16px; margin: 10px 10px 0.5rem auto; background: url("../images/common/icon_btnclose2.png"); background-size: 100%; background-repeat:no-repeat; opacity: 1;}
+.box_serviceintro .modal-body {padding: 0; letter-spacing: -0.025em;}
+.box_serviceintro .modal-body .box_head {padding: 0 32px}
+.box_serviceintro .modal-body .modal-title {padding-top: 30px;font-size: 26px; font-weight: 700; line-height:120%; color: #293D6C;text-align:left;}
+.box_serviceintro .modal-body .modal-title .txt_blue2 {display: block; color: #2E78E8;}
+.txt_blue2 {color: #2E78E8;}
+.box_introwhite {padding: 48px 32px; background: #fff}
+.box_introgray {padding: 48px 32px; background:#FAFAFC;}
+.box_serviceintro .modal-body .head_tit {padding: 32px 0 24px; font-size: 20px; font-weight: 700;color: #293D6C;}
+.icon_srv_history,
+.icon_srv_tool,
+.icon_srv_banknote,
+.icon_srv_car {display:inline-block; width: 24px; height:24px; font: 0 auto; text-indent: -9999999em}
+.icon_srv_history {background: url('../images/common/icon_srv_history.png') 0 0;background-size: 100%;}
+.icon_srv_tool {background: url('../images/common/icon_srv_tool.png') 0 0;background-size: 100%;}
+.icon_srv_banknote {background: url('../images/common/icon_srv_banknote.png') 0 0;background-size: 100%;}
+.icon_srv_car {background: url('../images/common/icon_srv_car.png') 0 0;background-size: 100%;}
+.area_srvlist {position: relative; padding-left: 12.5px; border-left: 1px solid #E5E8ED}
+.area_srvlist:before,
+.area_srvlist:after {content:''; position: absolute; left:-2px; display: block; width:3px; height: 35px; background: #fff;z-index: 1;}
+.area_srvlist:before {top:0;}
+.area_srvlist:after {bottom:0}
+.area_srvlist .srvbox_li {display: flex; position: relative; padding: 22px 24px; margin-bottom: 16px;background: #293D6C;box-shadow: 0px 2px 16px rgba(55, 63, 75, 0.04);border-radius: 16px;z-index: 2;}
+.area_srvlist .srvbox_li .cirdot {position: absolute; top:50%; left:-16px; margin-top: -3px; width: 6px; height: 6px; background: #293D6C; border-radius: 6px;}
+.area_srvlist .srvbox_li .txt {padding-left: 8px;font-weight: 500; font-size: 15px; color:#ADC1DF;}
+.area_srvlist .srvbox_li .pointtxt {padding-left: 3px;font-weight: 700; font-size: 15px; color:#fff}
+.head_desc {padding: 16px 0 42px; color: #293D6C;font-weight: 400; font-size: 18px; text-align: center;}
+.head_desc .desc {font-weight: 700; font-size: 20px;}
+.srvbox_dl {padding-bottom: 24px;}
+.srvbox_dl .dt_tit {padding-bottom: 12px;font-weight: 700; font-size: 20px; line-height:140%; color: #293D6C;}
+.srvbox_dl .dd_desc {font-weight: 400; font-size: 15px; line-height: 140%; color: #6D757C;}
+.inner_white {padding: 24px;background: #FFFFFF;box-shadow: 0px 8px 24px rgba(55, 63, 75, 0.04);border-radius: 16px;}
+.inner_white .inner_gray {padding: 24px 15px;background: rgba(41, 61, 108, 0.03);border-radius: 8px;}
+.inner_white .inner_gray.type2 {background: rgba(41, 61, 108, 0.06);}
+.inner_gray {padding: 24px; background: #F5F5F5; border-radius: 16px;}
+.box_serviceintro .step {padding-bottom: 12px;font-weight: 400;font-size: 12px;line-height: 20px; color: #293D6C;}
+.box_serviceintro .step strong {font-weight: 700}
+.step_dl {padding-bottom: 16px;}
+.step_dl .dt_tit {padding-bottom: 8px;font-weight: 900;font-size: 16px;line-height: 20px;color: #293D6C;}
+.step_dl .dd_desc {font-weight: 400;font-size: 15px;line-height: 140%;color: #7C8A9F;}
+.icon_sampleviewarrow {display:block; width:16px; height:16px; background: url('../images/common/icon_sampleviewarrow.png') 0 0 no-repeat; background-size: 100%;}
+.link_sampleview {display: flex;align-items: center; font-weight: 400; font-size: 13px; color: #293D6C;text-decoration-line: underline;}
+.link_sampleview .icon_sampleviewarrow {margin-left: 4px;}
+a.link_sampleview:link, a.link_sampleview:visited, a.link_sampleview:active, a.link_sampleview:hover {color: #293D6C;text-decoration-line: underline;}
+
+
+.reviewtextarea::placeholder {color:#999}
 @media (max-width: 575px) {
     .wrap_alarm {padding-left: 7%;}
     .pc_quick_Box {display: none}
