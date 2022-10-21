@@ -995,7 +995,7 @@ a.btn.btn_type6:hover,button.btn.btn_type6:hover {border:1px solid #283D6C;}
 .srvbox_dl {padding-bottom: 24px;}
 .srvbox_dl .dt_tit {padding-bottom: 12px;font-weight: 700; font-size: 20px; line-height:140%; color: #293D6C;}
 .srvbox_dl .dd_desc {font-weight: 400; font-size: 15px; line-height: 140%; color: #6D757C;}
-.inner_white {padding: 24px;background: #FFFFFF;box-shadow: 0px 8px 24px rgba(55, 63, 75, 0.04);border-radius: 16px;}
+.inner_white {padding: 24px;background: #FFFFFF;box-shadow: 0px 8px 24px rgba(55, 63, 75, 0.08);border-radius: 16px;}
 .inner_white .inner_gray {padding: 24px 15px;background: rgba(41, 61, 108, 0.03);border-radius: 8px;}
 .inner_white .inner_gray.type2 {background: rgba(41, 61, 108, 0.06);}
 .inner_gray {padding: 24px; background: #F5F5F5; border-radius: 16px;}
@@ -1035,6 +1035,10 @@ a.link_sampleview:link, a.link_sampleview:visited, a.link_sampleview:active, a.l
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {bottom:0}
 .inspectionMovSwiper1,
 .interviewMovSwiper2 {padding-bottom: 37px;margin-right: -20px;}
+
+.studiophotoimg {padding: 16px 0 30px}
+.studiophotoimg img {width: 263px; height: 220px; border-radius: 8px}
+.studiophotoimg .swiper-pagination {left:50%; margin-left: -25px; width:50px; background: rgba(41, 61, 108, 0.7); border-radius: 24px;font-size: 12px; font-weight: 500; color: #fff; text-align: center;}
 
 /* 이용후기작성입력 */
 .reviewtextarea::placeholder {color:#999}
